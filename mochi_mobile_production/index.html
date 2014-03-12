@@ -1,0 +1,437 @@
+{% extends "mobile/_base.html" %}
+{% block end_head %}
+<link href="/static/mobile/css/swipe.css" rel="stylesheet">
+<script type="text/javascript" src="/static/mobile/js/slider.js"></script>
+{% endblock end_head %}
+{% block main_content %}
+<div class="dev row">
+    <a name="dev-anchor"></a>
+    <a href="#" class="prod-link col-xs-12">Developers</a>
+    <div id="dev-prod" class="prod">
+        <br />
+        <p>Mochi Media’s tools and services allow developers to focus on what you do best- making games.</p>
+        <div class="swipe-nav">
+            <a href="#" class="prev" id="dev-swipe-prev"><img src="/static/mobile/images/slider/dev-prev.png" class="img-responsive" /></a>
+            <a href="#" class="next" id="dev-swipe-next"><img src="/static/mobile/images/slider/dev-next.png" class="img-responsive" /></a>
+        </div>
+        <div id="dev-slider" class="swipe">
+            <div class="swipe-wrap">
+                <div>
+                     <h2>Mochi ADs</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Monetize every gameplay with one line of code</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>You receive a revenue share for every ad shown in your game, from any site on the web. All it takes is one line of code!</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Five flexible ad placement options</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>And options are good, right? Mochi Ads offers 5 different ad placement options for developers, allowing you to choose the ad type that best suits your game: Pre-roll / Preloader Ads, Inter-level Ads, Click-away Ads, Scores Ads, and CPA Ads.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">Domain filtering = more developer control</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Domain filtering enables you to selectively turn off ads for specific domains, giving you the flexibility to decide where your ads will show.</p>
+                                </div>
+                            </li>
+                            <li class="four">
+                                <a href="#" class="act info-link">Advanced Analytics to track your game</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>We have best in class analytics. The dashboard shows real-time data on how your game and ads are performing across the web.</p>
+                                </div>
+                            </li>
+                            <li class="five">
+                                <a href="#" class="act info-link">No branding</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>The default UI for Mochi Ads doesn’t have any branding or links from Mochi Media.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Mochi Distribution</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Over 40,000 partner sites and climbing</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Distribute your game to thousands of publisher partners in the Mochi network, including some of the largest sites on the web.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Publishers prefer Mochi Media’s format</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Publishers like consistency, it makes their job easier. Having all of the data in one place in a consistent format makes it much easier to post. Your game and all of it’s details will be distributed by our catalog and direct feeds to publishers.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">3rd party tools have Mochi Game Distribution integration</a>
+                                <div class="info tall">
+                                    <span class="arrow"></span>
+                                    <p>Many commonly available arcade scripts and arcade Wordpress themes make it even easier for publishers to add your game automatically from our feed.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Mochi Live Updates</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Add new features and bug fixes post-release</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Want to promote a sequel or your next game? Add new levels, maps, or features? Bug fixes? Instantly update your game across the web from your Mochi developer dashboard.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Always playable, no matter what</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Even if the Live Updates servers are not accessible, the encrypted SWF contains a complete and playable version of your game.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">Extra layer of encryption for your game</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>The Live Updates service wraps your game with an extra layer of encryption to protect it from decompilers.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Mochi Scores</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Increase player engagement</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Competitive players love earning status. With Mochi Scores, players can show off with their high scores and even earn score-based medals to flaunt their skills.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Flexible and easy to customize</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>The Mochi Scores API is flexible and works well in nearly any game design. You can create any number of boards, use integer or time-based scores, save high or low scores, and more. No matter what kind of games you like to build, a little friendly competition goes a long way.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">No branding</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>The default UI for Mochi Scores doesn’t have any branding or links that would take the player away from the game.</p>
+                                </div>
+                            </li>
+                            <li class="four">
+                                <a href="#" class="act info-link">Publisher friendly</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Publishers can take advantage of Mochi Scores in the same way as Mochi Acheivements, using the publisher bridge to create a more customized experience for their players.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Mochi Analytics</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Improve your game</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Using analytics gives you data, and data gives you the opportunity to improve your game.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Track and share your statistics</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Track your gameplays, sessions, and duration...and share that information with your partners, sponsors, and friends!</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">Free and easy</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Mochi Analytics is easy to implement, requiring only a snippet of code. Oh yeah, it’s also FREE!</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Mochi Achievements</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Easy, solid, white label</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>If you are looking for a quick, easy, and solid achievements solution then we have you covered. Additionally, the default user interface and graphics for Mochi Achievements have no branding or outbound links.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Flexible</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>If you want control, we can give it to you. Toasters (“pop-ups”) come in two different sizes and have 9 placement options for your game.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">Customizable</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>If you don’t want to use the Mochi Media default UI, you can create your very own UI to make this look just the way you want! Incorporate developer or sponsor branding to get the most out of Mochi Achievements.</p>
+                                </div>
+                            </li>
+                            <li class="four">
+                                <a href="#" class="act info-link">Points system</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Developers can assign player points to achievements, giving more significance to certain achievements over others (or making them all equal). You have a total of 1,000 points to use as you please.</p>
+                                </div>
+                            </li>
+                            <li class="five">
+                                <a href="#" class="act info-link">Publisher friendly</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Publishers can take advantage of Mochi Achievements in the same way as Mochi Scores, using the same bridge.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pub row">
+    <a name="pub-anchor"></a>
+    <a href="#" class="prod-link col-xs-12">Publishers</a>
+    <div id="pub-prod" class="prod">
+        <br />
+        <p>The Mochi Media publisher program provides website owners and webmasters with easy access to thousands of free games, free analytics and insights into their performance across your sites, as well as opportunities to earn additional revenue.</p>
+        <div class="swipe-nav">
+            <a href="#" class="prev" id="pub-swipe-prev"><img src="/static/mobile/images/slider/pub-prev.png" class="img-responsive" /></a>
+            <a href="#" class="next" id="pub-swipe-next"><img src="/static/mobile/images/slider/pub-next.png" class="img-responsive" /></a>
+        </div>
+        <div id="pub-slider" class="swipe">
+            <div class="swipe-wrap">
+                <div>
+                     <h2>Free Content</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Over 70,000 games</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Mochi Media boasts the largest collection of high-quality free games on the web. Syndicate the whole collection, or just pick games that your users will love! Using Mochi Media’s Feedmonger technology, you can even create highly customized game feeds based on multiple criteria.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Easy content management</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>You get to choose how you want your content delivered. Options include default or custom game feeds via the catalog (available in JSON or XML), plug-ins for one-click "Auto Post" of games to your site, downloading individual .zip files, or copy-paste embed codes.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">Free analytics service</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>We provide free analytics for publishers, available via your account dashboard, that helps you manage and analyze game popularity and revenues.</p>
+                                </div>
+                            </li>
+                            <li class="four">
+                                <a href="#" class="act info-link">Consistent format</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Each game comes with thumbnail, description, category, tags and more. Consistency makes your life easier.</p>
+                                </div>
+                            </li>
+                            <li class="five">
+                                <a href="#" class="act info-link">Community</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>The Mochi Media Forums provides you with a place to hang out and chat with a vibrant gaming community of developers and fellow publishers</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Custom Integration</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Mochi Bridge API</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>The Mochi Bridge API allows communication between a Mochi Media game and the website publisher. Implemented as a simple JavaScript embed you can place on your game pages, the bridge can be used to pass information such as high scores, usernames, and other parameters between the game and your site.</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Customize to your players</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Keep players addicted to your brand by customizing gamer high scores boards to your community. Once players submit a score, they can view your own unique community usernames, link names to your user profiles, and drive new guests to your login and registration pages.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">It’s your data too</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Every Mochi Score enabled game can share the score and player data through the Publisher Bridge. This allows you to build engaging features around high scores, and reward top players. Every score posted in the game is reported back to your site, and that includes our gold, silver, and bronze medals based on top scores.</p>
+                                </div>
+                            </li>
+                            <li class="four">
+                                <a href="#" class="act info-link">Easy-peasy</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Mochi is known for easy to use technology, and our publisher platform is no exception. Customizing a Mochi game is as easy as including a small snippet of javascript on your game page. No server work is necessary to get started and it can be done in minutes.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                <div>
+                     <h2>Earn affiliate revenue</h2>
+                        <ul class="reasons">
+                            <li class="one">
+                                <a href="#" class="act info-link">Create an account</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Accounts are free, create one to get going!</p>
+                                </div>
+                            </li>
+                            <li class="two">
+                                <a href="#" class="act info-link">Verify your domain</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Once you have created your account, you will want to verify your domain. You can verify one domain for your account, so if you have multiple sites you will want to plan to host the files from one place. Detailed instructions for domain verification can be found in your publisher account under “Settings”.</p>
+                                </div>
+                            </li>
+                            <li class="three">
+                                <a href="#" class="act info-link">Host the game files</a>
+                                <div class="info">
+                                    <span class="arrow"></span>
+                                    <p>Once you have verified your domain, you will need to host the game filesthere in order for our system to give you credit for the impressions. Embedding won’t work, you will need to host the actual files.</p>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="adv row">
+    <a name="adv-anchor"></a>
+    <a href="#" class="prod-link col-xs-12">Advertisers</a>
+    <div id="adv-prod" class="prod">
+        <br />
+        <p>Mochi Media's unique platform brings game creators, website owners, and end users together, creating the largest online games network in the world. This gives Mochi Media the ability to reach a wide range of international audiences. We can handle large budget campaigns as well as self-serve campaigns (which start as low as $100)</p>
+        <br />
+        <h2>How It Works</h2>
+        <br />
+        <p>Mochi offers advertisers access to an extremely responsive audience by embedding Flash video and static advertising into natural and expected breaks in gameplay.</p>
+        <p>We have relationships with thousands of Flash game developers, powering their games across tens of thousands of websites from social networks and blogs to casual gaming sites. Our network delivers results with premium high-impact ads to a very diverse demographic audience.</p>
+        <br />
+        <div class="swipe-nav">
+            <a href="#" class="prev" id="adv-swipe-prev"><img src="/static/mobile/images/slider/adv-prev.png" class="img-responsive" /></a>
+            <a href="#" class="next" id="adv-swipe-next"><img src="/static/mobile/images/slider/adv-next.png" class="img-responsive" /></a>
+            <h2>Some of our advertisers</h2>
+        </div>
+        <div id="adv-slider" class="swipe">
+            <div class="swipe-wrap">
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/cartoon_net.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/disney.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/dreamworks.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/johnson.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/mattel.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/microsoft.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/newline.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/nintendo.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/ubi.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/uni.png" />
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/universal.png" />
+                </div>
+            </div>
+        </div>
+        <h2>Our Audience</h2>
+        <br />
+        <p>Games in our network are distributed to over 40,000 partner sites. This includes the top social networks and gaming websites across the Internet, reaching users where they're hanging out, relaxed and ready to receive your brand's message. The unique combination of engaging games and distribution make Mochi Media the largest online games network in the world!</p>
+        <br />
+        <div class="swipe-nav">
+            <a href="#" class="prev" id="ads-swipe-prev"><img src="/static/mobile/images/slider/adv-prev.png" class="img-responsive" /></a>
+            <a href="#" class="next" id="ads-swipe-next"><img src="/static/mobile/images/slider/adv-next.png" class="img-responsive" /></a>
+            <h2>Our ad formats</h2>
+        </div>
+        <div id="ads-slider" class="swipe">
+            <div class="swipe-wrap">
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/mcain-prer.png" />
+                    <div class="adv-label">Pre-roll video</div>
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/rayman-sv.png" />
+                    <div class="adv-label">Skinned video</div>
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/empire-static.png" />
+                    <div class="adv-label">Static</div>
+                </div>
+                <div>
+                    <img class="img-responsive" src="/static/mobile/images/advertisers/bio-cpa.png" />
+                    <div class="adv-label">CPA ads</div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h2>Targeting</h2>
+        <br />
+        <p>Mochi Media is the world’s largest network of online games, reaching over 160 million unique users. Our campaigns deliver powerful results, enabling marketers to establish a deep connection with our users. We have the ability to target by location, game category and we can also target using Quantcast© technology and data.</p>
+        <p>Quantcast© targeting only available for direct campaigns.</p>
+        <br />
+        <h2>Self-Serve Ads</h2>
+        <br />
+        <p>Unlike traditional online advertising where an advertisement may appear on the side of the page or around the content, your Self-Serve ad reaches engaged gamers during game load.</p>
+        <p>Our easy-to-use system is flexible to suit your advertising budget at any size, starting as low as $100.</p>
+        
+        <a href="http://www.mochimedia.com/contact?MMmobileref=Adv" target="_blank" class="contact-us col-xs-12">Contact Sales</a>
+    </div>
+</div>
+<div class="main-slider-nav">
+    <a href="#" id="slider-prev" class="slider-nav"><img src="/static/mobile/images/slider/b-prev.png" class="img-responsive" /></a>
+      <a href="#" id="slider-next" class="slider-nav"><img src="/static/mobile/images/slider/b-next.png" class="img-responsive" /></a>
+</div>
+<div id='slider' class='swipe'>
+  <div class='swipe-wrap'>
+    <div><a href="http://mochiland.com/articles/boost-your-revenue-with-mochi-ads-cpa?MMmobileref=Home" target="_blank"><img src="/static/mobile/images/slider/rotator_cpa_mobile.png" class="img-responsive" /></a></div>
+    <div><a href="http://www.mochimedia.com/games?MMmobileref=Home" target="_blank"><img src="/static/mobile/images/slider/rotator_games_cat_mobile.png" class="img-responsive" /></a></div>
+    <div><a href="https://www.mochimedia.com/jobs?MMmobileref=Home" target="_blank"><img src="/static/mobile/images/slider/rotator_wewantyou_mobile.png" class="img-responsive" /></a></div>
+  </div>
+</div>
+{% endblock main_content %}

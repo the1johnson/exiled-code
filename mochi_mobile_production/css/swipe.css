@@ -1,0 +1,72 @@
+.swipe{
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  margin-top: 15px;
+  clear: left;
+}
+.swipe-wrap{
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div{
+  float:left;
+  width:100%;
+  position: relative;
+  background-color: white;
+}
+#slider .swipe-wrap > div{
+    /*padding: 15px 30px;*/
+}
+.swipe-link{
+    background-color: #43C1E8;
+    color: white;
+    font-family: 'FuturaStd-Medium';
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    font-size: 1.5em;
+}
+.slider-nav{
+    position: absolute;
+    top: 75px;
+    width: 12%;
+    height: auto;
+}
+#slider-prev{
+    left: -15px;
+}
+#slider-next{
+    right: -15px;
+}
+#slider-prev:hover, #slider-next:hover{
+    background-color: #43C1E8;
+}
+#slider img{
+    margin: 0 auto;
+}
+.swipe-nav{
+    position: relative;
+    z-index: 1;
+}
+.swipe-nav .prev{
+    float: left;
+}
+.swipe-nav .next{
+    float: right;
+}
+.main-slider-nav{
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+#pub-slider, #dev-slider, #adv-slider{
+    margin-bottom: 15px;
+}
+#adv-prod .swipe-nav h2{
+    margin-bottom: 0;
+    text-transform: inherit;
+}
+#adv-prod .swipe{
+    margin-top: 0;
+}

@@ -1,0 +1,282 @@
+{% block start_html %}
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" class="ag3" lang="en">
+{% endblock start_html %}
+    {% block head %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="The World’s Largest Network of Online Games, with more than 160 million monthly active users, 90,000 games, and 40,000 publisher websites.">
+        <meta name="keywords" content="game, game developer, free games, free content, developer tools, Mochi Ads, Mochi API, distribution, advertising, ads, monetization, in-game ads, developer, publisher, portal, portal owner, targeting, audience acquisition, CPM, CPC"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Mochi Media - Home{% endblock title %} &ndash; {% block title_common %}Mochi Media :: Fueling Creativity{% endblock title_common %}</title>
+        
+        <link href="/static/css/bootstrap.css?v=d140a3648c683b0c2bc898ba54a58ca2" rel="stylesheet">
+        <link href="/static/mobile/css/global.css" rel="stylesheet">
+        
+        <script type="text/javascript" src="/static/js/jquery.js?v=663628f795cb62444143fde1ebdf2b5b"></script>
+        <script type="text/javascript" src="/static/mobile/js/fastclick.js"></script>
+        <script type="text/javascript" src="/static/mobile/js/swipe.js"></script>
+        <script type="text/javascript" src="/static/mobile/js/nav.js"></script>
+        <script type="text/javascript" src="/static/mobile/js/global.js"></script>
+        {% block end_head %}{% endblock end_head %}
+    </head>
+    {% endblock head %}
+    {% block start_body %}
+    <body>
+    {% endblock start_body %}
+        <div class="container">
+            {% block main_nav %}
+            <div class="row header">
+                <h1 class="col-xs-7"><img src="/static/mobile/images/mochimedia-logo.png" class="img-responsive" alt="Mochimedia Logo" /></h1>
+                <a href="#" id="drop-nav" class="col-xs-2"><img src="/static/mobile/images/nav-bars.png" class="img-responsive" alt="Show Nav" /></a>
+            </div>
+            <div class="row">
+                <ul id="nav-bar" class="nav col-xs-12">
+                    <li class="first"><a href="http://www.mochimedia.com/community?MMmobileref=Nav_hed" target="_blank">Community</a></li>
+                    <li><a href="http://mochiland.com/?MMmobileref=Nav_hed" target="_blank">Mochi Blog</a></li>
+                    <li class="last"><a id="nav-signup" href="#">Sign up now</a></li>
+                </ul>
+            </div>
+            {% endblock main_nav %}
+            
+            {% block main_content %}{% endblock main_content %}
+            {% block footer %}
+            <div class="row">
+                <a name="signup-anchor"></a>
+                <a href="#" id="signup-now" class="foot-sign-up col-xs-12">Sign up now</a>
+                <form method="POST" action="https://www.mochipass.com/new_user" id="registration">
+                    <input type="hidden" name="account_type" id="account_type" value="dev" />
+                    <input type="hidden" name="service" id="service" value="ads" />
+                    <input type="hidden" name="host" id="host" value="mochimedia.com" />
+                    <br />
+                    <div class="reg-wrapper">
+                        <div class="reg-slide">
+                            <input name="alias" id="alias" class="textbox" type="text" placeholder="username" />
+                            <input name="email" id="email" class="textbox" type="text" placeholder="email" />
+                            <input name="name" id="name" class="textbox" type="text" placeholder="real name" />
+                            <input name="password" id="password" class="textbox" type="password" placeholder="password" />
+                            <input name="password2" id="password2" class="textbox" type="password" placeholder="re-type password" />
+                            <div id="reg-next-slide" class="deactivated">next</div>
+                        </div>
+                        <div class="reg-slide slide-last">
+                            <div class="field captcha">
+                              <label i18n:msg="">Please be a human:<em>*</em></label>
+                              <script type="text/javascript">
+                              var RecaptchaOptions = {
+                                 theme :  'custom',
+                                 custom_theme_widget: 'recaptcha_widget'
+                              };
+                              </script>
+                              <div id="recaptcha_widget" style="display:none">
+
+                                 <div id="recaptcha_image"></div>
+                                 <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+
+                                 <span class="recaptcha_only_if_image"></span>
+                                 <span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
+
+                                 <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" placeholder="Type the text" tabindex="-1" />
+
+                                 <div id="captcha-options">
+                                     <div class="option"><a href="javascript:Recaptcha.reload()"><img src="https://www.google.com/recaptcha/api/img/clean/refresh.png" alt="Refresh Captcha" /></a></div>
+                                     <div class="recaptcha_only_if_image option"><a href="javascript:Recaptcha.switch_type('audio')"><img src="https://www.google.com/recaptcha/api/img/clean/audio.png" alt="Get an audio CAPTCHA"></a></div>
+                                     <div class="recaptcha_only_if_audio option"><a href="javascript:Recaptcha.switch_type('image')"><img src="https://www.google.com/recaptcha/api/img/clean/text.png" alt="Get a text CAPTCHA"></a></div>
+
+                                     <div class="option"><a href="javascript:Recaptcha.showhelp()"><img src="https://www.google.com/recaptcha/api/img/clean/help.png" alt="Help"></a></div>
+                                 </div>
+
+                               </div>
+
+                               <script type="text/javascript"
+                                  src="http://www.google.com/recaptcha/api/challenge?k=6LfoY9ASAAAAABlJ0VhvkJq7ub_jtYnAKVqypavq">
+                               </script>
+                               <noscript>
+                                 <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LfoY9ASAAAAABlJ0VhvkJq7ub_jtYnAKVqypavq"
+                                      height="300" width="500" frameborder="0"></iframe><br>
+                                 <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                                 </textarea>
+                                 <input type="hidden" name="recaptcha_response_field"
+                                      value="manual_challenge">
+                               </noscript>
+                            </div>
+                            <input type="checkbox" id="tos" name="tos" value="tos" class="checkbox"  tabindex="-1" /> I agree to the Terms of Service
+                            <br />
+                            <p>By checking the box next to “I agree to the terms of service” you agree that these terms of service are an agreement that is enforceable like any written negotiation agreement signed by you and you agree to be legally bound and to abide by this agreement just as if you had signed this agreement.</p>
+                            <input id="create_user" name="create_user" type="submit" class="button" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="social-hooks row">
+                <li class="facebook">
+                    <a href="http://www.facebook.com/mochimedia?MMmobileref=Nav_foot" target="_blank"><img src="/static/images/facebook-icon@2x.png" class="img-responsive" alt="Facebook Link" /></a>
+                </li>
+                <li class="twitter">
+                    <a href="http://twitter.com/mochimedia?MMmobileref=Nav_foot" target="_blank"><img src="/static/images/twitter-icon@2x.png" class="img-responsive" alt="Twitter Link" /></a>
+                </li>
+                <li class="rss">
+                    <a href="http://mochiland.com/?MMmobileref=Nav_foot" target="_blank"><img src="/static/images/rss-icon@2x.png" class="img-responsive" alt="RSS Link" /></a>
+                </li>
+                <li class="instagram">
+                    <a href="http://www.instagram.com/mochimedia?MMmobileref=Nav_foot" target="_blank"><img src="/static/images/instagram-icon@2x.png" class="img-responsive" alt="Instagram Link" /></a>
+                </li>
+                <li class="google">
+                    <a href="https://plus.google.com/107889187791585381489?MMmobileref=Nav_foot" target="_blank"><img src="/static/images/google-plus-icon@2x.png" class="img-responsive" alt="Google Plus Link" /></a>
+                </li>
+            </ul>
+            <ul class="foot-nav row">
+                <li>
+                    <a id="foot-contact" class="action" href="#">Contact us</a>
+                    <div id="contact-info">
+                        <br />
+                        <p>
+                            <strong>Email us:</strong>
+                            <br />
+                            Human Resources: <a href="mailto:hr@mochimedia.com">hr@mochimedia.com</a>
+                        </p>
+                        <p>
+                            <strong>Talk to us:</strong>
+                            <br />
+                            Phone: (415) 680-3740
+                        </p>
+                        <p>
+                            <strong>Support:</strong>
+                            <br />
+                            For developer, publisher and user support inquiries, we welcome you to click on this link to the Mochi Knowledgebase and direct contact to our Support Team: <a href="http://mochi.desk.com/?MMmobileref=Nav_foot" target="_blank">Mochi Support</a>
+                        </p>
+                        <p>
+                            <strong>Send us gifts:</strong>
+                            <br />
+                            <address>
+                                Mochi Media, Inc.<br />
+                                611 Mission St., 5th Floor<br />
+                                San Francisco, CA 94105<br />
+                            </address>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a id="foot-team" class="action" href="#">Team</a>
+                    <div id="team-info">
+                        <br />
+                        <ul>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Josh_T.jpg" />
+                                <div class="name">Josh Larson</div>
+                                <div class="title">CEO</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Emad_T.jpg" alt="" />
+                                <div class="name">Emad El-Haraty</div>
+                                <div class="title">Vice President of Engineering</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Alex_T.jpg" />
+                                <div class="name">Alexander Hsu</div>
+                                <div class="title">Sales Manger</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Antonio_T.jpg" />
+                                <div class="name">Antonio "Bromethus" Tran</div>
+                                <div class="title">Senior UI Developer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/ChrisJ_T.jpg" />
+                                <div class="name">Chris “Big Janks” Jankos</div>
+                                <div class="title">Sales Manager</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Colin_T.jpg" />
+                                <div class="name">Colin Cupp</div>
+                                <div class="title">Senior Product Marketing Manager</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/ChrisY_T.jpg" />
+                                <div class="name">Chris "Mr Yu" Yu</div>
+                                <div class="title">Accountant</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/ChrisZ_T.jpg" />
+                                <div class="name">Christopher Zorn</div>
+                                <div class="title">Lead Platform Engineer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Dmitry_T.jpg" />
+                                <div class="name">Dmitry “Dues Ex” Demeshchuk</div>
+                                <div class="title">Platform Engineer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Janay_T.jpg" />
+                                <div class="name">Ja’Nay "Jenx" Jenkins</div>
+                                <div class="title">Office Manager</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Jenny_T.jpg" />
+                                <div class="name">Jenny Turner</div>
+                                <div class="title">Quality Assurance Engineer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/JohnJ_T.jpg" />
+                                <div class="name">John “The1” Johnson</div>
+                                <div class="title">UI Developer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/michaela_t.jpg" />
+                                <div class="name">Michael "Mykel" Andrick</div>
+                                <div class="title">Systems Engineer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Min_T.jpg" />
+                                <div class="name">Minfang Gao</div>
+                                <div class="title">Controller</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Seb_T.jpg" />
+                                <div class="name">Sebastien “Seb” Roux</div>
+                                <div class="title">Creative Director</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/SteveT_T.jpg" />
+                                <div class="name">Steve Thorpe</div>
+                                <div class="title">Flash Engineer</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Suzanne_T.jpg" />
+                                <div class="name">Suzanne “Zanny” Shinn</div>
+                                <div class="title">Ad Operations Manager</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Tammy_T.jpg" />
+                                <div class="name">Tammy “TK” Kim</div>
+                                <div class="title">Junior Account Manager, Advertising</div>
+                            </li>
+                            <li>
+                                <img class="img-responsive" src="/static/mobile/images/team/Zane_T.jpg" />
+                                <div class="name">Zane “Pickle” Williamson</div>
+                                <div class="title">Operations Engineer</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a id="foot-jobs" class="action" href="#">Jobs</a>
+                    <div id="jobs">
+                        <br />
+                        <p>
+                            Currently no job openings.
+                        </p>
+                        <br />
+                    </div>
+                </li>
+            </ul>
+            <div class="copy-close row">
+                <ul class="foot-end">
+                    <li><a href="http://www.mochimedia.com/tos.html?MMmobileref=Nav_foot" target="_blank">Terms</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mochimedia.com/privacy.html?MMmobileref=Nav_foot" target="_blank">Privacy</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.mochimedia.com/dmca.html?MMmobileref=Nav_foot" target="_blank">DMCA</a></li>
+                    <li class="copyright">&copy; 2014 Mochi Media, Inc.</li>
+                </ul>
+                <a href="#" id="to-top"><img src="/static/mobile/images/up-arrow.png" class="img-responsive" /></a>
+            </div>
+            {% endblock footer %}
+        </div>
+    </body>
+</html>
