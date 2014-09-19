@@ -1,0 +1,20 @@
+<div class="pg-wrap">
+    <div class="row">
+        <form role="loginForm" class="col-xs-12 col-sm-12 col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <label for="usernameLoginInput">Username</label>
+                <label class="control-label" for="usernameLoginInput" ng-show="usernameError">{{usernameError}}</label>
+                <input type="text" class="form-control" id="usernameLoginInput" placeholder="Username" data-ng-model="loginFormInfo.username">
+            </div>
+            <div class="form-group">
+                <label for="passwordLoginInput">Password</label>
+                <label class="control-label" for="passwordLoginInput" ng-show="passwordError">{{passwordError}}</label>
+                <input type="password" class="form-control" id="passwordLoginInput" placeholder="Password" data-ng-model="loginFormInfo.password">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="invalidLogin" id="invalidLogin" ng-show="invalidLoginError">{{invalidLoginError}}</label><br>
+                <button type="button" data-ng-click="validateUserInfo()" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

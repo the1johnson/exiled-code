@@ -1,0 +1,541 @@
+<fieldset data-ng-disabled="ptuFormDisabled">
+    <div id="character-front" class="sheet character-sheet">
+        <form class="form-inline" role="form">
+            <div id="charBasics" class="row">
+                <div class="col-md-4">
+                    <div class="row spaced">
+                        <label for="charName" class="col-md-5">Name</label><div class="col-md-7"><input type="text" class="form-control charInfo" id="charName" placeholder="Character Name" data-ng-model="formCharacterInfo.charName"></div>
+                    </div>
+                    <div class="row spaced">
+                        <label for="charGender" class="col-md-5">Gender</label><div class="col-md-7"><input type="text" class="form-control charInfo" id="charGender" placeholder="Character Gender" data-ng-model="formCharacterInfo.charGender"></div>
+                    </div>
+                    <div class="row">
+                        <label for="charAge" class="col-md-5">Age</label><div class="col-md-7"><input type="text" class="form-control charInfo" id="charAge" placeholder="Character Age" data-ng-model="formCharacterInfo.charAge"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://placehold.it/700x900" class="img-responsive" alt="Character Portrait" data-ng-click="linkCharPortrait()">
+                </div>
+                <div class="col-md-4">
+                    <div class="row spaced">
+                        <label for="charSize" class="col-md-5">Height/Size</label><div class="col-md-7"><input type="text" class="form-control charInfo" id="charSize" placeholder="Character Height &amp; Size" data-ng-model="formCharacterInfo.charSize"></div>
+                    </div>
+                    <div class="row spaced">
+                        <label for="charWeight" class="col-md-5">Weight</label><div class="col-md-7"><input type="text" class="form-control charInfo" id="charWeight" placeholder="Character Weight" data-ng-model="formCharacterInfo.charWeight"></div>
+                    </div>
+                    <div class="row">
+                        <label for="charBackground" class="col-md-5">Background</label><div class="col-md-7"><input type="text" class="form-control charInfo" id="charBackground" placeholder="Character Background" data-ng-model="formCharacterInfo.charBackground"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="skillAttributes" class="row">
+                <div class="form-group col-xs-12 col-md-2">
+                    <div class="row head">
+                        <label for="attributeBody" class="col-xs-7">Body</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control attribute" id="attributeBody" maxlength="1" data-ng-model="formCharacterInfo.attributeBody">
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="row"><label for="skillAcrobatics" class="col-xs-7">Acrobatics:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillAcrobatics" maxlength="1" data-ng-model="formCharacterInfo.skillAcrobatics"></div></li>
+                        <li class="row"><label for="skillAthletics" class="col-xs-7">Athletics:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillAthletics" maxlength="1" data-ng-model="formCharacterInfo.skillAthletics"></div></li>
+                        <li class="row"><label for="skillCombat" class="col-xs-7">Combat:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillCombat" maxlength="1" data-ng-model="formCharacterInfo.skillCombat"></div></li>
+                        <li class="row"><label for="skillIntimidate" class="col-xs-7">Intimidate:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillIntimidate" maxlength="1" data-ng-model="formCharacterInfo.skillIntimidate"></div></li>
+                        <li class="row"><label for="skillStealth" class="col-xs-7">Stealth:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillStealth" maxlength="1" data-ng-model="formCharacterInfo.skillStealth"></div></li>
+                        <li class="row"><label for="skillSurvival" class="col-xs-7">Survival:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillSurvival" maxlength="1" data-ng-model="formCharacterInfo.skillSurvival"></div></li>
+                    </ul>
+                    <div class="row head">
+                        <label for="attributeMind" class="col-xs-7">Mind</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control attribute" id="attributeMind" maxlength="1" data-ng-model="formCharacterInfo.attributeMind">
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="row"><label for="skillGenEdu" class="col-xs-7">General Edu:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillGenEdu" maxlength="1" data-ng-model="formCharacterInfo.skillGenEdu"></div></li>
+                        <li class="row"><label for="skillMediEdu" class="col-xs-7">Medicine Edu:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillMediEdu" maxlength="1" data-ng-model="formCharacterInfo.skillMediEdu"></div></li>
+                        <li class="row"><label for="skillOccultEdu" class="col-xs-7">Occult Edu:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillOccultEdu" maxlength="1" data-ng-model="formCharacterInfo.skillOccultEdu"></div></li>
+                        <li class="row"><label for="skillPokeEdu" class="col-xs-7">Pokémon Edu:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillPokeEdu" maxlength="1" data-ng-model="formCharacterInfo.skillPokeEdu"></div></li>
+                        <li class="row"><label for="skillTechEdu" class="col-xs-7">Technology Edu:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillTechEdu" maxlength="1" data-ng-model="formCharacterInfo.skillTechEdu"></div></li>
+                        <li class="row"><label for="skillGuile" class="col-xs-7">Guile:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillGuile" maxlength="1" data-ng-model="formCharacterInfo.skillGuile"></li>
+                        <li class="row"><label for="skillPerception" class="col-xs-7">Perception:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillPerception" maxlength="1" data-ng-model="formCharacterInfo.skillPerception"></div></li>
+                    </ul>
+                    <div class="row head">
+                        <label for="attributeSpirit" class="col-xs-7">Spirit</label>
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control attribute" id="attributeSpirit" maxlength="1" data-ng-model="formCharacterInfo.attributeSpirit">
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="row"><label for="skillCharm" class="col-xs-7">Charm:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillCharm" maxlength="1" data-ng-model="formCharacterInfo.skillCharm"></div></li>
+                        <li class="row"><label for="skillCommand" class="col-xs-7">Command:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillCommand" maxlength="1" data-ng-model="formCharacterInfo.skillCommand"></div></li>
+                        <li class="row"><label for="skillFocus" class="col-xs-7">Focus:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillFocus" maxlength="1" data-ng-model="formCharacterInfo.skillFocus"></div></li>
+                        <li class="row"><label for="skillIntuition" class="col-xs-7">Intuition:</label><div class="col-xs-5"><input type="text" class="form-control skill" id="skillIntuition" maxlength="1" data-ng-model="formCharacterInfo.skillIntuition"></div></li>
+                    </ul>
+                </div>
+                <div class="form-group col-xs-12 col-md-10">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6 charClass">
+                            <div class="head text-center"><label for="charClass1">Class:</label><input type="text" class="form-control" id="charClass1" data-ng-model="formCharacterInfo.charClass1"></div>
+                            <textarea id="class1desc" class="form-control class-desc" data-ng-model="formCharacterInfo.class1desc"></textarea>
+                        </div>
+                        <div class="col-xs-6 col-md-6 charClass">
+                            <div class="head text-center"><label for="charClass2">Class:</label><input type="text" class="form-control" id="charClass2" data-ng-model="formCharacterInfo.charClass2"></div>
+                            <textarea id="class2desc" class="form-control class-desc" data-ng-model="formCharacterInfo.class2desc"></textarea>
+                        </div>
+                        <div class="col-xs-6 col-md-6 charClass">
+                            <div class="head text-center"><label for="charClass3">Class:</label><input type="text" class="form-control" id="charClass3" data-ng-model="formCharacterInfo.charClass3"></div>
+                            <textarea id="class3desc" class="form-control class-desc" data-ng-model="formCharacterInfo.class3desc"></textarea>
+                        </div>
+                        <div class="col-xs-6 col-md-6 charClass">
+                            <div class="head text-center"><label for="charClass4">Class:</label> <input type="text" class="form-control" id="charClass4" data-ng-model="formCharacterInfo.charClass4"></div>
+                            <textarea id="class4desc" class="form-control class-desc" data-ng-model="formCharacterInfo.class4desc"></textarea>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div class="head text-center">Edges</div>
+                            <textarea id="charEdges" class="form-control class-desc" data-ng-model="formCharacterInfo.charEdges"></textarea>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div class="head text-center">General Features</div>
+                            <textarea id="generalFeatures" class="form-control class-desc" data-ng-model="formCharacterInfo.generalFeatures"></textarea>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            <div class="head text-center">Moves</div>
+                            <textarea id="charMoves" class="form-control class-desc" data-ng-model="formCharacterInfo.charMoves"></textarea>
+
+                            <div id="capabilities">
+                                <div class="head text-center">Capabilities</div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row spaced"><label for="charOverland" class="col-md-5">Overland:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charOverland" data-ng-model="formCharacterInfo.charOverland"></div></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row spaced"><label for="charSwim" class="col-md-5">Swim:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charSwim" data-ng-model="formCharacterInfo.charSwim"></div></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row spaced"><label for="charPower" class="col-md-5">Power:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charPower" data-ng-model="formCharacterInfo.charPower"></div></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row spaced"><label for="charThrowRng" class="col-md-5">Throw Range:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charThrowRng" data-ng-model="formCharacterInfo.charThrowRng"></div></div>
+                                    </div>
+                                    <div class="col-md-12">
+                                         <div class="row spaced"><label for="charJump" class="col-md-3">Jump L/H:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charJump" data-ng-model="formCharacterInfo.charJump"></div></div>
+                                    </div>
+                                    <div class="col-md-12">
+                                         <label for="capabilityNotes">Notes</label><textarea id="capabilityNotes" class="form-control class-desc" data-ng-model="formCharacterInfo.capabilityNotes"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="stats" class="col-xs-6 col-md-6">
+                            <div class="head text-center">Stats</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row spaced">
+                                        <label for="charLevel" class="col-md-5">Level:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charLevel" data-ng-model="formCharacterInfo.charLevel"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row spaced">
+                                        <label for="charExp" class="col-md-5">EXP:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charExp" data-ng-model="formCharacterInfo.charExp"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row spaced">
+                                        <label for="charAp" class="col-md-5">Action Points:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charAp" data-ng-model="formCharacterInfo.charAp"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row spaced">
+                                        <label for="charHp" class="col-md-5">Hit Points:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charHp" data-ng-model="formCharacterInfo.charHp"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row spaced">
+                                        <label for="charInjury" class="col-md-2">Injuries:</label><div class="col-md-10"><input type="text" class="form-control stat" id="charInjury" data-ng-model="formCharacterInfo.charInjury"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatHp" class="col-md-5">HP:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatHp" data-ng-model="formCharacterInfo.charStatHp"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatSpAtk" class="col-md-5">SpAtk:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatSpAtk" data-ng-model="formCharacterInfo.charStatSpAtk"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatAtk" class="col-md-5">Atk:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatAtk" data-ng-model="formCharacterInfo.charStatAtk"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatSpDef" class="col-md-5">SpDef:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatSpDef" data-ng-model="formCharacterInfo.charStatSpDef"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatDef" class="col-md-5">Def:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatDef" data-ng-model="formCharacterInfo.charStatDef"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatSpeed" class="col-md-5">Speed:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatSpeed" data-ng-model="formCharacterInfo.charStatSpeed"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatPhyEva" class="col-md-5">PhyEva:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatPhyEva" data-ng-model="formCharacterInfo.charStatPhyEva"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table">
+                                        <label for="charStatSpcEva" class="col-md-5">SpcEva:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatSpcEva" data-ng-model="formCharacterInfo.charStatSpcEva"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row spaced">
+                                        <label for="charStatSpdEva" class="col-md-5">SpdEva:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charStatSpdEva" data-ng-model="formCharacterInfo.charStatSpdEva"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="charAbilities">Abilities</label><textarea id="charAbilities" class="form-control class-desc" data-ng-model="formCharacterInfo.charAbilities"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="character-back" class="sheet character-sheet">
+        <form class="form-inline" role="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="charCreation">
+                        <div class="head">Character Creation</div>
+                        <div class="row spaced"><label for="charBgName" class="col-md-4">Background Name:</label><div class="col-md-8"><input type="text" class="form-control stat" id="charBgName" data-ng-model="formCharacterInfo.charBgName"></div></div>
+                        <div class="row spaced"><label for="bgAddSkills" class="col-md-4">+ Skills:</label><div class="col-md-8"><input type="text" class="form-control stat" id="bgAddSkills" data-ng-model="formCharacterInfo.bgAddSkills"></div></div>
+                        <div class="row spaced"><label for="bgSubSkills" class="col-md-4">- Skills:</label><div class="col-md-8"><input type="text" class="form-control stat" id="bgSubSkills" data-ng-model="formCharacterInfo.bgSubSkills"></div></div>
+                        <div class="row spaced">
+                            <div class="col-md-4">
+                                <div class="row stat-table"><label for="charCreateBody" class="col-md-5">Body:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateBody" data-ng-model="formCharacterInfo.charCreateBody"></div></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row stat-table"><label for="charCreateMind" class="col-md-5">Mind:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateMind" data-ng-model="formCharacterInfo.charCreateMind"></div></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row stat-table"><label for="charCreateSpirit" class="col-md-5">Spirit:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateSpirit" data-ng-model="formCharacterInfo.charCreateSpirit"></div></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="charCreateHp" class="col-md-5">HP:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateHp" data-ng-model="formCharacterInfo.charCreateHp"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="charCreateSpAtk" class="col-md-5">SpAtk:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateSpAtk" data-ng-model="formCharacterInfo.charCreateSpAtk"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="charCreateAtk" class="col-md-5">Atk:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateAtk" data-ng-model="formCharacterInfo.charCreateAtk"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="charCreateSpDef" class="col-md-5">SpDef:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateSpDef" data-ng-model="formCharacterInfo.charCreateSpDef"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="charCreateDef" class="col-md-5">Def:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateDef" data-ng-model="formCharacterInfo.charCreateDef"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="charCreateSpd" class="col-md-5">Speed:</label><div class="col-md-7"><input type="text" class="form-control stat" id="charCreateSpd" data-ng-model="formCharacterInfo.charCreateSpd"></div></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row spaced"><label for="charLvl1Edges" class="col-md-4">Level 1 Edges:</label><div class="col-md-8"><input type="text" class="form-control stat" id="charLvl1Edges" data-ng-model="formCharacterInfo.charLvl1Edges"></div></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row spaced"><label for="charLvl1Feats" class="col-md-4">Level 1 Feats:</label><div class="col-md-8"><input type="text" class="form-control stat" id="charLvl1Feats" data-ng-model="formCharacterInfo.charLvl1Feats"></div></div>
+                            </div>
+                            <div class="col-md-12"><label for="charCreateNotes">Notes</label><textarea id="charCreateNotes" class="form-control class-desc" data-ng-model="formCharacterInfo.charCreateNotes"></textarea></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="equipInventory">
+                        <div class="head">Equipment &amp; Inventory</div>
+                            <div class="row spaced"><label for="charEquipHead" class="col-md-3">Head:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charEquipHead" data-ng-model="formCharacterInfo.charEquipHead"></div></div>
+                            <div class="row spaced"><label for="charEquipBody" class="col-md-3">Body:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charEquipBody" data-ng-model="formCharacterInfo.charEquipBody"></div></div>
+                            <div class="row spaced"><label for="charEquipMainHand" class="col-md-3">Main Hand:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charEquipMainHand" data-ng-model="formCharacterInfo.charEquipMainHand"></div></div>
+                            <div class="row spaced"><label for="charEquipOffHand" class="col-md-3">Off-Hand:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charEquipOffHand" data-ng-model="formCharacterInfo.charEquipOffHand"></div></div>
+                            <div class="row spaced"><label for="charEquipFeet" class="col-md-3">Feet:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charEquipFeet" data-ng-model="formCharacterInfo.charEquipFeet"></div></div>
+                            <div class="row spaced"><label for="charEquipAccessory" class="col-md-3">Accessory:</label><div class="col-md-9"><input type="text" class="form-control stat" id="charEquipAccessory" data-ng-model="formCharacterInfo.charEquipAccessory"></div></div>
+
+                    </div>
+                    <div id="items">
+                        <div class="head text-center">Items</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <textarea id="charItem1" class="form-control item" data-ng-model="formCharacterInfo.charItem1"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <textarea id="charItem2" class="form-control item" data-ng-model="formCharacterInfo.charItem2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div id="charProg">
+                        <div class="head">Level Progression</div>
+                        <textarea id="charProgression" class="form-control charProg" data-ng-model="formCharacterInfo.charProgression"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="sheet poke-tracker">
+        <div class="row">
+            <div class="col-md-12 btn-toolbar">
+                <div class="btn-group">
+                    <button type="button" data-ng-repeat="pkmn in formPokemonInfo" data-ng-click="updateActivePokemon($index)" class="btn btn-default">{{pkmn.pokeName}}</button>
+                </div>
+                <div class="btn-group"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#sureNewPoke">Add New Pokémon</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="character-back" class="sheet poke-sheet">
+        <form class="form-inline" role="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row spaced">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <label for="pokeName" class="col-md-2">Name:</label><div class="col-md-10"><input type="text" class="form-control stat" id="pokeName" data-ng-model="formPokemonInfo[activePokemon].pokeName"></div>
+                            </div>
+                         </div>
+                    </div>
+
+                     <div class="row spaced">
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeSpecies" class="col-md-3">Species:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeSpecies" data-ng-model="formPokemonInfo[activePokemon].pokeSpecies"></div></div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeType" class="col-md-3">Type:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeType" data-ng-model="formPokemonInfo[activePokemon].pokeType"></div></div>
+                          </div>
+                    </div>
+                    <div class="row spaced">
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeLevel" class="col-md-3">Level:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeLevel" data-ng-model="formPokemonInfo[activePokemon].pokeLevel"></div></div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeExp" class="col-md-3">EXP:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeExp" data-ng-model="formPokemonInfo[activePokemon].pokeExp"></div></div>
+                          </div>
+                    </div>
+                    <div class="row spaced"><label for="pokeHeldItem" class="col-md-3">Held Item:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeHeldItem" data-ng-model="formPokemonInfo[activePokemon].pokeHeldItem"></div></div>
+                    <div class="row spaced">
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeGender" class="col-md-3">Gender:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeGender" data-ng-model="formPokemonInfo[activePokemon].pokeGender"></div></div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeLoyalty" class="col-md-3">Loyalty:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeLoyalty" data-ng-model="formPokemonInfo[activePokemon].pokeLoyalty"></div></div>
+                          </div>
+                    </div>
+                    <div class="row spaced"><label for="pokeNature" class="col-md-3">Nature:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeNature" data-ng-model="formPokemonInfo[activePokemon].pokeNature"></div></div>
+                    <div class="row spaced"><label for="pokeAbilities" class="col-md-3">Abilities:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeAbilities" data-ng-model="formPokemonInfo[activePokemon].pokeAbilities"></div></div>
+                    <div class="row spaced">
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeSize" class="col-md-5">Height/Size:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSize" data-ng-model="formPokemonInfo[activePokemon].pokeSize"></div></div>
+                         </div>
+                         <div class="col-md-6">
+                             <div class="row"><label for="pokeWeight" class="col-md-3">Weight Class:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeWeight" data-ng-model="formPokemonInfo[activePokemon].pokeWeight"></div></div>
+                          </div>
+                    </div>
+                    <div id="capabilities">
+                        <div class="head text-center">Capabilities</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="pokeOverland" class="col-md-5">Overland:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeOverland" data-ng-model="formPokemonInfo[activePokemon].pokeOverland"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="pokeSwim" class="col-md-5">Swim:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSwim" data-ng-model="formPokemonInfo[activePokemon].pokeSwim"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="pokePower" class="col-md-5">Power:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokePower" data-ng-model="formPokemonInfo[activePokemon].pokePower"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="pokeJump" class="col-md-5">Jump L/H:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeJump" data-ng-model="formPokemonInfo[activePokemon].pokeJump"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row spaced"><label for="pokeInt" class="col-md-5">INT:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeInt" data-ng-model="formPokemonInfo[activePokemon].pokeInt"></div></div>
+                            </div>
+                            <div class="col-md-12">
+                                 <label for="pokeCapabilityNotes">Notes</label><textarea id="pokeCapabilityNotes" class="form-control class-desc" data-ng-model="formPokemonInfo[activePokemon].pokeCapabilityNotes"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="capabilities">
+                        <div class="head text-center">Skills</div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="pokeAthletics" class="col-md-5">Athletics:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeAthletics" data-ng-model="formPokemonInfo[activePokemon].pokeAthletics"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="pokeAcrobatics" class="col-md-5">Acrobatics:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeAcrobatics" data-ng-model="formPokemonInfo[activePokemon].pokeAcrobatics"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="pokeCombat" class="col-md-5">Combat:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeCombat" data-ng-model="formPokemonInfo[activePokemon].pokeCombat"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="pokeStealth" class="col-md-5">Stealth:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeStealth" data-ng-model="formPokemonInfo[activePokemon].pokeStealth"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="pokePerception" class="col-md-5">Perception:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokePerception" data-ng-model="formPokemonInfo[activePokemon].pokePerception"></div></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row stat-table"><label for="pokeFocus" class="col-md-5">Focus:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeFocus" data-ng-model="formPokemonInfo[activePokemon].pokeFocus"></div></div>
+                            </div>
+                            <div class="col-md-12">
+                                 <label for="pokeSkillNotes">Notes</label><textarea id="pokeSkillNotes" class="form-control class-desc" data-ng-model="formPokemonInfo[activePokemon].pokeSkillNotes"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="pokeTutor">
+                        <div class="head">PokéEdge / Tutor Item | Cost</div>
+                        <textarea id="pokeEdge" class="form-control charProg spaced" data-ng-model="formPokemonInfo[activePokemon].pokeEdge"></textarea>
+                        <div class="row spaced"><label for="pokeTutorPoints" class="col-md-5">Remaining Tutor Points:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeTutorPoints" data-ng-model="formPokemonInfo[activePokemon].pokeTutorPoints"></div></div>
+                        <div class="row spaced"><label for="pokeInheritanceMoves" class="col-md-5">Inheritance Moves:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeInheritanceMoves" data-ng-model="formPokemonInfo[activePokemon].pokeInheritanceMoves"></div></div>
+                        <div class="row spaced"><label for="pokeVitamins" class="col-md-5">Vitamins:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeVitamins" data-ng-model="formPokemonInfo[activePokemon].pokeVitamins"></div></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row stat-table">
+                                <label for="pokeBeauty" class="col-md-5">Beauty:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeBeauty" data-ng-model="formPokemonInfo[activePokemon].pokeBeauty"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row stat-table">
+                                <label for="pokeCool" class="col-md-5">Cool:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeCool" data-ng-model="formPokemonInfo[activePokemon].pokeCool"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row stat-table">
+                                <label for="pokeCute" class="col-md-5">Cute:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeCute" data-ng-model="formPokemonInfo[activePokemon].pokeCute"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row stat-table">
+                                <label for="pokeSmart" class="col-md-5">Smart:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSmart" data-ng-model="formPokemonInfo[activePokemon].pokeSmart"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row spaced">
+                                <label for="pokeTough" class="col-md-5">Tough:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeTough" data-ng-model="formPokemonInfo[activePokemon].pokeTough"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row spaced">
+                                <label for="pokePoffins" class="col-md-2">Poffins:</label><div class="col-md-10"><input type="text" class="form-control stat" id="pokePoffins" data-ng-model="formPokemonInfo[activePokemon].pokePoffins"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="capabilities">
+                            <div class="head text-center">Stats</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="row stat-table"><label for="pokeHpTotal" class="col-md-3">Hit Points:</label><div class="col-md-9"><input type="text" class="form-control stat" id="pokeHpTotal" data-ng-model="formPokemonInfo[activePokemon].pokeHpTotal"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeHp" class="col-md-5">HP:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeHp" data-ng-model="formPokemonInfo[activePokemon].pokeHp"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeSpAtk" class="col-md-5">SpAtk:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSpAtk" data-ng-model="formPokemonInfo[activePokemon].pokeSpAtk"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeAtk" class="col-md-5">Atk:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeAtk" data-ng-model="formPokemonInfo[activePokemon].pokeAtk"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeSpDef" class="col-md-5">SpDef:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSpDef" data-ng-model="formPokemonInfo[activePokemon].pokeSpDef"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeDef" class="col-md-5">Def:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeDef" data-ng-model="formPokemonInfo[activePokemon].pokeDef"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeSpeed" class="col-md-5">Speed:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSpeed" data-ng-model="formPokemonInfo[activePokemon].pokeSpeed"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokePhysEvade" class="col-md-5">Phys Evade:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokePhysEvade" data-ng-model="formPokemonInfo[activePokemon].pokePhysEvade"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeSpecEvade" class="col-md-5">Spec Evade:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSpecEvade" data-ng-model="formPokemonInfo[activePokemon].pokeSpecEvade"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeSpeedEvade" class="col-md-5">Speed Evade:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeSpeedEvade" data-ng-model="formPokemonInfo[activePokemon].pokeSpeedEvade"></div></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row stat-table"><label for="pokeInjuries" class="col-md-5">Injuries:</label><div class="col-md-7"><input type="text" class="form-control stat" id="pokeInjuries" data-ng-model="formPokemonInfo[activePokemon].pokeInjuries"></div></div>
+                                </div>
+                                <div class="col-md-12">
+                                     <label for="pokeStatNotes">Notes</label><textarea id="pokeStatNotes" class="form-control class-desc" data-ng-model="formPokemonInfo[activePokemon].pokeStatNotes"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Move</th>
+                                        <th>Freq</th>
+                                        <th>AC</th>
+                                        <th>Type</th>
+                                        <th>DMG Roll</th>
+                                        <th>DMG Type</th>
+                                        <th>Range</th>
+                                        <th>Special Effect</th>
+                                        <th>Contest Effect</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td><input type="text" class="form-control stat" id="pokeMoveName"></td><td><input type="text" class="form-control stat" id="pokeMoveFreq"></td><td><input type="text" class="form-control stat" id="pokeMoveAc"></td><td><input type="text" class="form-control stat" id="pokeMoveType"></td><td><input type="text" class="form-control stat" id="pokeMoveDmgRoll"></td><td><input type="text" class="form-control stat" id="pokeMoveDmgType"></td><td><input type="text" class="form-control stat" id="pokeMoveRng"></td><td><input type="text" class="form-control stat" id="pokeMoveSpecialEffect"></td><td><input type="text" class="form-control stat" id="pokeMoveContestEffect"></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    
+    <div id="sheet-buttons" class="hidden">
+        <button type="button" data-ng-click="saveSheet()" class="btn btn-primary">Save</button>
+        <button type="button" data-ng-click="toDash()" class="btn btn-default">Dashboard</button>
+    </div>
+    
+</fieldset>
+<!-- Sure New Pokémon Modal -->
+<div class="modal fade" id="sureNewPoke" tabindex="-1" role="dialog" aria-labelledby="sureNewPoke" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Are You Sure You Want To Add a New Pokémon To This Character Sheet?</h4>
+      </div>
+      <div class="modal-body">
+          Clicking 'Create New' will add a new Pokémon to your current character.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" data-ng-click="newPokemonchar()" data-dismiss="modal" class="btn btn-primary">Create New</button>
+      </div>
+    </div>
+  </div>
+</div>

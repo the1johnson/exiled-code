@@ -1,0 +1,95 @@
+body{
+    padding: 20px 0;
+    background-color: #333;
+}
+textarea, input{
+    border-radius: 0 !important;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.skill, .attribute, .stat, .charInfo{
+    width: 100% !important;
+}
+.sheet, .pg-wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.character-sheet, .poke-sheet, .pg-wrap{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px black;
+    padding: 20px 30px;
+}
+.poke-sheet{
+}
+.sheet:not(#character-front){
+    margin-top: 20px;
+}
+.sheet.poke-tracker{
+    margin-top: 40px !important;
+}
+.item, .charProg, .class-desc{
+    width: 100% !important;
+    height: 150px !important;
+    resize: none;
+}
+.item{
+    height: 272px !important;
+}
+.class-desc{
+    margin-bottom: 20px;
+}
+.charClass label{
+    padding-right: 10px;
+}
+.head, th{
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    vertical-align: middle;
+    font-weight: 700;
+}
+th{
+    font-size: 0.9em;
+    text-align: center;
+}
+.head label{
+    line-height: 35px;
+    margin-bottom: 0;
+}
+#charBasics{
+    margin-bottom: 20px;
+}
+#skillAttributes ul label, #stats label, #capabilities label{
+    font-weight: normal;
+    margin: 0;
+}
+#skillAttributes ul li{
+    padding: 5px 0;
+}
+#skillAttributes ul li:nth-child(2n){
+    background-color: #E5E5E5;
+}
+.spaced{
+    margin-bottom: 20px;
+}
+.stat-table{
+    margin-bottom: 5px;
+}
+#stats .head, #capabilities .head, #equipInventory .head, #items .head, #charCreation .head{
+    margin-bottom: 10px;
+}
+#items .head{
+    margin-top: 20px;
+}
+#equipInventory .head, #charProg .head, #charCreation .head, #pokeTutor .head{
+    padding: 5px 15px;
+}
+
+#sheet-buttons{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}

@@ -1,0 +1,27 @@
+<div class="pg-wrap">
+    <div class="row">
+        <form role="registrationForm" class="col-xs-12 col-sm-12 col-md-4 col-md-offset-4">
+            <div class="form-group">
+                <label for="usernameRegisterInput">Username</label>
+                <label class="control-label" for="usernameRegisterInput" ng-show="usernameError">{{usernameError}}</label>
+                <input type="text" class="form-control" id="usernameRegisterInput" placeholder="Username" data-ng-model="registerFormInfo.username">
+            </div>
+            <div class="form-group">
+                <label for="emailRegisterInput">Email</label>
+                <label class="control-label" for="emailRegisterInput" ng-show="emailError">{{emailError}}</label>
+                <input type="text" class="form-control" id="emailRegisterInput" placeholder="Email" data-ng-model="registerFormInfo.email">
+            </div>
+            <div class="form-group">
+                <label for="passwordRegisterInput">Password</label>
+                <label class="control-label" for="passwordRegisterInput" ng-show="passwordError">{{passwordError}}</label>
+                <input type="password" class="form-control" id="passwordRegisterInput" placeholder="Password" data-ng-model="registerFormInfo.password">
+            </div>
+            <div class="form-group">
+                <label for="passwordVerifyRegisterInput">Password Verify</label>
+                <label class="control-label" for="passwordVerifyRegisterInput" ng-show="passwordVerifyError">{{passwordVerifyError}}</label>
+                <input type="password" class="form-control" id="passwordVerifyRegisterInput" placeholder="Re-enter Password" data-ng-model="registerFormInfo.passwordVerify">
+            </div>
+            <button type="button" data-ng-click="checkUsername()" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+</div>
