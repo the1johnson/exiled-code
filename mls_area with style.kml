@@ -4,7 +4,7 @@
     
     <Style id="placeStyle">
       <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3> <a href="$[llp_link]" target="_blank">community Info</a>]]> </text>
+        <text><![CDATA[<h3>$[name]</h3> <a href="$[llp_link]" target="_blank">Community Information</a>]]> </text>
       </BalloonStyle>
       <PolyStyle>
           <outline>1</outline> 
