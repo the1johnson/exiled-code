@@ -1,0 +1,268 @@
+body{
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 300;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+button{
+  font-weight: 700;
+  font-style: italic;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.container > * {
+  flex: 1 100%;
+}
+header{
+  order: 1;
+}
+.container main{
+  flex: 2;
+  order: 2;
+  line-height: 34px;
+}
+p + p{
+  margin-top: 30px;
+}
+svg{
+  fill: #fff;
+}
+input{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font: 300 16px 'Roboto Mono', monospace;
+}
+input:focus{
+  outline: none;
+}
+input::placeholder{
+  color: #fff;
+}
+
+/* Header */
+.videoActive h1{
+  display: inline-block;
+  text-align: left;
+}
+.headerBtns{
+  padding: 0;
+  float: right;
+}
+.headerBtns li{
+  list-style: none;
+  display: inline-block;
+}
+.headerBtns li + li{
+  margin-left: 30px;
+}
+.headerBtns button{
+  background-color: #bdbdbd;
+  padding: 8px 8px 4px;
+}
+.headerBtns svg{
+  fill: #212121;
+  height: 32px;
+  width: 32px;
+}
+/* Add Video */
+#addVideo{
+  flex: 0 0 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+.addVideoWrap{
+  border-bottom: 1px solid white;
+  margin-top: 35px;
+}
+.addVideoWrap svg{
+  vertical-align: bottom;
+  position: relative;
+  bottom: 3px;
+  margin-right: 5px;
+}
+.addVideoWrap.invalid{
+  border-bottom-color: #64231d;
+}
+.addVideoWrap.invalid svg{
+  fill: #64231d;
+}
+.invalidLinkMsg{
+  color: white;
+  background-color: #64231d;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Video Editor */
+#videoEditor{
+  flex: 0 0 85%;
+}
+.loopList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.loopList li{
+  position: relative;
+}
+.loopList li + li {
+  margin-top: 1px;
+}
+.loopDetails{
+  background-color: #bdbdbd;
+  color: #212121;
+  line-height: 24px;
+  padding: 0 5px;
+  position: relative;
+  width: 100%;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+.loopName, .timeControl{
+  display: inline-block;
+  color: #212121;
+  padding: 0;
+}
+.loopName{
+  width: 115px;
+  text-overflow: ellipsis;
+}
+.loopRange{
+  flex: 1 1 auto;
+}
+.loopDelay{
+  width: 100%;
+}
+.timeControl{
+  width: 20px;
+  text-align: center;
+}
+.hour,.minute, .delay{
+  width: 10px;
+}
+.timeTo{
+  margin: 0px 5px;
+}
+.active .loopName{
+  width: 85px;
+}
+.active .loopDetails{
+  width: calc(100% - 156px);
+  left: 48px;
+}
+.active .timeControl, .active .loopName{
+  color: #1d5e64;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button.loopAction{
+  padding: 0;
+  text-decoration: none;
+  padding: 8px 8px 4px;
+  position: absolute;
+  top: 0;
+  background-color: #424242;
+}
+button.loopAction:focus{
+  outline: none;
+}
+button.loopAction svg{
+  height: 32px;
+  width: 32px;
+}
+.repeatCount{
+  width: 10px;
+  line-height: 32px;
+  vertical-align: top;
+}
+.loopType{
+  right: 0;
+}
+.loopType.forever{
+  right: 60px;
+}
+.loopType.active{
+  background-color: #1d6423;
+}
+/* Responsive */
+@media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
+  #addVideo{
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+  .addVideoWrap, .invalidLinkMsg{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container{
+    max-width: 960px;
+  }
+  .addVideoWrap, .invalidLinkMsg{
+    width: 45%;
+  }
+  .loopDetails{
+    padding: 0 10px;
+  }
+  .active .loopName{
+    width: 115px;
+  }
+  #videoEditor{
+    display: flex;
+  }
+  .ytVidWrap{
+    margin-right: 30px;
+  }
+  .ytVidWrap, .loopList{
+    flex: 1 1 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1140px;
+  }
+}
