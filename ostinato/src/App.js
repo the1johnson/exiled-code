@@ -295,13 +295,10 @@ class App extends Component {
   }
 
   togglePlayState = () => {
-    console.log('is playing??', this.state.videoIsPlaying)
     if(this.state.videoIsPlaying){
-      console.log('we here???');
       this.endPlayStateTimer();
       this.state.ytPlayer.pauseVideo();
     }else{
-      console.log('we should be here');
       this.goToLoopStartTime();
       this.startPlayStateTimer();
       this.state.ytPlayer.playVideo();
