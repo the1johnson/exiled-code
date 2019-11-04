@@ -6,14 +6,19 @@ class LoopItem extends Component {
   renderPausePlay = () => {
     return (this.props.videoIsPlaying) ? <button className="loopAction pausePlay" onClick={this.props.togglePlayState}>{pauseSvg}</button> : <button className="loopAction pausePlay" onClick={this.props.togglePlayState}>{playSvg}</button>;
   }
+  renderDelete = () => {
+    let deleteStyle = {height: this.props.deleteCountdown > this.props.minDeleteCountdownDisplay ? (((this.props.deleteCountdown-this.props.minDeleteCountdownDisplay)/this.props.deleteCountdownTarget)*100)+'%': '0%'}
+    return (this.props.loopIsActive && this.props.deleteCountdown && (this.props.deleteCountdown <= this.props.deleteCountdownTarget) && this.props.deleteCountdown > this.props.minDeleteCountdownDisplay) ? <div className="deleteWrap"><div className="deletePercent" style={deleteStyle}></div></div> : false;
+  }
   render(){
     const {id, name, delay, loopForever, loopCount, startTime, endTime} = this.props.loop
     return(
       <li className={this.props.loopIsActive ? 'active' : ''} onClick={() => this.props.changeActiveLoop(id)}>
-      {this.renderPausePlay()}
+        {this.renderPausePlay()}
+        {this.renderDelete()}
         <button onClick={() => {this.props.changeLoopType(true)}} className={'loopAction forever loopType '+(loopForever ? 'active' : '')}>{loopSvg}</button>
         <button onClick={() => {this.props.changeLoopType(false)}} className={'loopAction loopType '+(!loopForever ? 'active' : '')}><input className="repeatCount" type="number" placeholder="" defaultValue={loopCount} onChange={this.props.updateLoopCount} />{repeatSvg}</button>
-        <div className="loopDetails">
+        <div className="loopDetails" onTouchStart={() => this.props.loopIsActive ? this.props.startDeleteHold() : null} onMouseDown={() => this.props.loopIsActive ? this.props.startDeleteHold() : null} onMouseUp={this.props.endDeleteHold} onTouchEnd={this.props.endDeleteHold}>
           <input className="loopName" type="text" placeholder="" defaultValue={name} onChange={(e) => this.props.updateLoopName(e)} />
           <div className="loopRange">
             -

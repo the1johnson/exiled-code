@@ -16,6 +16,7 @@
       "jest"
     ],
     "typeRoots": [
+      "./types",
       "./node_modules/@types"
     ],
     "paths": {
@@ -39,5 +40,6 @@
   ],
   "exclude": [
     "node_modules",
+    "./types"
   ]
 }

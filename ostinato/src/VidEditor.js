@@ -14,7 +14,7 @@ class VidEditor extends Component {
           <div id="ytVid"></div>
           <input type="text" defaultValue={this.props.video.name} onChange={(e) => this.props.updatedVideoName(e)} />
         </div>
-        <Loops loopList={this.props.video.loopList} videoIsPlaying={this.props.videoIsPlaying} changeActiveLoop={this.props.changeActiveLoop} activeLoopId={this.props.video.activeLoop} updateLoopName={this.props.updateLoopName} togglePlayState={this.props.togglePlayState} changeLoopType={this.props.changeLoopType} updateLoopCount={this.props.updateLoopCount} updateDelay={this.props.updateDelay} updateLoopTime={this.props.updateLoopTime} />
+        <Loops loopList={this.props.video.loopList} videoIsPlaying={this.props.videoIsPlaying} changeActiveLoop={this.props.changeActiveLoop} activeLoopId={this.props.video.activeLoop} updateLoopName={this.props.updateLoopName} togglePlayState={this.props.togglePlayState} changeLoopType={this.props.changeLoopType} updateLoopCount={this.props.updateLoopCount} updateDelay={this.props.updateDelay} updateLoopTime={this.props.updateLoopTime} startDeleteHold={this.props.startDeleteHold} endDeleteHold={this.props.endDeleteHold} deleteCountdown={this.props.deleteCountdown} deleteCountdownTarget={this.props.deleteCountdownTarget} minDeleteCountdownDisplay={this.props.minDeleteCountdownDisplay} />
       </main>
 
     );

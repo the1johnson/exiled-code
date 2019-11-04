@@ -7,6 +7,23 @@ class AddVideo extends Component {
       return <div class="invalidLinkMsg">invalid link</div>;
     }
   }
+  renderDelete = () => {
+    /* GOING TO NEED TO SET UP SOME SORT OF VIDEO ID TO DELETE THE RIGHT DUDE */
+    let deleteStyle = {height: this.props.deleteCountdown > this.props.minDeleteCountdownDisplay ? (((this.props.deleteCountdown-this.props.minDeleteCountdownDisplay)/this.props.deleteCountdownTarget)*100)+'%': '0%'}
+    return (this.props.deleteCountdown && this.props.deleteCountdown <= this.props.deleteCountdownTarget && this.props.deleteCountdown > this.props.minDeleteCountdownDisplay) ? <div className="deleteWrap"><div className="deletePercent" style={deleteStyle}></div></div> : false;
+  }
+  renderState = () => {
+    if(this.props.videoList.length){
+      return(
+        <div className="savedVideosWrap">
+          <h2>Saved Videos</h2>
+          <ul className="savedVideosList">
+            {this.props.videoList.map( (userVideo) => <li key={userVideo.id}><button onClick={() => this.props.setActiveVideo(userVideo.id)}>{this.renderDelete()}<span className="savedVideoDetails">{userVideo.name} - {userVideo.loopList.length} Loops</span></button></li> )}
+          </ul>
+        </div>
+      );
+    }
+  }
   render(){
     return (
       <main id="addVideo">
@@ -18,9 +35,8 @@ class AddVideo extends Component {
         </div>
         {this.invalidLinkMessage()}
         
-        <ul>
-          {this.props.videoList.map( (userVideo) => <li key={userVideo.id}><button onClick={() => this.props.setActiveVideo(userVideo.id)}>{userVideo.name}</button></li> )}
-        </ul>
+        {this.renderState()}
+        
       </main>
     );
   }

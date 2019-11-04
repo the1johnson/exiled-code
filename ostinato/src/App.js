@@ -22,6 +22,9 @@ class App extends Component {
       videoIsPlaying: false,
       invalidUserLink: false,
       playLoopCount: 0,
+      deleteCountdown: 0,
+      deleteCountdownTarget: 850,
+      minDeleteCountdownDisplay: 120,
       vidList: (storageVidList) ? storageVidList : []
     }
   }
@@ -191,13 +194,35 @@ class App extends Component {
   }
 
   getActiveLoopId = () => {
-    let activeLoopId = this.state.vidList[this.state.activeVideo].activeLoop;
+    let activeLoopId = this.state.vidList[this.state.activeVideo].activeLoop
 
-    return activeLoopId;
+    return activeLoopId
+  }
+
+  deleteActiveLoop = () => {
+    if (window.confirm('Are you sure you wish to delete this item?')){
+      let newVidList = JSON.parse(JSON.stringify(this.state.vidList))
+      let activeLoopId = this.getActiveLoopId()
+      let activeVideoLoopList = newVidList[this.state.activeVideo].loopList
+      activeVideoLoopList.splice(activeLoopId, 1)
+      activeVideoLoopList = this.arrayKeyToObjId(activeVideoLoopList)
+
+      newVidList[this.state.activeVideo].loopList = activeVideoLoopList
+      this.setState({vidList:newVidList})
+      this.storeVidList();
+    }
+  }
+
+  arrayKeyToObjId = (arrayOfObjs) =>{
+    arrayOfObjs.map((obj, index)=>{
+      obj.id = index
+      return obj
+    })
+    return arrayOfObjs
   }
 
   startPlayStateTimer = () => {
-    this.playStateTimer = setInterval(this.checkIfVideoLoops, 50)
+    this.playStateTimer = setInterval(this.checkIfVideoLoops, 10);
   }
 
   startDelayTimer = () => {
@@ -399,6 +424,24 @@ class App extends Component {
     this.setState({activeVideo:newVidId})
   }
 
+  startDeleteHold = () =>{
+    this.countdownTimer = setInterval(this.deleteCountdown, 1);
+  }
+
+  deleteCountdown = () => {
+    this.setState({deleteCountdown:this.state.deleteCountdown + 1})
+    if(this.state.deleteCountdown >= this.state.deleteCountdownTarget){
+      this.deleteActiveLoop()
+      this.setState({deleteCountdown:0})
+      clearInterval(this.countdownTimer)
+    }
+  }
+
+  endDeleteHold = () => {
+    this.setState({deleteCountdown:0})
+    clearInterval(this.countdownTimer)
+  }
+
   resetActiveVideo = () => {
     this.setState({activeVideo: false});
   }
@@ -413,9 +456,9 @@ class App extends Component {
   }
   renderState = () => {
     if(this.state.activeVideo !== false){
-      return <VidEditor video={this.state.vidList[this.state.activeVideo]} videoIsPlaying={this.state.videoIsPlaying} togglePlayState={this.togglePlayState} changeLoopType={this.changeLoopType} updatedVideoName={this.updatedVideoName} updateDelay={this.updateDelay} updateLoopTime={this.updateLoopTime} updateLoopName={this.updateLoopName} updateLoopCount={this.updateLoopCount} setYtPlayer={this.setYtPlayer} changeActiveLoop={this.changeActiveLoop} />;
+      return <VidEditor video={this.state.vidList[this.state.activeVideo]} videoIsPlaying={this.state.videoIsPlaying} togglePlayState={this.togglePlayState} changeLoopType={this.changeLoopType} updatedVideoName={this.updatedVideoName} updateDelay={this.updateDelay} updateLoopTime={this.updateLoopTime} updateLoopName={this.updateLoopName} updateLoopCount={this.updateLoopCount} setYtPlayer={this.setYtPlayer}  changeActiveLoop={this.changeActiveLoop} endDeleteHold={this.endDeleteHold} startDeleteHold={this.startDeleteHold} deleteCountdown={this.state.deleteCountdown} deleteCountdownTarget={this.state.deleteCountdownTarget} minDeleteCountdownDisplay={this.state.minDeleteCountdownDisplay} />;
     }else{
-      return <AddVideo videoLinkAdded={this.addNewVideo} videoList={this.state.vidList} invalidUserLink={this.state.invalidUserLink} setActiveVideo={this.setActiveVideo} loadExample={this.loadExample} />;
+      return <AddVideo videoLinkAdded={this.addNewVideo} videoList={this.state.vidList} invalidUserLink={this.state.invalidUserLink} setActiveVideo={this.setActiveVideo} loadExample={this.loadExample} deleteCountdown={this.state.deleteCountdown} deleteCountdownTarget={this.state.deleteCountdownTarget} minDeleteCountdownDisplay={this.state.minDeleteCountdownDisplay} />;
     }
   }
 

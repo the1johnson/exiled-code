@@ -1,6 +1,6 @@
 body{
-  background-color: #121212;
-  color: #fff;
+  background-color: #202029;
+  color: #e9e9ea;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   font-weight: 300;
@@ -10,6 +10,13 @@ h1{
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 button{
   font-weight: 700;
@@ -48,19 +55,22 @@ p + p{
   margin-top: 30px;
 }
 svg{
-  fill: #fff;
+  fill: #e9e9ea;
 }
 input{
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #e9e9ea;
   font: 300 16px 'Roboto Mono', monospace;
 }
 input:focus{
   outline: none;
 }
 input::placeholder{
-  color: #fff;
+  color: #e9e9ea;
+}
+button:focus{
+  outline: none;
 }
 
 /* Header */
@@ -118,12 +128,34 @@ input::placeholder{
   text-align: center;
   margin-top: 15px;
 }
+.savedVideosList button{
+  text-decoration: none;
+  background-color: #32323b;
+  color: #8c8c90;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  line-height: 48px;
+  padding: 0;
+}
+.savedVideosList li{
+  width: 50%;
+  display: inline-block;
+}
+.savedVideosWrap{
+  margin-top: 23px;
+}
+.savedVideoDetails{
+
+}
 
 /* Video Editor */
 #videoEditor{
   flex: 0 0 85%;
 }
-.loopList {
+.loopList, .savedVideosList {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -135,22 +167,26 @@ input::placeholder{
   margin-top: 1px;
 }
 .loopDetails{
-  background-color: #bdbdbd;
-  color: #212121;
+  background-color: #32323b;
+  color: #8c8c90;
   line-height: 24px;
   padding: 0 5px;
   position: relative;
   width: 100%;
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out, color 0.3s ease-in-out;
   left: 0;
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
 }
+.active > .loopDetails{
+  color: #e9e9ea;
+}
 .loopName, .timeControl{
   display: inline-block;
-  color: #212121;
+  color: #8c8c90;
   padding: 0;
+  transition: color 0.3s ease-in-out;
 }
 .loopName{
   width: 115px;
@@ -180,22 +216,18 @@ input::placeholder{
   left: 48px;
 }
 .active .timeControl, .active .loopName{
-  color: #1d5e64;
+  color: #0177e5;
 }
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 button.loopAction{
-  padding: 0;
   text-decoration: none;
   padding: 8px 8px 4px;
   position: absolute;
   top: 0;
-  background-color: #424242;
-}
-button.loopAction:focus{
-  outline: none;
+  background-color: #191919;
 }
 button.loopAction svg{
   height: 32px;
@@ -213,7 +245,25 @@ button.loopAction svg{
   right: 60px;
 }
 .loopType.active{
-  background-color: #1d6423;
+  background-color: #006635;
+}
+.deleteWrap{
+  background-color: #ff857b;
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  top:0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.deletePercent{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #620002;
+  width: 100%;
 }
 /* Responsive */
 @media (min-width: 576px) {
