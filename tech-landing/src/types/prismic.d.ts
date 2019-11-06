@@ -3,6 +3,7 @@ import { DefaultClient } from 'prismic-javascript/d.ts/client';
 
 import Vue from 'vue';
 
+type Element<T> = { build: any };
 type ThenArg<T> = T extends Promise<infer U> ? U : T;
 type PrismicAPIPromise = ReturnType<typeof getApi>;
 type PrismicAPI = ThenArg<PrismicAPIPromise>;

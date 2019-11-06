@@ -1,16 +1,9 @@
 <template>
-  <full-page ref="fullpage" :options="fpopts" id="fullpage">
-    <div class="section" v-for="slide in prismicRes" v-bind:key="slide.id">
-      <button class="next" @click="$refs.fullpage.api.moveSectionDown()">Next</button>
-      tester
-    </div>
-    <div class="section">
-      <button class="next" @click="$refs.fullpage.api.moveSectionDown()">Next</button>
-      First section ...
-    </div>
-    <div class="section">
-      <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button>
-      Second section ...
+  <full-page v-if="prismicRes.length" ref="fullpage" :options="fpopts" id="fullpage">
+    <div class="section" v-for="(slide, index) in prismicRes" v-bind:key="slide.id">
+      <button v-if="index != prismicRes.length - 1" class="next" @click="$refs.fullpage.api.moveSectionDown()">Next</button>
+      <button v-if='index' class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button>
+      {{ slide.data.title[0].text }}
     </div>
   </full-page>
 </template>
@@ -25,18 +18,18 @@ import PrismicMixin from '@/mixins/prismic.mixin';
 export default class PrismicSlides extends mixins(PrismicMixin) {
   prismicRes: PrismicResultsObject[] = [];
   fpopts = {
-    licenseKey: 'x',
+    licenseKey: 'DBE56275-4E7F4563-B1EC41D0-77DDCB26',
   };
-  queryOptions = {};
+  queryOptions = {
+    orderings: '[my.slide.order_position]',
+  };
 
   created() {
     this.getSlides();
   }
-
   getSlides() {
     this.prismicService.getByType('slide', this.queryOptions).then((res: PrismicApiResponseObject) => {
       this.prismicRes = res.results;
-      console.log(this.prismicRes);
     });
   }
 }
