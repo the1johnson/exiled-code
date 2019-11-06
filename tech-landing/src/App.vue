@@ -1,20 +1,18 @@
 <template>
   <div id="app">
-    <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section">
-        <button class="next" @click="$refs.fullpage.api.moveSectionDown()">Next</button>
-        First section ...
-      </div>
-      <div class="section">
-        <button class="prev" @click="$refs.fullpage.api.moveSectionUp()">Prev</button>
-        Second section ...
-      </div>
-    </full-page>
+    <prismic-slides></prismic-slides>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
+import PrismicSlides from './components/prismic-slides.vue';
+
+@Component({
+  components: {
+    PrismicSlides,
+  },
+})
 export default class App extends Vue {}
 </script>
 

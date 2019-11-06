@@ -7,7 +7,6 @@ export interface PrismicResultsObject {
   first_publication_date: string
   last_publication_date: string
   slugs: string[]
-  linked_documents: []
   lang: string
   alternate_languages: []
   data: []
