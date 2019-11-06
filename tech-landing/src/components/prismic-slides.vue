@@ -25,7 +25,7 @@ import PrismicMixin from '@/mixins/prismic.mixin';
 export default class PrismicSlides extends mixins(PrismicMixin) {
   prismicRes: PrismicResultsObject[] = [];
   fpopts = {
-    licenseKey: 'DBE56275-4E7F4563-B1EC41D0-77DDCB26',
+    licenseKey: 'x',
   };
   queryOptions = {};
 
