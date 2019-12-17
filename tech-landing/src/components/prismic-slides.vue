@@ -23,6 +23,7 @@ export default class PrismicSlides extends mixins(PrismicMixin) {
   fpopts = {
     licenseKey: 'DBE56275-4E7F4563-B1EC41D0-77DDCB26',
     navigation: true,
+    afterLoad: this.afterLoad,
   };
   queryOptions = {
     orderings: '[my.slide.order_position]',
@@ -35,6 +36,9 @@ export default class PrismicSlides extends mixins(PrismicMixin) {
     this.prismicService.getByType('slide', this.queryOptions).then((res: PrismicApiResponseObject) => {
       this.prismicRes = res.results;
     });
+  }
+  afterLoad() {
+    console.log('af hit');
   }
   getClass(layoutType:string) {
     let cName = '';
