@@ -4,8 +4,7 @@ import { PrismicResultsObject } from '@/types/prismic-data';
 
 @Component
 export default class PrismicMixin extends Vue {
-
-  prismicService = {
+  prismicService = { 
 
     // TODO: 'this.$prismic.client' doesn't work with localVue, have to add $root
 
