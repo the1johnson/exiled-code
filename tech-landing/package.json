@@ -15,7 +15,8 @@
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-fullpage.js": "^0.1.4",
-    "vue-property-decorator": "^8.3.0"
+    "vue-property-decorator": "^8.3.0",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
@@ -29,10 +30,10 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^8.0.0",
     "typescript": "~3.5.3",
     "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.41.2"
+    "webpack": "^4.41.5"
   }
 }

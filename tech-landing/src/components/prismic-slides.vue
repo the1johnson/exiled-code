@@ -19,6 +19,7 @@ import PrismicMixin from '@/mixins/prismic.mixin';
 
 @Component
 export default class PrismicSlides extends mixins(PrismicMixin) {
+  // This here is no longer in use. From the first layout design sent to us. Delete when no longer needed for reference
   prismicRes: PrismicResultsObject[] = [];
   fpopts = {
     licenseKey: 'DBE56275-4E7F4563-B1EC41D0-77DDCB26',

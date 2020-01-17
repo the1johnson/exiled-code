@@ -1,0 +1,10 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+.card .maxStudents{
+  height: 0;
+  overflow: hidden;
+}
+h1 span{
+  text-transform: capitalize;
+}

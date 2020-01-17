@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <prismic-slides></prismic-slides>
+    <header-component />
+    <main>
+      <router-view />
+    </main>
+    <footer-component />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import PrismicSlides from './components/prismic-slides.vue';
+import HeaderComponent from './components/header.vue';
+import FooterComponent from './components/footer.vue';
 
 @Component({
   components: {
-    PrismicSlides,
+    HeaderComponent,
+    FooterComponent,
   },
 })
 export default class App extends Vue {}
