@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Documentation Links
+[Vue Fullpage](https://github.com/alvarotrigo/vue-fullpage.js)
+[Prismic](https://prismic.io/docs/vuejs/getting-started/integrating-with-existing-project-esm)

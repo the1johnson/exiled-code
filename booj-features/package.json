@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
-    "vue": "^2.6.10"
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.1.5",
+    "prismic-vue": "^2.0.0",
+    "vue": "^2.6.10",
+    "vue-fullpage.js": "^0.1.5",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
