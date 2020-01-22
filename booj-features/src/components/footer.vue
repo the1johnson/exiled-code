@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <footer>
     <prismic-rich-text v-if=fields.footerText :field="fields.footerText"/>
-  </div>
+  </footer>
 </template>
  
 <script>
@@ -11,18 +11,18 @@ export default {
       fields: {
         footerText: null
       }
-    };
+    }
   },
   methods: {
     getContent () {
       this.$prismic.client.getSingle('footer_info')
         .then((document) => {
-          this.fields.footerText = document.data.footer_text;
+          this.fields.footerText = document.data.footer_text
         })
     }
   },
   created () {
-    this.getContent();
+    this.getContent()
   }
 }
 </script>

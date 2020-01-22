@@ -1,0 +1,60 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $weight-medium;
+  color: $baseBlack;
+}
+a{
+  color: $baseBlack;
+  text-decoration: none;
+}
+.section{
+  .sliceSimple{
+    text-align: center;
+    @include mbp-up($breakpoint-lg){
+      text-align: left;
+    }
+
+    img{
+      max-height: 160px;
+      @include mbp-up($breakpoint-md){
+        max-height: 700px;
+      }
+      @include mbp-up($breakpoint-lg){
+        width: 40%;
+        display: inline-block;
+        vertical-align: middle;
+        max-height: none;
+      }
+    }
+    .contentWrap{
+      padding: 0 35px;
+      margin-top: 40px;
+      box-sizing: border-box;
+      @include mbp-up($breakpoint-lg){
+        width: 37%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0;
+        margin-left: 5%;
+      }
+    }
+    .description, .title{
+      font-weight: $weight-light;
+    }
+    .title{
+      font-size: 24px;
+      line-height: 1.35em;
+      @include mbp-up($breakpoint-md){
+        font-size: 32px;
+      }
+    }
+    .description{
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 25px;
+    }
+  }
+}

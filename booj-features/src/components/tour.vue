@@ -18,12 +18,12 @@ export default {
     getContent () {
       this.$prismic.client.getSingle('footer_info')
         .then((document) => {
-          this.fields.footerText = document.data.footer_text;
+          this.fields.footerText = document.data.footer_text
         })
     }
   },
   created () {
-    this.getContent();
+    this.getContent()
   }
 }
 </script>

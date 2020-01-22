@@ -1,0 +1,17 @@
+$weight-light: 300;
+$weight-medium: 500;
+$weight-bold: 700;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$rmaxRed: #E91D2D;
+$baseBlack: #231F20;
+
+@mixin mbp-up($bpSize){
+  @media (min-width: $bpSize){
+    @content;
+  }
+}

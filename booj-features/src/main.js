@@ -3,12 +3,14 @@ import App from './App.vue'
 import PrismicVue from 'prismic-vue'
 import linkResolver from './link-resolver'
 import router from './router'
+import VueFullPage from 'vue-fullpage.js'
  
 // Add this before the new Vue instance
 Vue.use(PrismicVue, {
   endpoint: window.prismic.endpoint,
   linkResolver
 })
+Vue.use(VueFullPage);
 
 Vue.config.productionTip = false
 

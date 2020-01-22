@@ -13,7 +13,7 @@ export default new Router({
       component: Homepage
     },
     {
-      path: '/tour',
+      path: '/tour/:id',
       name: 'Tour',
       component: Tour
     }

@@ -1,0 +1,64 @@
+@import "vars";
+header{
+  background-color: white;
+  position: relative;
+  z-index: 5;
+  padding: 10px 0;
+  @include mbp-up($breakpoint-md){
+    padding-top: 0;
+  }
+  > ul{
+    @include mbp-up($breakpoint-lg){
+      text-align: right;
+    }
+
+    > li{
+      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+      @include mbp-up($breakpoint-lg){
+        width: auto;
+        margin-right: 40px;
+      }
+      a{
+        font-size: 10px;
+        display: inline-block;
+
+        @include mbp-up($breakpoint-md){
+          background-color: $rmaxRed;
+          color: white;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          font-size: 14px;
+          font-weight: $weight-bold;
+          padding-right: 10px;
+        }
+        .iconWrap{
+          background-color: $rmaxRed;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          padding: 7px;
+          box-sizing: border-box;
+          @include mbp-up($breakpoint-md){
+            border-radius: 0;
+            background-color: transparent;
+          }
+        }
+        .txt{
+          margin-top: 5px;
+          display: block;
+          text-transform: uppercase;
+          @include mbp-up($breakpoint-md){
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+}
