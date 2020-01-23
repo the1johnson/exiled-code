@@ -1,3 +1,4 @@
+@import "vars";
 #introOverlay{
   height: 100%;
   width: 100%;
@@ -6,5 +7,73 @@
   left: 0;
   background-color: white;
   z-index: 10;
-  display: none;
+  padding: 15px 35px;
+  box-sizing: border-box;
+  overflow: scroll;
+  &.hide{
+    display: none;
+  }
+  .skipIntro{
+    cursor: poitner;
+    font-weight: $weight-bold;
+    font-size: 14px;
+    opacity: 0.6;
+    text-decoration: underline;
+    display: inline;
+  }
+  .logBomax{
+    width: 240px;
+    margin: 30px auto 0;
+  }
+  .vidtitle{
+    font-size: 24px;
+    font-weight: $weight-light;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #vimeoVid{
+    min-height: 150px;
+    margin-top: 20px;
+
+    iframe{
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  .vidList{
+    li.active {
+      cursor: default;
+      .thumbnail{
+        background-color: #0059AD;
+        border-width: 0;
+      }
+    }
+    li{
+      width: calc(33% - 10px);
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+
+      + li{
+        margin-left: 15px;
+      }
+    }
+    .thumbnail{
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: transparent;
+      border: 2px solid #A2A1A1;
+      box-sizing: border-box;
+      display: inline-block;
+    }
+    .thumbTitle{
+      color: white;
+      background-color: $rmaxRed;
+      font-size: 10px;
+      border-radius: 6px;
+      padding: 7px 0;
+      line-height: 1.35em;
+    }
+  }
 }

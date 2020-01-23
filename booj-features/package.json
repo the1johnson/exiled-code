@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vimeo/player": "^2.10.0",
     "core-js": "^3.4.4",
     "prismic-dom": "^2.1.0",
     "prismic-javascript": "^2.1.5",
