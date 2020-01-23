@@ -1,5 +1,8 @@
 <template>
   <header>
+    <div class="booj-logo">
+      <img src="@/assets/booj_product_rgb.svg">
+    </div>
     <ul>
       <li>
         <router-link to="/">

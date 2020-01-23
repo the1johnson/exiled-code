@@ -1,7 +1,7 @@
 <template>
   <div>
     <full-page v-if="this.fields.homeSlice" ref="fullpage" v-bind:options="this.fields.fpopts">
-      <div v-for="(slice, index) in this.fields.homeSlice" v-bind:key="index" class="section">
+      <div v-for="(slice, index) in this.fields.homeSlice" v-bind:key="index" v-bind:class="slice.primary.background_image" class="section fp-auto-height-responsive">
         <SliceSimple v-if="slice.slice_type === 'simple_slide'" v-bind:graphic="slice.primary.graphic" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" />
 
         <SliceApp v-else-if="slice.slice_type === 'app_slide'" v-bind:graphic="slice.primary.graphic" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" v-bind:preLinkTitle="slice.primary.pre_link_title" v-bind:preLinkDescription="slice.primary.pre_link_description" v-bind:appleStoreLink="slice.primary.apple_store_link" v-bind:googleStoreLink="slice.primary.google_store_link" />
@@ -27,6 +27,9 @@ export default {
         fpopts: {
           licenseKey: 'DBE56275-4E7F4563-B1EC41D0-77DDCB26',
           navigation: true,
+          navigationPosition: 'right',
+          // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+          responsiveWidth: 1200,
         }
       }
     }

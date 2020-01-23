@@ -1,11 +1,35 @@
 @import "vars";
 header{
   background-color: white;
-  position: relative;
+  text-align: center;
+  position: fixed;
+  width: 100%;
   z-index: 5;
   padding: 10px 0;
+  box-shadow: 0 -5px 21px -3px grey;
   @include mbp-up($breakpoint-md){
+    padding-top: 10px;
+  }
+  @include mbp-up($breakpoint-xl){
     padding-top: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .booj-logo {
+    img {
+      height: 45px;
+      width: 114px;
+      position: absolute;
+      left: 30px;
+      display: none;
+      @include mbp-up($breakpoint-lg){
+        display: block;
+        top: 5px;
+      }
+      @include mbp-up($breakpoint-xl){
+        top: 20px;
+      }
+    }
   }
   > ul{
     @include mbp-up($breakpoint-lg){
@@ -30,10 +54,16 @@ header{
           color: white;
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
           font-size: 14px;
           font-weight: $weight-bold;
           padding-right: 10px;
         }
+        @include mbp-up($breakpoint-xl){
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+        }  
         .iconWrap{
           background-color: $rmaxRed;
           display: inline-block;

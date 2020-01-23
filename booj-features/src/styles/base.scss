@@ -1,6 +1,7 @@
 @import "vars";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700&display=swap');
 
+
 body{
   font-family: 'Montserrat', sans-serif;
   font-weight: $weight-medium;
@@ -10,51 +11,49 @@ a{
   color: $baseBlack;
   text-decoration: none;
 }
-.section{
-  .sliceSimple{
-    text-align: center;
-    @include mbp-up($breakpoint-lg){
-      text-align: left;
-    }
 
-    img{
-      max-height: 160px;
-      @include mbp-up($breakpoint-md){
-        max-height: 700px;
-      }
-      @include mbp-up($breakpoint-lg){
-        width: 40%;
-        display: inline-block;
-        vertical-align: middle;
-        max-height: none;
-      }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  @include mbp-up($breakpoint-md){
+    width: 750px;
+  }
+  @include mbp-up($breakpoint-lg){
+    width: 970px;
+  }
+  @include mbp-up($breakpoint-xl){
+    width: 1170px;
+  }
+}
+
+#app {
+  overflow: hidden;
+  .section {
+    &.Gray {
+      background-image: url('~@/assets/_bg-gray.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-    .contentWrap{
-      padding: 0 35px;
-      margin-top: 40px;
-      box-sizing: border-box;
-      @include mbp-up($breakpoint-lg){
-        width: 37%;
-        display: inline-block;
-        vertical-align: middle;
-        margin-top: 0;
-        margin-left: 5%;
-      }
+    &.White {
+      background-image: url('~@/assets/_bg-white.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-    .description, .title{
-      font-weight: $weight-light;
+    &.Home {
+      background-image: url('~@/assets/_bg-home.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
     }
-    .title{
-      font-size: 24px;
-      line-height: 1.35em;
-      @include mbp-up($breakpoint-md){
-        font-size: 32px;
-      }
-    }
-    .description{
-      font-size: 18px;
-      line-height: 26px;
-      margin-top: 25px;
+    .tour-button {
+      background-color: $rmaxBlue;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: $weight-bold;
+      margin-left: 15px;
+      padding: 12px 15px 13px;
+      border-radius: 5px;
+      display: inline-block;
     }
   }
 }

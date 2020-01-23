@@ -1,0 +1,139 @@
+.sliceList {
+	.slide-wrapper {
+	    padding-top: 35px;
+	    padding-bottom: 35px;
+	    @include mbp-up($breakpoint-md){
+	      padding-top: 20px;
+	      padding-bottom: 40px;
+	    }
+	    @include mbp-up($breakpoint-lg){
+	      padding-top: 30px;
+	    }
+	    @include mbp-up($breakpoint-xl){
+	      padding-top: 0px;
+	      padding-bottom: 0px;
+	    }
+		.top-text {
+			text-align: center;
+			.title{
+			    font-size: 24px;
+			    line-height: 32px;
+			    font-weight: $weight-light;
+			    margin: 0 auto 5px;
+			    @include mbp-up($breakpoint-md){
+			      font-size: 32px;
+			      line-height: 44px;
+			    }
+			    @include mbp-up($breakpoint-xl){
+			      font-size: 44px;
+			      line-height: 52px;
+			      max-width: 970px;
+			    }
+			}	
+			.description {
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: $weight-bold;
+				margin: 0 30px 50px;
+				@include mbp-up($breakpoint-xl){
+			      font-size: 24px;
+			      line-height: 32px;
+			      max-width: 970px;
+			      margin: 0 auto 50px;
+			    }
+			} 
+		} 
+		.two-column {
+			position: relative;
+			text-align: center;
+			@include mbp-up($breakpoint-lg){
+				text-align: left;
+			}
+			img, .contentWrap {
+				display: inline-block;
+				vertical-align: top;
+			}
+			.img-wrapper {
+				width: 100%;
+				display: inline-block;
+				@include mbp-up($breakpoint-lg){
+					width: 50%;
+				}
+				img {
+					max-width: 100%;
+				}
+			}
+			.contentWrap {
+				width: 100%;
+				@include mbp-up($breakpoint-lg){
+					width: 50%;
+				}
+				.pre-list-description {
+					font-weight: $weight-light;
+					margin-top: 20px;
+					font-size: 18px;
+					line-height: 26px;
+					padding-left: 15px;
+    				padding-right: 15px;
+					@include mbp-up($breakpoint-lg){
+						font-size: 24px;
+						line-height: 32px;
+						margin-left: 15px;
+						padding-left: 0;
+    					padding-right: 0;
+					}	
+				}
+				ul {
+					margin-top: 15px;
+					margin-bottom: 25px;
+					column-count: 1;
+					@include mbp-up($breakpoint-md){
+				    	column-count: 2;
+				    }
+					@include mbp-up($breakpoint-lg){
+				    	margin-left: 15px;
+				    	column-count: 1;
+				    }
+				    @include mbp-up($breakpoint-xl){
+				    	margin-left: 25px;
+				    }
+  					li {
+  						line-height: 20px;
+  						font-size: 14px;
+  						font-weight: $weight-medium;
+  					}
+  					&.custom-bullet {
+  						list-style: none;
+  					}
+  					&.custom-bullet > li {
+  						clear: left;
+  						margin-bottom: 12px;
+  					}
+  					&.custom-bullet > li:before {
+  						content:"";
+					    height:25px;
+					    width:25px;
+					    display:block;
+					    background-position:center;
+					    background-repeat:no-repeat;
+					    background-size:100%;
+					    @include mbp-up($breakpoint-lg){
+					    	float:left;
+					    	margin-left:-1.5em;
+					    }	
+  					}
+  					&.check > li:before{
+						  background-image:url("~@/assets/li-check.svg");
+						  background-size:100%;
+						  background-position:center;
+						  margin: auto;
+						  @include mbp-up($breakpoint-lg){
+					    	margin-right: 15px;
+					    	margin-left: auto;
+					    }
+					}
+				}
+			}
+		}
+	}
+}

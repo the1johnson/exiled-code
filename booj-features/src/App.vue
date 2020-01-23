@@ -27,4 +27,7 @@ export default {
   @import "@/styles/header.scss";
   @import "@/styles/intro.scss";
   @import "@/styles/base.scss";
+  @import "@/styles/slice-simple.scss";
+  @import "@/styles/slice-list.scss";
+  @import "@/styles/slice-app.scss";
 </style>

@@ -8,7 +8,9 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 
 $rmaxRed: #E91D2D;
+$rmaxBlue: #0059AD;
 $baseBlack: #231F20;
+
 
 @mixin mbp-up($bpSize){
   @media (min-width: $bpSize){
