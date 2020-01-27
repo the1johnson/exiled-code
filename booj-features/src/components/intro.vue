@@ -30,6 +30,7 @@
             <div class="thumbnail">
               <div class="thumbGradient"></div>
               <prismic-image v-if="videoInfo.primary.thumbnail_image" class="thumb_base" :field="videoInfo.primary.thumbnail_image"/>
+              <prismic-image v-if="videoInfo.primary.thumbnail_hover_gif" class="thumb_hover" :field="videoInfo.primary.thumbnail_hover_gif"/>
             </div>
             <div class="thumbTitle">{{videoInfo.primary.thumbnail_title}}</div>
           </li>

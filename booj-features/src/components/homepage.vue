@@ -48,7 +48,6 @@ export default {
       this.$prismic.client.getSingle('homepage')
         .then((document) => {
           this.fields.homeSlice = document.data.body
-          window.console.log(document.data.body)
         })
     },
   },
