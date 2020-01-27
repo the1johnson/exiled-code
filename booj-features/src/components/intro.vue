@@ -1,28 +1,54 @@
 <template>
   <div id="introOverlay" v-bind:class="[this.hiddenIntro ? 'hide' : '']">
-    <div>
-      <div class="skipIntro" v-on:click="hideIntro(true)">Skip Intro</div>
+    <div class="skipIntro" v-on:click="hideIntro(true)">Skip Intro</div>
+    
+    <div class="section">
       <div class="logBomax"><img src="@/assets/remax-booj-horiz.svg"></div>
-      <div v-if="this.videos">
+      
+      <div  class="" v-if="this.videos">
         <div class="vidtitle" v-if="this.selectedVideo.title">{{this.selectedVideo.title}}</div>
-        
-        <div id="vimeoVid"></div>
 
-        <div>
-           <div class="vidDescription" v-if="this.selectedVideo.description">
+        <div id="vidWrap">
+          <div id="vimeoVid"></div>
+          <div class="vidDescription" v-if="this.selectedVideo.description">
             <prismic-rich-text v-if="this.selectedVideo.description" :field="this.selectedVideo.description" />
+            <div class="tooltip" v-if="this.selectedVideo.tooltip">
+              <span class="ttTitle">{{this.selectedVideo.tooltip.title}}</span>
+              <span class="ttDescription">{{this.selectedVideo.tooltip.description}}</span>
+            </div>
           </div>
-          <ul class="vidTooltips" v-else-if="this.selectedVideo.tooltip"></ul>
+          <ul class="vidTooltips" v-else-if="this.selectedVideo.tooltip">
+            <li v-for="(tooltipInfo, index) in this.selectedVideo.tooltip" v-bind:key="index" class="tooltip">
+              <span class="ttTitle">{{tooltipInfo.title}}</span>
+              <span class="ttDescription">{{tooltipInfo.description}}</span>
+            </li>
+          </ul>
         </div>
 
         <ul class="vidList">
           <li v-for="(videoInfo, index) in this.videos" v-bind:key="index" v-bind:class="[videoInfo.isActive ? 'active' : '']" v-on:click="setActiveVid(index)">
-            <div class="thumbnail"></div>
+            <div class="thumbnail">
+              <div class="thumbGradient"></div>
+              <prismic-image v-if="videoInfo.primary.thumbnail_image" class="thumb_base" :field="videoInfo.primary.thumbnail_image"/>
+            </div>
             <div class="thumbTitle">{{videoInfo.primary.thumbnail_title}}</div>
           </li>
         </ul>
       </div>
     </div>
+
+    <div class="section" v-for="(introSlide, index) in this.slides" v-bind:key="index">
+      <div class="introText">
+        <div class="introTitle">{{introSlide.primary.slide_title}}</div>
+        <prismic-rich-text v-if="introSlide.primary.slide_description" class="introDescription" :field="introSlide.primary.slide_description" />
+      </div>
+      
+      <div class="introGraphic">
+        <prismic-image v-if="introSlide.primary.graphic" :field="introSlide.primary.graphic"/>
+      </div>
+      
+    </div>
+
   </div>
 </template>
  
@@ -33,6 +59,10 @@ export default {
     return {
       hiddenIntro: false,
       testd: null,
+      baseVideoSize: {
+        height: 0,
+        width: 0
+      },
       selectedVideo: {
         title: null,
         description: null,
@@ -73,8 +103,18 @@ export default {
       })
 
       this.selectedVideo.title = selectedVidInfo.primary.full_title
-      this.selectedVideo.description = selectedVidInfo.primary.description
-      window.console.log(this.selectedVideo.description,selectedVidInfo)
+      if(selectedVidInfo.primary.description){
+        this.selectedVideo.description = selectedVidInfo.primary.description
+        this.selectedVideo.tooltip = {title: selectedVidInfo.primary.tootip_title, description: selectedVidInfo.primary.tooltip_description}
+      }else{
+        this.selectedVideo.description = null
+        this.selectedVideo.tooltip = []
+        selectedVidInfo.items.forEach((tooltipInfo) => {
+          if(tooltipInfo.tooltip_title && tooltipInfo.tooltip_description){
+            this.selectedVideo.tooltip.push({title:tooltipInfo.tooltip_title, description:tooltipInfo.tooltip_description})
+          }
+        })
+      }
 
       if(this.player !== null){
         this.player.destroy();
@@ -83,8 +123,22 @@ export default {
         id: selectedVidInfo.primary.video.video_id,
         autoplay: true
       })
-      this.player.setVolume(0);
+      this.player.on('loaded', this.saveBaseVideoSize)
+    },
+    saveBaseVideoSize () {
+      let vidIframe = document.querySelector('#vimeoVid iframe')
+      this.baseVideoSize.height = parseInt(vidIframe.getAttribute('height'), 10)
+      this.baseVideoSize.width = parseInt(vidIframe.getAttribute('width'), 10)
 
+      this.setResponsiveVideoSize()
+    },
+    setResponsiveVideoSize () {
+      let containerWidth = document.getElementById('vidWrap').offsetWidth
+      let ratioMulti = containerWidth/this.baseVideoSize.width
+      let newHeight = this.baseVideoSize.height*ratioMulti
+      let vidIframe = document.querySelector('#vimeoVid iframe')
+
+      vidIframe.setAttribute('height', newHeight)
     }
   },
   created () {

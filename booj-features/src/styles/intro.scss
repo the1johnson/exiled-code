@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background-color: white;
-  z-index: 10;
+  z-index: 101;
   padding: 15px 35px;
   box-sizing: border-box;
   overflow: scroll;
@@ -30,6 +30,10 @@
     font-weight: $weight-light;
     text-align: center;
     margin-top: 30px;
+
+    @include mbp-up($breakpoint-sm){
+      font-size: 32px;
+    }
   }
   #vimeoVid{
     min-height: 150px;
@@ -37,15 +41,96 @@
 
     iframe{
       width: 100% !important;
-      height: auto !important;
+    }
+  }
+  .vidDescription{
+    font-weight: $weight-bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.35em;
+    margin-top: 5px;
+  }
+  .vidTooltips{
+    list-style: none;
+    margin-top: 20px;
+    @include mbp-up($breakpoint-sm){
+      display: table;
+    }
+    .tooltip{
+      text-align: center;
+      @include mbp-up($breakpoint-sm){
+        width: 1%;
+        display: table-cell;
+        vertical-align: bottom;
+      }
+    }
+    li+li{
+      margin-top: 25px;
+      @include mbp-up($breakpoint-sm){
+        margin-top: 0;
+      }
+    }
+  }
+  .tooltip{
+    margin-top: 10px;
+    position: relative;
+    .ttTitle{
+      color: $rmaxBlue;
+      text-transform: uppercase;
+      font-weight: $weight-bold;
+    }
+    .ttDescription{
+      display: none;
+      font-size: 14px;
+      position: absolute;
+      background-color: white;
+      border-radius: 10px;
+      z-index: 1;
+      bottom: 100%;
+      width: 160px;
+      box-sizing: border-box;
+      box-shadow: 0 0 5px 0px rgba(0,0,0,0.75);
+      left: 50%;
+      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      padding: 15px 20px;
+      font-weight: $weight-medium;
+      line-height: 1.35em;
+    }
+    &:focus, &:active, &:hover{
+      .ttDescription{
+        display: block;
+      }
+    }
+  }
+  #vidWrap{
+    @include mbp-up($breakpoint-lg){
+      display: inline-block;
+      width: calc(100% - 190px);
+      vertical-align: top;
+      margin-right: 20px;
     }
   }
   .vidList{
+    margin-top: 15px;
+    @include mbp-up($breakpoint-lg){
+      display: inline-block;
+      width: 170px;
+      vertical-align: top;
+      margin-top: 20px;
+    }
+
     li.active {
       cursor: default;
       .thumbnail{
-        background-color: #0059AD;
+        background-color: $rmaxBlue;
         border-width: 0;
+      }
+      .thumbGradient{
+        @include mbp-up($breakpoint-sm){
+          display: block;
+        }
       }
     }
     li{
@@ -53,9 +138,22 @@
       display: inline-block;
       text-align: center;
       cursor: pointer;
+      position: relative;
+
+      @include mbp-up($breakpoint-sm){
+        box-sizing: border-box;
+        padding-right: 15px;
+      }
+      @include mbp-up($breakpoint-lg){
+        width: 100%;
+      }
 
       + li{
         margin-left: 15px;
+        @include mbp-up($breakpoint-lg){
+          margin-left: 0;
+          margin-top: 38px;
+        }
       }
     }
     .thumbnail{
@@ -66,6 +164,37 @@
       border: 2px solid #A2A1A1;
       box-sizing: border-box;
       display: inline-block;
+      position: relative;
+
+      @include mbp-up($breakpoint-sm){
+        width: 100%;
+        height: 90px;
+        border-radius: 20px;
+        border: none;
+        overflow: hidden;
+      }
+
+      .thumb_base{
+        max-width: 100%;
+        position: absolute;
+        left: 0;
+        display: none;
+        @include mbp-up($breakpoint-sm){
+          display: block;
+        }
+      }
+    }
+    .thumbGradient{
+      display: none;
+      @include mbp-up($breakpoint-sm){
+        background: rgb(0,89,173);
+        background: linear-gradient(180deg, rgba(0,89,173,1) 0%, rgba(0,46,109,1) 100%);
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+      }
     }
     .thumbTitle{
       color: white;
@@ -74,6 +203,68 @@
       border-radius: 6px;
       padding: 7px 0;
       line-height: 1.35em;
+      margin-top: 5px;
+      text-transform: uppercase;
+      font-weight: $weight-bold;
+
+      @include mbp-up($breakpoint-sm){
+        position: absolute;
+        right: 0;
+        bottom: -9px;
+        padding: 3px 10px;
+        margin-top: 0;
+        z-index: 2;
+      }
+    }
+  }
+
+  .section{
+    min-height: 100%;
+    max-width: 1070px;
+    margin: 0 auto;
+    + .section{
+      margin-top: 40px;
+    }
+  }
+
+  .introTitle, .introDescription{
+    line-height: 1.35em;
+  }
+  .introTitle{
+    font-size: 24px;
+    
+  }
+  .introDescription{
+    font-size: 16px;
+    margin-top: 20px;
+
+    p + p{
+      margin-top: 10px;
+    }
+  }
+  .introText{
+    font-weight: $weight-light;
+    text-align: center;
+    
+    @include mbp-up($breakpoint-lg){
+      width: 230px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+    }
+  }
+  .introGraphic{
+    margin-top: 20px;
+    @include mbp-up($breakpoint-lg){
+      width: calc(100% - 240px);
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+
+    img{
+      width: 100%;
     }
   }
 }
