@@ -38,7 +38,7 @@ export default {
           navigationPosition: 'right',
           // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
           responsiveWidth: 1200,
-          scrollingSpeed: 700,
+          scrollingSpeed: 900,
         }
       }
     }
