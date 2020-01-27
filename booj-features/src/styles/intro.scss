@@ -10,7 +10,6 @@
   padding: 15px 35px;
   box-sizing: border-box;
   overflow: scroll;
-  display: block;
   &.hide{
     display: none;
   }
@@ -173,13 +172,24 @@
         border-radius: 20px;
         border: none;
         overflow: hidden;
+
+        &:hover, &:active, &:focus{
+          .thumb_hover{
+            display: block;
+          }
+          .thumb_base{
+            display: none;
+          }
+        }
       }
 
-      .thumb_base{
+      .thumb_base, .thumb_hover{
         max-width: 100%;
         position: absolute;
         left: 0;
         display: none;
+      }
+      .thumb_base{
         @include mbp-up($breakpoint-sm){
           display: block;
         }
