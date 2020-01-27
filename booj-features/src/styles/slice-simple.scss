@@ -10,7 +10,8 @@
       max-height: 700px;
     }
     @include mbp-up($breakpoint-lg){
-      width: 40%;
+      width: 30%;
+      margin-left: 250px;
       display: inline-block;
       vertical-align: middle;
       max-height: none;
