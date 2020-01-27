@@ -1,24 +1,24 @@
 <template>
   <div id="app">
+    <div class="side-logo">
+      <img src="@/assets/remax_logo_line.svg">
+    </div>
     <HeaderComponent />
     <IntroComponent />
     <main>
       <router-view />
     </main>
-    <FooterComponent />
   </div>
 </template>
 
 <script>
 import IntroComponent from './components/intro.vue'
 import HeaderComponent from './components/header.vue'
-import FooterComponent from './components/footer.vue'
 export default {
   name: 'app',
   components: {
     IntroComponent,
-    HeaderComponent,
-    FooterComponent
+    HeaderComponent
   }
 }
 </script>
@@ -30,4 +30,5 @@ export default {
   @import "@/styles/slice-simple.scss";
   @import "@/styles/slice-list.scss";
   @import "@/styles/slice-app.scss";
+  @import "@/styles/slice-support.scss";
 </style>

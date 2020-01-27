@@ -1,0 +1,137 @@
+.sliceSupport {
+	.slide-wrapper {
+		padding-top: 35px;
+	    padding-bottom: 35px;
+	    position: relative;
+	    z-index: 1;
+	    @include mbp-up($breakpoint-md){
+	      padding-top: 20px;
+	      padding-bottom: 40px;
+	    }
+	    @include mbp-up($breakpoint-lg){
+	      padding-top: 30px;
+	    }
+	    @include mbp-up($breakpoint-xl){
+	      padding-top: 0px;
+	      padding-bottom: 0px;
+	    }
+	    h2 {
+			font-size: 24px;
+			line-height: 32px;
+			font-weight: $weight-bold;
+		}
+	    .text-left{
+			width: 100%;
+			display: inline-block;
+			text-align: center;
+			vertical-align: top;
+			float: none;
+			@include mbp-up($breakpoint-lg){
+				float: left;
+				width: 50%;
+			}	
+			.box {
+				width: 80%;
+				background-color: white;
+				margin: 20px auto 0;
+				padding: 30px 15px;
+				border-radius: 10px;
+				-webkit-box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.16);
+				-moz-box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.16);
+				box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.16);
+				@include mbp-up($breakpoint-md){
+					width: 370px;
+				}	
+				@include mbp-up($breakpoint-lg){
+					margin: 80px auto 0;
+				}
+				.white-box-description {
+					font-size: 14px;
+					line-height: 20px;
+					padding: 0 20px;
+				}
+				hr {
+					margin: 1em 20px;
+				}
+				.tour-button {
+					margin-top: 10px;
+				}
+			}
+		}
+		.text-right {
+			width: 100%;
+			display: inline-block;
+			float: none;
+			@include mbp-up($breakpoint-lg){
+				float: right;
+				width: 50%;
+			}	
+			.title{
+			    font-size: 24px;
+			    line-height: 32px;
+			    font-weight: $weight-light;
+			    margin: 0 auto 5px;
+			    text-align: center;
+			    padding: 0 20px;
+			    @include mbp-up($breakpoint-md){
+			      font-size: 32px;
+			      line-height: 44px;
+			    }
+			    @include mbp-up($breakpoint-lg){
+			    	text-align: left;
+			    	padding: 0px;
+			    }	
+			    @include mbp-up($breakpoint-xl){
+			      font-size: 44px;
+			      line-height: 52px;
+			      max-width: 970px;
+			    }
+			}	
+			.description {
+				font-size: 18px;
+    			font-weight: $weight-medium;
+    			line-height: 27px;
+    			margin-bottom: 30px;
+    			text-align: center;
+    			padding: 0 20px;
+    			@include mbp-up($breakpoint-lg){
+			    	text-align: left;
+			    	padding: 0px;
+			    }
+			}
+			.repeat-text {
+				margin: auto;
+				width: 90%;
+				img {
+					display: inline-block;
+					vertical-align: top;
+					margin-right: 15px;
+				}
+				.list-text {
+					width: 80%;
+					display: inline-block;
+					margin-bottom: 20px;
+					@include mbp-up($breakpoint-md){
+				    	width: 90%;
+				    }
+					@include mbp-up($breakpoint-lg){
+				    	width: 88%;
+				    }
+					.list-text-description {
+						font-size: 16px;
+	    				font-weight: $weight-medium;
+	    				line-height: 26px;
+					}
+				}
+			}
+		}
+	}
+	.bg-img-red {
+		position: absolute;
+		left: 0;
+		z-index: 0;
+		img {
+			width: 620px;
+		}
+	}
+}

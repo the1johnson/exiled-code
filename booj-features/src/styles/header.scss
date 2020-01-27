@@ -15,6 +15,16 @@ header{
     background-color: transparent;
     box-shadow: none;
   }
+  &.headerShort {
+    a {
+      .txt {
+        display: none;
+        @include mbp-up($breakpoint-md){
+          display: inline-block;
+        }
+      }
+    }
+  }
   .booj-logo {
     img {
       height: 45px;

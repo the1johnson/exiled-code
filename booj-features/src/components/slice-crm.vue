@@ -1,6 +1,6 @@
 <template>
-  <div>
-    CRM is on hold for now
+  <div style="text-align: center;">
+    CRM Slide
   </div>
 </template>
  

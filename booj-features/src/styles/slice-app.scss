@@ -56,18 +56,76 @@
 			.img-wrapper {
 				width: 100%;
 				display: inline-block;
-				text-align: right;
+				text-align: center;
 				@include mbp-up($breakpoint-lg){
+					text-align: right;
 					width: 50%;
 				}
 				img {
-					max-height: 455px;
+					max-height: 450px;
 				}
 			}
 			.contentWrap {
 				width: 100%;
 				@include mbp-up($breakpoint-lg){
 					width: 50%;
+				}
+				.txt-wrapper {
+					margin-left: 20px;
+					@include mbp-up($breakpoint-lg){
+						margin-top: 75px;
+					}
+					img {
+						margin-bottom: 10px;
+						max-height: 75px;
+					}
+					.content-right-title, .content-right-description {
+						margin-left: 5px;
+					}
+					.content-right-title {
+						color: $rmaxDarkBlue;
+						font-size: 18px;
+						line-height: 27px;
+						max-width: 250px;
+						font-weight: $weight-bold;
+						margin-left: auto;
+						margin-right: auto;
+						@include mbp-up($breakpoint-lg){
+							margin: 0px 0px 0px 5px;
+						}
+					}
+					.content-right-description {
+						font-size: 14px;
+						line-height: 20px;
+						max-width: 300px;
+						margin-bottom: 15px;
+						font-weight: $weight-medium;
+						margin-left: auto;
+						margin-right: auto;
+						@include mbp-up($breakpoint-lg){
+							margin: 0px 0px 20px 5px;
+						}
+					}
+				}
+				.download-buttons {
+					margin-left: 20px;
+					margin-bottom: 35px;
+					.apple-link {
+						img {
+							width: 123px;
+							height: 38px;
+							margin-right: 20px;
+						}
+					}
+					.google-link {
+						img {
+							width: 121px;
+							height: 38px;
+						}
+					}
+				}
+				.tour-button {
+					margin-left: 25px;
 				}
 			}
 		}

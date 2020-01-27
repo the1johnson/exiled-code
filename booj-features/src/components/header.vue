@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="header" v-bind:class="{headerTall: scrollPosition < 70, headerShort: scrollPosition > 70}">
     <div class="booj-logo">
       <img src="@/assets/booj_product_rgb.svg">
     </div>
@@ -27,7 +27,16 @@
 export default {
   data () {
     return {
+      scrollPosition: null,
     }
+  },
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
   }
 }
 </script>
