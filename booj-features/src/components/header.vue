@@ -6,7 +6,9 @@
     <ul>
       <li>
         <router-link to="/">
-          <span class="iconWrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path id="Icon_awesome-play-circle" data-name="Icon awesome-play-circle" d="M8.063.563a7.5,7.5,0,1,0,7.5,7.5A7.5,7.5,0,0,0,8.063.563Zm3.5,8.226L6.239,11.843a.727.727,0,0,1-1.08-.635V4.917a.728.728,0,0,1,1.08-.635l5.323,3.236A.728.728,0,0,1,11.561,8.788Z" transform="translate(-0.563 -0.563)" fill="#fff"/></svg></span><span class="txt">Introducing Booj</span>
+          <span class="clickWrap" v-on:click="emitShowIntro()">
+            <span class="iconWrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path id="Icon_awesome-play-circle" data-name="Icon awesome-play-circle" d="M8.063.563a7.5,7.5,0,1,0,7.5,7.5A7.5,7.5,0,0,0,8.063.563Zm3.5,8.226L6.239,11.843a.727.727,0,0,1-1.08-.635V4.917a.728.728,0,0,1,1.08-.635l5.323,3.236A.728.728,0,0,1,11.561,8.788Z" transform="translate(-0.563 -0.563)" fill="#fff"/></svg></span><span class="txt">Introducing Booj</span>
+          </span>
         </router-link>
       </li>
       <li>
@@ -24,6 +26,7 @@
 </template>
  
 <script>
+import { eBus } from '../main';
 export default {
   data () {
     return {
@@ -33,6 +36,9 @@ export default {
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY
+    },
+    emitShowIntro() {
+      eBus.$emit('introHideUpdated', false)
     }
   },
   mounted() {

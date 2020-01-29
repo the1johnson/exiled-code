@@ -73,7 +73,10 @@ header{
         @include mbp-up($breakpoint-xl){
           border-top-left-radius: 0px;
           border-top-right-radius: 0px;
-        }  
+        }
+        .clickWrap{
+          display: block;
+        }
         .iconWrap{
           background-color: $rmaxRed;
           display: inline-block;

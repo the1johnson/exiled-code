@@ -15,10 +15,10 @@
       <div class="section fp-auto-height">
         <FooterComponent id="footer" />
       </div>
-    </full-page>  
+    </full-page>
   </div>
 </template>
- 
+
 <script>
 import SliceSimple from './slice-simple.vue'
 import SliceApp from './slice-app.vue'

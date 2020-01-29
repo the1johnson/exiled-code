@@ -7,19 +7,53 @@
   left: 0;
   background-color: white;
   z-index: 101;
-  padding: 15px 35px;
-  box-sizing: border-box;
-  overflow: scroll;
+  
+  .introWrap{
+    position: relative;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    transition: transform $animSpeedBase ease-in-out;
+    @include mbp-up($breakpoint-lg){
+      overflow: visible;
+      transform: translate3d(0px, 0px, 0px);
+    }
+  }
+
   &.hide{
     display: none;
   }
   .skipIntro{
-    cursor: poitner;
     font-weight: $weight-bold;
     font-size: 14px;
     opacity: 0.6;
     text-decoration: underline;
     display: inline;
+    position: fixed;
+    top: 12px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1070px;
+    margin: 0 auto 0;
+    @include mbp-up($breakpoint-sm){
+      font-size: 16px;
+    }
+     > span{
+      cursor: pointer;
+     }
+  }
+  .scrollFixed{
+    color: $rmaxRed;
+    font-size: 12px;
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 100;
   }
   .logBomax{
     width: 240px;
@@ -38,6 +72,9 @@
   #vimeoVid{
     min-height: 150px;
     margin-top: 20px;
+    @include mbp-up($breakpoint-md){
+      min-height: 350px;
+    }
 
     iframe{
       width: 100% !important;
@@ -74,6 +111,7 @@
   .tooltip{
     margin-top: 10px;
     position: relative;
+    cursor: pointer;
     .ttTitle{
       color: $rmaxBlue;
       text-transform: uppercase;
@@ -129,7 +167,7 @@
       }
       .thumbGradient{
         @include mbp-up($breakpoint-sm){
-          display: block;
+          opacity: 0.6;
         }
       }
     }
@@ -197,14 +235,16 @@
     }
     .thumbGradient{
       display: none;
+      transition: opacity $animSpeedBase ease-in-out;
       @include mbp-up($breakpoint-sm){
+        display: block;
         background: rgb(0,89,173);
         background: linear-gradient(180deg, rgba(0,89,173,1) 0%, rgba(0,46,109,1) 100%);
         z-index: 1;
         position: absolute;
         width: 100%;
         height: 100%;
-        opacity: 0.6;
+        opacity: 0;
       }
     }
     .thumbTitle{
@@ -231,10 +271,24 @@
 
   .section{
     min-height: 100%;
-    max-width: 1070px;
-    margin: 0 auto;
+    box-sizing: border-box;
     + .section{
-      margin-top: 40px;
+      padding-top: 40px;
+    }
+
+    background-image: url('~@/assets/_bg-intro-2.svg');
+    background-size: cover;
+
+    &:first-child{
+      background-image: url('~@/assets/_bg-intro-1.svg');
+    }
+    .sectionWrap{
+      max-width: 1070px;
+      margin: 0 auto;
+      padding: 15px 35px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 10;
     }
   }
 
@@ -276,6 +330,34 @@
 
     img{
       width: 100%;
+    }
+  }
+
+  .rectLeft, .rectRight{
+    display: none;
+    position: absolute;
+    width: 250px;
+
+    @include mbp-up($breakpoint-md){
+      display: block;
+    }
+    @include mbp-up($breakpoint-lg){
+      width: 340px;
+    }
+  }
+  .rectLeft{
+    left: -140px;
+    top: 100px;
+    @include mbp-up($breakpoint-lg){
+      left: 0;
+    }
+  }
+  .rectRight{
+    right: -140px;
+    top: 350px;
+    @include mbp-up($breakpoint-lg){
+      right: 0;
+      top: 100px;
     }
   }
 }
