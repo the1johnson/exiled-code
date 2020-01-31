@@ -40,7 +40,7 @@ export default {
     this.galleryKeys.active = 0
     this.galleryKeys.next = 1
     this.galleryKeys.prev = this.gallerySlides.length - 1
-    window.console.log(this.galleryKeys, this.gallerySlides.length)
+    //window.console.log(this.galleryKeys, this.gallerySlides.length)
   }
 }
 </script>
