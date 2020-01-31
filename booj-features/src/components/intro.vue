@@ -1,7 +1,7 @@
 <template>
   <div id="introOverlay" v-bind:class="[this.hiddenIntro ? 'hide' : '']">
     <div class="introWrap">
-      <div class="section">
+      <div class="intro-section">
         <div class="sectionWrap">
           <div class="logBomax"><img src="@/assets/remax-booj-horiz.svg"></div>
 
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <div class="section" v-for="(introSlide, index) in this.slides" v-bind:key="index">
+      <div class="intro-section" v-for="(introSlide, index) in this.slides" v-bind:key="index">
         <div class="sectionWrap">
           <div class="introText">
             <div class="introTitle">{{introSlide.primary.slide_title}}</div>
@@ -47,14 +47,15 @@
           </div>
           
           <div class="introGraphic">
-            <prismic-image v-if="introSlide.primary.graphic" :field="introSlide.primary.graphic"/>
+            <!-- <prismic-image v-if="introSlide.primary.graphic" :field="introSlide.primary.graphic"/> -->
           </div>
         </div>
       </div>
+      <img class="rectLeft" src="@/assets/intro-rect-left.svg" v-bind:class="[activeClass ? 'active' : '']">
+      <img class="rectRight" src="@/assets/intro-rect-right.svg" v-bind:class="[activeClass ? 'active' : '']">
     </div>
 
-    <img class="rectLeft" src="@/assets/intro-rect-left.svg">
-    <img class="rectRight" src="@/assets/intro-rect-right.svg">
+    
     <div class="skipIntro"><span v-on:click="emitHideIntro()">Skip Intro</span></div>
     <div class="scrollFixed">Scroll</div>
   </div>
@@ -69,6 +70,7 @@ export default {
       hiddenIntro: false,
       activeSlideIndex: 0,
       scrollDebounce: false,
+      activeClass: false,
       baseVideoSize: {
         height: 0,
         width: 0
@@ -102,6 +104,7 @@ export default {
     emitHideIntro (){
       eBus.$emit('introHideUpdated', true)
       window.scrollTo(0, 0)
+      // this.player.destroy()
     },
     setActiveVid (vidId) {
       let selectedVidInfo = null;
@@ -132,7 +135,7 @@ export default {
       }
       this.player = new Player('vimeoVid', {
         id: selectedVidInfo.primary.video.video_id,
-        autoplay: true
+        autoplay: false
       })
       this.player.on('loaded', this.saveBaseVideoSize)
     },
@@ -153,6 +156,7 @@ export default {
     },
     scrollHandler (event) {
       let windowWidth = window.outerWidth
+
       if(this.scrollDebounce || this.hiddenIntro || windowWidth < 992){
         return false
       }
@@ -164,8 +168,10 @@ export default {
 
       if(scolledUp){
         this.activeSlideIndex -= 1
+        this.activeClass = false
       }else{
         this.activeSlideIndex += 1
+        this.activeClass = true
       }
       this.activeSlideIndex = this.activeSlideIndex < 0 ? 0 : this.activeSlideIndex
       if(this.activeSlideIndex > this.slides.length){
@@ -174,6 +180,7 @@ export default {
       }
 
       document.querySelector('#introOverlay .introWrap').setAttribute("style", "transform: translate3d(0px, "+(-1*introHeight*this.activeSlideIndex)+"px, 0px);")
+
 
       setTimeout(function(){
           self.scrollDebounce = false;
@@ -184,6 +191,7 @@ export default {
     this.getContent()
     eBus.$on('introHideUpdated', (data) => {
       this.hiddenIntro = data
+      // this.activeClass = false
     })
     window.addEventListener('resize', this.setResponsiveVideoSize)
     window.addEventListener('wheel', this.scrollHandler)
