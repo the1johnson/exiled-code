@@ -48,6 +48,7 @@
           
           <div class="introGraphic">
             <!-- <prismic-image v-if="introSlide.primary.graphic" :field="introSlide.primary.graphic"/> -->
+            <iframe src="./intro-animation/index.html"></iframe>
           </div>
         </div>
       </div>
@@ -196,7 +197,7 @@ export default {
 
 
 
-    this.emitHideIntro()
+    //this.emitHideIntro()
 
 
     
