@@ -8,7 +8,7 @@
 
         <SliceList v-else-if="slice.slice_type === 'list_slide'" v-bind:graphic="slice.primary.graphic" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" v-bind:preListDescription="slice.primary.pre_list_description" v-bind:buttonTxt="slice.primary.button_text" v-bind:buttonLink="slice.primary.button_link" v-bind:checkList="slice.items" />
 
-        <SliceCRM v-else-if="slice.slice_type === 'crm_slide'" />
+        <SliceCRM v-else-if="slice.slice_type === 'crm_slide'" v-bind:gallerySlides="slice.items" v-bind:class="slice.primary.background_image" v-bind:title="slice.primary.top_title" v-bind:description="slice.primary.top_description" />
 
         <SliceSupport v-else-if="slice.slice_type === 'support_slide'" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" v-bind:whiteBoxTitleTop="slice.primary.white_box_title_top" v-bind:whiteBoxDescriptionTop="slice.primary.white_box_description_top" v-bind:whiteBoxTitleBottom="slice.primary.white_box_title_bottom" v-bind:whiteBoxDescriptionBottom="slice.primary.white_box_description_bottom" v-bind:buttonLink="slice.primary.button_link" v-bind:buttonTxt="slice.primary.button_text" v-bind:checkList="slice.items" />
       </div>

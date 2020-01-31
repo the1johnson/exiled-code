@@ -31,4 +31,5 @@ export default {
   @import "@/styles/slice-list.scss";
   @import "@/styles/slice-app.scss";
   @import "@/styles/slice-support.scss";
+  @import "@/styles/slice-crm.scss";
 </style>

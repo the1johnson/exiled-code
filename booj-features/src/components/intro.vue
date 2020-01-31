@@ -185,6 +185,13 @@ export default {
     eBus.$on('introHideUpdated', (data) => {
       this.hiddenIntro = data
     })
+
+
+
+    this.emitHideIntro()
+
+
+    
     window.addEventListener('resize', this.setResponsiveVideoSize)
     window.addEventListener('wheel', this.scrollHandler)
   }
