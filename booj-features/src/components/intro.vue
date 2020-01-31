@@ -63,8 +63,9 @@
 </template>
 
 <script>
-import Player from '@vimeo/player';
-import { eBus } from '../main';
+import Player from '@vimeo/player'
+import { eBus } from '../main'
+
 export default {
   data () {
     return {
@@ -104,7 +105,7 @@ export default {
     },
     emitHideIntro (){
       eBus.$emit('introHideUpdated', true)
-      window.scrollTo(0, 0)
+      //window.scrollTo(0, 0)
       // this.player.destroy()
     },
     setActiveVid (vidId) {

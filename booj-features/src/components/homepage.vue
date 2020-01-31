@@ -26,6 +26,7 @@ import SliceList from './slice-list.vue'
 import SliceCRM from './slice-crm.vue'
 import SliceSupport from './slice-support.vue'
 import FooterComponent from './footer.vue'
+import { eBus } from '../main'
 
 export default {
   data () {
@@ -53,6 +54,15 @@ export default {
   },
   created () {
     this.getContent();
+    eBus.$on('introHideUpdated', (data) => {
+      //this.hiddenIntro = data
+      // this.activeClass = false
+      if(data){
+        window.console.log(data, 'hit here', this.$refs.fullpage)
+        this.$refs.fullpage.api.moveTo(0)
+      }
+      
+    })
   },
   components: {
     SliceSimple,
