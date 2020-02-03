@@ -6,12 +6,42 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: $weight-medium;
   color: $baseBlack;
+  &.fp-viewing-0 {
+    #fp-nav {
+      ul {
+        li {
+          &:nth-child(2) {
+            a {
+              span {
+                background: $rmaxRed;
+              }
+            }
+          }
+        }
+      }
+    }  
+  }
+  &.last {
+    #fp-nav {
+      ul {
+        li {
+          &:nth-last-child(2) {
+            a {
+              span {
+                background: $rmaxRed;
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
   #fp-nav {
     top: 50%;
     ul {
       li {
         margin: 40px;
-        &:last-child {
+        &:first-child, &:last-child {
           display: none;
         }
         &:hover {

@@ -11,7 +11,7 @@
             <div id="vidWrap">
               <div id="vimeoVid"></div>
               <div class="vidDescription" v-if="this.selectedVideo.description">
-                <prismic-rich-text v-if="this.selectedVideo.description" :field="this.selectedVideo.description" />
+                <prismic-rich-text class="pre-tooltip-text" v-if="this.selectedVideo.description" :field="this.selectedVideo.description" />
                 <div class="tooltip" v-if="this.selectedVideo.tooltip">
                   <span class="ttTitle">{{this.selectedVideo.tooltip.title}}</span>
                   <span class="ttDescription">{{this.selectedVideo.tooltip.description}}</span>
@@ -105,7 +105,7 @@ export default {
     },
     emitHideIntro (){
       eBus.$emit('introHideUpdated', true)
-      //window.scrollTo(0, 0)
+      // window.scrollTo(0, 0)
       // this.player.destroy()
     },
     setActiveVid (vidId) {
@@ -186,13 +186,14 @@ export default {
 
       setTimeout(function(){
           self.scrollDebounce = false;
-      }, 1000)
+      }, 2000)
     }
   },
   created () {
     this.getContent()
     eBus.$on('introHideUpdated', (data) => {
       this.hiddenIntro = data
+      this.player.destroy();
       // this.activeClass = false
     })
 

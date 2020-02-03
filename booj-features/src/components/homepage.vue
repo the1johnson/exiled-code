@@ -1,6 +1,7 @@
 <template>
   <div id="fullpagewrapper">
     <full-page v-if="this.fields.homeSlice" ref="fullpage" v-bind:options="this.fields.fpopts">
+      <div class="section fp-auto-height" style="height: 0px;"></div>
       <div v-for="(slice, index) in this.fields.homeSlice" v-bind:key="index" v-bind:class="slice.primary.background_image" class="section fp-auto-height-responsive">
         <SliceSimple v-if="slice.slice_type === 'simple_slide'" id="Home" v-bind:graphic="slice.primary.graphic" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" />
 
@@ -39,7 +40,9 @@ export default {
           navigationPosition: 'right',
           // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
           responsiveWidth: 1200,
-          scrollingSpeed: 900,
+          scrollingSpeed: 2000,
+          autoScrolling: true,
+          onLeave: this.onLeave,
         }
       }
     }
@@ -51,16 +54,38 @@ export default {
           this.fields.homeSlice = document.data.body
         })
     },
+    onLeave(index) {
+      var element = document.querySelectorAll('.section').length
+      var indexcount = index.index
+      if (element == (indexcount + 2)) {
+          document.body.classList.toggle("last");
+      } 
+     // last section loaded
+     // if(index == el.length){
+     //  window.console.log('last')
+     // }
+    },
   },
   created () {
     this.getContent();
     eBus.$on('introHideUpdated', (data) => {
-      //this.hiddenIntro = data
-      // this.activeClass = false
       if(data){
-        window.console.log(data, 'hit here', this.$refs.fullpage)
-        this.$refs.fullpage.api.moveTo(0)
-      }
+            this.$refs.fullpage.api.moveTo(2)
+            this.$refs.fullpage.api.setScrollingSpeed(1000)
+      }  
+        // this.$refs.fullpage.api.setAllowScrolling(false)
+
+
+      // window.console.log(this.$refs.fullpage)
+      // this.$refs.fullpage.api.setAllowScrolling(false)
+      // if(data){
+        // window.console.log(data, 'hit here', this.$refs.fullpage)
+        // this.$refs.fullpage.api.setAllowScrolling(true)
+        // this.$refs.fullpage.api.setScrollingSpeed(0)
+        // this.$refs.fullpage.api.moveTo(1)
+        // this.$refs.fullpage.api.setAutoScrolling(true)
+        // this.$refs.fullpage.api.setScrollingSpeed(1000)
+      // }
       
     })
   },
