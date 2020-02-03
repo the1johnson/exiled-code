@@ -7,40 +7,55 @@
       </div>
       
       <div class="galleryWrap">
-        <ul class="gallery">
-          <li v-for="(slide, index) in gallerySlides" v-bind:key="index" v-bind:class="[index === galleryKeys.active ? 'active' : '', index === galleryKeys.next ? 'galNext' : '', index === galleryKeys.prev ? 'galPrev' : '']">
+        <carousel-3d ref="carousel" :perspective="carouOpts.perspective" :space="carouOpts.space" :display="carouOpts.display" :controls-visible="carouOpts.controlsVisible" :controls-prev-html="carouOpts.galleryPrevTitle" :controls-next-html="carouOpts.galleryNextTitle" @after-slide-change="onAfterSlideChange">
+          <slide v-for="(slide, index) in gallerySlides" v-bind:key="index" :index="index" >
             <prismic-image v-if="slide.graphic" :field="slide.graphic"/>
-            <div class="slideInfoWrapper">
-              <div class="bbTitle">{{slide.blue_box_title}}</div>
-              <prismic-rich-text v-if="slide.blue_box_description" :field="slide.blue_box_description" class="bbDescritpion" />
-
-              <div class="tourButton"><span>Take a</span> Tour <span>of</span> {{slide.slide_name}}</div>
-            </div>
-          </li>
-        </ul>
+          </slide>
+        </carousel-3d>
         <div class="galleryBg"></div>
+        
       </div>
+
     </div>
   </div>
 </template>
- 
+
 <script>
+import { Carousel3d, Slide } from 'vue-carousel-3d';
+
 export default {
   props: ['title', 'description', 'gallerySlides'],
   data () {
     return {
-      galleryKeys: {
-        active: null,
-        next: null,
-        prev: null
+      galleryNextTitle: "<div>Next</div>",
+      galleryPrevTitle: "<div>Prev</div>",
+      carouOpts: {
+        space: 500,
+        display: 3,
+        perspective: 0,
+        controlsVisible: false
       }
     }
   },
-  created () {
-    this.galleryKeys.active = 0
-    this.galleryKeys.next = 1
-    this.galleryKeys.prev = this.gallerySlides.length - 1
-    //window.console.log(this.galleryKeys, this.gallerySlides.length)
+  methods: {
+    galNextSlide () {
+      this.$refs.carousel.goNext()
+    },
+    galPrevSlide () {
+      this.$refs.carousel.goPrev()
+    },
+    onAfterSlideChange (index) {
+      window.console.log('sooooo', index, this.gallerySlides[index])
+    }
+  },
+  mounted () {
+    //this.galleryNextTitle = "<div>Next Text</div>"
+    //this.galleryPrevTitle = 'Prev Text'
+    //this.$refs.carousel.onSlideChange()
+  },
+  components: {
+    Carousel3d,
+    Slide
   }
 }
 </script>

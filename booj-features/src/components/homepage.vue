@@ -70,23 +70,9 @@ export default {
     this.getContent();
     eBus.$on('introHideUpdated', (data) => {
       if(data){
-            this.$refs.fullpage.api.moveTo(2)
-            this.$refs.fullpage.api.setScrollingSpeed(1000)
-      }  
-        // this.$refs.fullpage.api.setAllowScrolling(false)
-
-
-      // window.console.log(this.$refs.fullpage)
-      // this.$refs.fullpage.api.setAllowScrolling(false)
-      // if(data){
-        // window.console.log(data, 'hit here', this.$refs.fullpage)
-        // this.$refs.fullpage.api.setAllowScrolling(true)
-        // this.$refs.fullpage.api.setScrollingSpeed(0)
-        // this.$refs.fullpage.api.moveTo(1)
-        // this.$refs.fullpage.api.setAutoScrolling(true)
-        // this.$refs.fullpage.api.setScrollingSpeed(1000)
-      // }
-      
+        this.$refs.fullpage.api.moveTo(2)
+        this.$refs.fullpage.api.setScrollingSpeed(1000)
+      }
     })
   },
   components: {

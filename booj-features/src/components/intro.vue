@@ -111,7 +111,7 @@ export default {
     setActiveVid (vidId) {
       let selectedVidInfo = null;
       this.videos = this.videos.filter(function(videoInfo, index){
-        videoInfo.isActive = (index === vidId) ? true :false
+        videoInfo.isActive = (index === vidId) ? true : false
         if(videoInfo.isActive){
           selectedVidInfo = videoInfo
         }
@@ -194,12 +194,11 @@ export default {
     eBus.$on('introHideUpdated', (data) => {
       this.hiddenIntro = data
       this.player.destroy();
-      // this.activeClass = false
     })
 
 
 
-    //this.emitHideIntro()
+    this.emitHideIntro()
 
 
     
