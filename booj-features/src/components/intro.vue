@@ -105,13 +105,13 @@ export default {
     },
     emitHideIntro (){
       eBus.$emit('introHideUpdated', true)
-      //window.scrollTo(0, 0)
+      // window.scrollTo(0, 0)
       // this.player.destroy()
     },
     setActiveVid (vidId) {
       let selectedVidInfo = null;
       this.videos = this.videos.filter(function(videoInfo, index){
-        videoInfo.isActive = (index === vidId) ? true :false
+        videoInfo.isActive = (index === vidId) ? true : false
         if(videoInfo.isActive){
           selectedVidInfo = videoInfo
         }
@@ -185,7 +185,7 @@ export default {
 
 
       setTimeout(function(){
-          self.scrollDebounce = false;
+          self.scrollDebounce = false
       }, 1000)
     }
   },
@@ -193,12 +193,11 @@ export default {
     this.getContent()
     eBus.$on('introHideUpdated', (data) => {
       this.hiddenIntro = data
-      // this.activeClass = false
     })
 
 
 
-    //this.emitHideIntro()
+    this.emitHideIntro()
 
 
     

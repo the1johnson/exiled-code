@@ -55,13 +55,9 @@ export default {
   created () {
     this.getContent();
     eBus.$on('introHideUpdated', (data) => {
-      //this.hiddenIntro = data
-      // this.activeClass = false
       if(data){
-        window.console.log(data, 'hit here', this.$refs.fullpage)
-        this.$refs.fullpage.api.moveTo(0)
+        this.$refs.fullpage.api.moveTo(1)
       }
-      
     })
   },
   components: {
