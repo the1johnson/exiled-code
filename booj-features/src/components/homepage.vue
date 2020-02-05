@@ -1,5 +1,5 @@
 <template>
-  <div id="fullpagewrapper">
+  <div id="fullpagewrapper" :class="[ introClosed ? 'introclosed' : ' ' ]">
     <full-page v-if="this.fields.homeSlice" ref="fullpage" v-bind:options="this.fields.fpopts">
       <div class="section fp-auto-height" style="height: 0px;"></div>
       <div v-for="(slice, index) in this.fields.homeSlice" v-bind:key="index" v-bind:class="slice.primary.background_image" class="section fp-auto-height-responsive">
@@ -13,7 +13,7 @@
 
         <SliceSupport v-else-if="slice.slice_type === 'support_slide'" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" v-bind:whiteBoxTitleTop="slice.primary.white_box_title_top" v-bind:whiteBoxDescriptionTop="slice.primary.white_box_description_top" v-bind:whiteBoxTitleBottom="slice.primary.white_box_title_bottom" v-bind:whiteBoxDescriptionBottom="slice.primary.white_box_description_bottom" v-bind:buttonLink="slice.primary.button_link" v-bind:buttonTxt="slice.primary.button_text" v-bind:checkList="slice.items" />
       </div>
-      <div class="section fp-auto-height">
+      <div class="section fp-auto-height last-section">
         <FooterComponent id="footer" />
       </div>
     </full-page>
@@ -32,6 +32,7 @@ import { eBus } from '../main'
 export default {
   data () {
     return {
+      introClosed: false,
       fields: {
         homeSlice: null,
         fpopts: {
@@ -42,7 +43,7 @@ export default {
           responsiveWidth: 1200,
           scrollingSpeed: 2000,
           autoScrolling: true,
-          onLeave: this.onLeave,
+          afterLoad: this.afterLoad,
         }
       }
     }
@@ -54,13 +55,17 @@ export default {
           this.fields.homeSlice = document.data.body
         })
     },
-    onLeave(index) {
-      var element = document.querySelectorAll('.section').length
-      var indexcount = index.index
-      if (element == (indexcount + 2)) {
-          document.body.classList.toggle("last");
-      } 
-     // last section loaded
+    afterLoad() {
+      // var element = document.querySelectorAll('.last-section')
+      // if (element.classList.contains('active')) {
+      //   alert('hi')
+      // }
+      // var indexcount = index.index
+      // window.console.log(element, indexcount, index)
+     //  if (element == (indexcount + 2)) {
+     //      document.body.classList.toggle("last");
+     //  } 
+
      // if(index == el.length){
      //  window.console.log('last')
      // }
@@ -72,6 +77,7 @@ export default {
       if(data){
         this.$refs.fullpage.api.moveTo(2)
         this.$refs.fullpage.api.setScrollingSpeed(1000)
+        this.introClosed = true
       }
     })
   },
