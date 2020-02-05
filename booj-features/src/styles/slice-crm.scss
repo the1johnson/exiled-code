@@ -64,24 +64,93 @@
     height: 80px;
     display: none;
     position: absolute;
-    bottom: -10px;
+    bottom: -10%;
     width: 100%;
     z-index: -1;
     @include mbp-up($breakpoint-sm){
       display: block;
     }
+    @include mbp-up($breakpoint-md){
+      height: 100px;
+    }
+    @include mbp-up($breakpoint-lg){
+      height: 125px;
+    }
+  }
+  .galleryNextBtn, .galleryPrevBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background-color: $rmaxRed;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: $weight-bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .galleryNextBtn{
+    right: 10%;
+    @include mbp-up($breakpoint-sm){
+      right: 32%;
+    }
+    @include mbp-up($breakpoint-md){
+      right: 22%;
+    }
+  }
+  .galleryPrevBtn{
+    left: 10%;
+    @include mbp-up($breakpoint-sm){
+      left: 32%;
+    }
+    @include mbp-up($breakpoint-md){
+      left: 22%;
+    }
+  }
+
+  #slideInfo{
+    position: relative;
+    height: 340px;
+
+    @include mbp-up($breakpoint-sm){
+      height: 230px;
+      top: -15px;
+    }
+
+    .slideInfoPost, .slideInfoPre{
+      opacity: 0;
+      z-index: -1;
+      transition: opacity $animSpeedBase ease-in-out;
+
+      &.active{
+        opacity: 1;
+        z-index: 1;
+      }
+    }
   }
 
   .slideInfoWrapper{
+    position: absolute;
     color: white;
     background-color: $rmaxDarkBlue;
     border-radius: 10px;
     text-align: center;
     padding: 20px 10px;
-    margin-top: 10px;
+    box-sizing: border-box;
+    width: calc(100% - 60px);
+    margin: 0 30px;
 
     @include mbp-up($breakpoint-sm){
-      display: none;
+      width: 570px;
+      padding: 20px 15px;
+      margin: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
     }
 
     .bbTitle{

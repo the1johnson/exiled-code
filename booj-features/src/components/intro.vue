@@ -193,7 +193,9 @@ export default {
     this.getContent()
     eBus.$on('introHideUpdated', (data) => {
       this.hiddenIntro = data
-      this.player.destroy();
+      if(this.player){
+        this.player.destroy();
+      }
     })
 
 
