@@ -1,12 +1,16 @@
 <template>
   <div id="introOverlay" v-bind:class="[this.hiddenIntro ? 'hide' : '']">
     <div class="introWrap">
+      <div class="skip-intro-mobile" v-on:click="emitHideIntro()">
+        <span>Skip Intro</span>
+        <img src="@/assets/skip-down.svg">
+      </div>
       <div class="intro-section">
         <div class="sectionWrap">
           <div class="logBomax"><img src="@/assets/remax-booj-horiz.svg"></div>
 
           <div  class="" v-if="this.videos">
-            <div class="vidtitle" v-if="this.selectedVideo.title">{{this.selectedVideo.title}}</div>
+            <div class="vidtitle h2" v-if="this.selectedVideo.title">{{this.selectedVideo.title}}</div>
 
             <div id="vidWrap">
               <div id="vimeoVid"></div>
@@ -32,33 +36,44 @@
                   <prismic-image v-if="videoInfo.primary.thumbnail_image" class="thumb_base" :field="videoInfo.primary.thumbnail_image"/>
                   <prismic-image v-if="videoInfo.primary.thumbnail_hover_gif" class="thumb_hover" :field="videoInfo.primary.thumbnail_hover_gif"/>
                 </div>
-                <div class="thumbTitle">{{videoInfo.primary.thumbnail_title}}</div>
+                <div class="thumbTitle">{{videoInfo.primary.thumbnail_title}} <img class="arrow" src="@/assets/cta-arrow.svg"></div>
               </li>
             </ul>
           </div>
         </div>
+        <a class="scrollFixed" v-on:click="scrollDown()">
+          Scroll
+          <img src="@/assets/cta-arrow.svg">
+        </a>
       </div>
 
       <div class="intro-section" v-for="(introSlide, index) in this.slides" v-bind:key="index">
         <div class="sectionWrap">
           <div class="introText">
-            <div class="introTitle">{{introSlide.primary.slide_title}}</div>
-            <prismic-rich-text v-if="introSlide.primary.slide_description" class="introDescription" :field="introSlide.primary.slide_description" />
+            <div class="introTitle h1">{{introSlide.primary.slide_title}}</div>
+            <prismic-rich-text v-if="introSlide.primary.slide_description" class="introDescription body-text" :field="introSlide.primary.slide_description" />
           </div>
           
           <div class="introGraphic">
-            <!-- <prismic-image v-if="introSlide.primary.graphic" :field="introSlide.primary.graphic"/> -->
             <iframe src="./intro-animation/index.html"></iframe>
           </div>
         </div>
+        <a class="scrollFixed" v-on:click="emitHideIntro()">
+          Scroll
+          <img src="@/assets/cta-arrow.svg">
+        </a>
       </div>
       <img class="rectLeft" src="@/assets/intro-rect-left.svg" v-bind:class="[activeClass ? 'active' : '']">
       <img class="rectRight" src="@/assets/intro-rect-right.svg" v-bind:class="[activeClass ? 'active' : '']">
+      <div class="intro-exit-mobile" v-on:click="emitHideIntro()">
+        <button>See How It Works</button>
+        <img src="@/assets/cta-arrow.svg">
+      </div>
     </div>
 
     
     <div class="skipIntro"><span v-on:click="emitHideIntro()">Skip Intro</span></div>
-    <div class="scrollFixed">Scroll</div>
+    
   </div>
 </template>
 
@@ -137,7 +152,7 @@ export default {
       }
       this.player = new Player('vimeoVid', {
         id: selectedVidInfo.primary.video.video_id,
-        autoplay: false
+        autoplay: true
       })
       this.player.on('loaded', this.saveBaseVideoSize)
     },
@@ -159,7 +174,7 @@ export default {
     scrollHandler (event) {
       let windowWidth = window.outerWidth
 
-      if(this.scrollDebounce || this.hiddenIntro || windowWidth < 992){
+      if(this.scrollDebounce || this.hiddenIntro || windowWidth < 1200){
         return false
       }
       this.scrollDebounce = true
@@ -175,6 +190,7 @@ export default {
         this.activeSlideIndex += 1
         this.activeClass = true
       }
+      window.console.log(this.activeSlideIndex)
       this.activeSlideIndex = this.activeSlideIndex < 0 ? 0 : this.activeSlideIndex
       if(this.activeSlideIndex > this.slides.length){
         this.activeSlideIndex = this.slides.length - 1
@@ -182,6 +198,16 @@ export default {
       }
 
       document.querySelector('#introOverlay .introWrap').setAttribute("style", "transform: translate3d(0px, "+(-1*introHeight*this.activeSlideIndex)+"px, 0px);")
+
+      setTimeout(function(){
+          self.scrollDebounce = false;
+      }, 2000)
+    },
+    scrollDown () {
+      let introHeight = document.getElementById('introOverlay').offsetHeight
+       this.activeSlideIndex += 1
+       this.activeClass = true
+       document.querySelector('#introOverlay .introWrap').setAttribute("style", "transform: translate3d(0px, "+(-1*introHeight*this.activeSlideIndex)+"px, 0px);")
 
 
       setTimeout(function(){
@@ -200,7 +226,7 @@ export default {
 
 
 
-    this.emitHideIntro()
+    // this.emitHideIntro()
 
 
     
