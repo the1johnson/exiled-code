@@ -1,47 +1,61 @@
 .sliceSimple{
-  text-align: center;
-  @include mbp-up($breakpoint-lg){
-    text-align: left;
-  }
-
-  img{
-    max-height: 160px;
+  .slide-wrapper {
+    padding-top: 35px;
+    padding-bottom: 35px;
     @include mbp-up($breakpoint-md){
-      max-height: 700px;
+      padding-top: 20px;
+      padding-bottom: 40px;
     }
     @include mbp-up($breakpoint-lg){
-      width: 30%;
-      margin-left: 250px;
-      display: inline-block;
-      vertical-align: middle;
-      max-height: none;
+      padding-top: 30px;
     }
-  }
-  .contentWrap{
-    padding: 0 35px;
-    margin-top: 40px;
-    box-sizing: border-box;
+    @include mbp-up($breakpoint-xl){
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    text-align: center;
     @include mbp-up($breakpoint-lg){
-      width: 37%;
-      display: inline-block;
-      vertical-align: middle;
-      margin-top: 0;
-      margin-left: 5%;
+      text-align: left;
     }
-  }
-  .description, .title{
-    font-weight: $weight-light;
-  }
-  .title{
-    font-size: 24px;
-    line-height: 1.35em;
-    @include mbp-up($breakpoint-md){
-      font-size: 32px;
+    img{
+      max-height: 160px;
+      @include mbp-up($breakpoint-md){
+        max-height: 700px;
+      }
+      @include mbp-up($breakpoint-lg){
+        width: 30%;
+        margin-left: 250px;
+        display: inline-block;
+        vertical-align: middle;
+        max-height: none;
+      }
     }
-  }
-  .description{
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: 25px;
+    .contentWrap{
+      padding: 0 35px;
+      margin-top: 40px;
+      box-sizing: border-box;
+      @include mbp-up($breakpoint-lg){
+        width: 37%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0;
+        margin-left: 5%;
+      }
+    }
+    .description, .title{
+      font-weight: $weight-light;
+    }
+    .title{
+      font-size: 24px;
+      line-height: 1.35em;
+      @include mbp-up($breakpoint-md){
+        font-size: 32px;
+      }
+    }
+    .description{
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 25px;
+    }
   }
 }

@@ -82,6 +82,47 @@ body{
   } 
 }
 
+.h1 {
+  font-weight: $weight-light;
+  font-size: 24px;
+  line-height: 32px;
+  @include mbp-up($breakpoint-sm){
+    font-size: 32px;
+    line-height: 44px;
+  }
+  @include mbp-up($breakpoint-xl){
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+}
+.h2 {
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 17px;
+  @include mbp-up($breakpoint-sm){
+    font-size: 20px;
+    line-height: 28px;
+  }
+  @include mbp-up($breakpoint-xl){
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.body-text {
+  font-weight: $weight-light;
+  font-size: 16px;
+  line-height: 24px;
+  @include mbp-up($breakpoint-sm){
+    font-size: 18px;
+    line-height: 26px;
+  }
+  @include mbp-up($breakpoint-lg){
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 a{
   color: $baseBlack;
   text-decoration: none;
@@ -103,6 +144,17 @@ a{
 
 #app {
   overflow: hidden;
+  #fullpagewrapper {
+    height: 0;
+    margin-top: 50px;
+     @include mbp-up($breakpoint-lg){
+      height: auto;
+      margin-top: 0;
+    }
+    &.introclosed {
+      height: auto;
+    }
+  }
   .side-logo {
     position: absolute;
     left: 30px;
@@ -150,9 +202,14 @@ a{
       } 
     }
     &.Home {
-      background-image: url('~@/assets/_bg-home.svg');
-      background-size: cover;
+      background-image: url('~@/assets/_bg-home-mobile.jpg');
       background-repeat: no-repeat;
+      @include mbp-up($breakpoint-sm){
+        background-size: cover;
+      }  
+      @include mbp-up($breakpoint-xl){
+        background-image: url('~@/assets/_bg-home.jpg');
+      }  
     }
     .tour-button {
       background-color: $rmaxBlue;

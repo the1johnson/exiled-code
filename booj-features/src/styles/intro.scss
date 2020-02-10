@@ -7,21 +7,81 @@
   left: 0;
   background-color: white;
   z-index: 101;
+  transition: top 1s ease-out;
   .introWrap{
     position: relative;
     z-index: 100;
     height: 100%;
     width: 100%;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     transition: transform $animSpeedBase ease-in-out;
-    @include mbp-up($breakpoint-lg){
+    @include mbp-up($breakpoint-xl){
       overflow: visible;
       transform: translate3d(0px, 0px, 0px);
     }
   }
 
   &.hide{
-    display: none;
+    top:-200vh;
+    .introWrap {
+      overflow: hidden;
+    }
+    .skipIntro, .skip-intro-mobile {
+      display: none;
+    }
+  }
+  .skip-intro-mobile {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 15px;
+    color: #7B7979;
+    z-index: 200;
+    &:hover {
+      cursor: pointer;
+    }
+    @include mbp-up($breakpoint-xl){
+      display: none;
+    }  
+    span {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    img {
+      display: inline-block;
+      max-height: 20px;
+      vertical-align:middle
+    }
+  }
+  .intro-exit-mobile {
+    text-align: center;
+    margin-bottom: 30px;
+    @include mbp-up($breakpoint-xl){
+      display: none;
+    }
+    button {
+      text-transform: uppercase;
+      background-color: $rmaxRed;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: $weight-medium;
+      font-size: 10px;
+      line-height: 15px;
+      padding: 13px 20px 12px;
+      margin-top: 20px;
+    }
+    img {
+      display: block;
+      margin: 5px auto;
+      transform: rotate(90deg);
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
   .skipIntro{
     font-weight: $weight-bold;
@@ -31,15 +91,20 @@
     display: inline;
     position: fixed;
     top: 12px;
-    left: 0;
+    left: 30px;
     right: 0;
     width: 100%;
     max-width: 1070px;
     margin: 0 auto 0;
     z-index: 200;
+    display: none;
     @include mbp-up($breakpoint-sm){
       font-size: 16px;
+      left: 0;
     }
+    @include mbp-up($breakpoint-xl){
+      display: block;
+    }  
     @include mbp-up($breakpoint-xxl){
       max-width: 1920px;
     }
@@ -51,44 +116,57 @@
     color: $rmaxRed;
     text-transform: uppercase;
     font-size: 12px;
-    position: fixed;
-    bottom: 25px;
+    position: absolute;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     z-index: 100;
+    text-align: center;
+    display: none;
+    @include mbp-up($breakpoint-xl){
+      display: block;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      display: block;
+      margin: auto;
+      transform: rotate(90deg);  
+    }
   }
   .logBomax{
-    width: 240px;
-    margin: 0px auto;
+    width: 200px;
+    margin: 20px auto 0px;
+    @include mbp-up($breakpoint-sm){
+      margin: 0px auto;
+      width: 240px
+    }  
   }
   .vidtitle{
-    font-size: 24px;
-    font-weight: $weight-bold;
     text-align: center;
     margin-top: 10px;
-    @include mbp-up($breakpoint-sm){
-      font-size: 24px;
-      line-height: 32px;
-    } 
   }
   #vimeoVid{
     min-height: 150px;
     margin-top: 20px;
+    display: block;
     @include mbp-up($breakpoint-md){
       min-height: 350px;
     }
 
     iframe{
       width: 100% !important;
+      min-height: 1px;
     }
   }
   .vidDescription{
     font-weight: $weight-bold;
     font-size: 16px;
     text-align: center;
-    line-height: 1.35em;
+    line-height: 19px;
     margin-top: 5px;
   }
   .vidTooltips{
@@ -103,7 +181,7 @@
       }
     }
     li+li{
-      margin-top: 25px;
+      margin-top: 15px;
       @include mbp-up($breakpoint-sm){
         margin-top: 0;
       }
@@ -117,7 +195,10 @@
     margin-top: 10px;
     position: relative;
     cursor: pointer;
-    display: inline-block;
+    display: block;
+    @include mbp-up($breakpoint-sm){
+      display: inline-block;
+    }  
     .ttTitle{
       color: $rmaxBlue;
       text-transform: uppercase;
@@ -149,7 +230,7 @@
     }
   }
   #vidWrap{
-    @include mbp-up($breakpoint-lg){
+    @include mbp-up($breakpoint-xl){
       display: inline-block;
       width: calc(100% - 190px);
       vertical-align: top;
@@ -158,15 +239,29 @@
   }
   .vidList{
     margin-top: 15px;
-    @include mbp-up($breakpoint-lg){
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    @include mbp-up($breakpoint-xl){
       display: inline-block;
+      align-items: unset;
+      justify-content: unset;
       width: 170px;
       vertical-align: top;
       margin-top: 20px;
+
     }
 
     li.active {
       cursor: default;
+      @include mbp-up($breakpoint-sm) {
+        border-top: 2px solid $rmaxBlue;
+      }  
+      @include mbp-up($breakpoint-xl) {
+        border-left: 2px solid $rmaxBlue;
+        border-top: none;
+        padding-top: 0;
+      }
       .thumbnail{
         background-color: $rmaxBlue;
         border-width: 0;
@@ -176,9 +271,13 @@
           opacity: 0.6;
         }
       }
+      .arrow {
+        display: none;
+      }
     }
     li{
-      width: calc(33% - 10px);
+      width: 240px;
+      padding-top: 10px;
       display: inline-block;
       text-align: center;
       cursor: pointer;
@@ -187,16 +286,27 @@
       @include mbp-up($breakpoint-sm){
         box-sizing: border-box;
         padding-right: 15px;
+        padding-left: 15px;
       }
-      @include mbp-up($breakpoint-lg){
+      @include mbp-up($breakpoint-xl){
         width: 100%;
       }
 
       + li{
         margin-left: 15px;
-        @include mbp-up($breakpoint-lg){
+        @include mbp-up($breakpoint-xl){
           margin-left: 0;
           margin-top: 38px;
+        }
+      }
+      .arrow {
+        position: absolute;
+        right: -15px;
+        height: 20px;
+        bottom: 0px;
+        display: none;
+        @include mbp-up($breakpoint-sm){
+          display: block;
         }
       }
     }
@@ -258,7 +368,7 @@
       background-color: $rmaxRed;
       font-size: 10px;
       border-radius: 6px;
-      padding: 7px 5px;
+      padding: 7px 7px;
       line-height: 1.35em;
       margin-top: 5px;
       text-transform: uppercase;
@@ -277,8 +387,11 @@
 
   .intro-section{
     overflow: hidden;
-    height: 100%;
     box-sizing: border-box;
+    position: relative;
+    @include mbp-up($breakpoint-xl){
+      height: 100%;
+    }  
     + .section{
       padding-top: 40px;
     }
@@ -290,39 +403,32 @@
       background-image: url('~@/assets/_bg-intro-1.svg');
     }
     .sectionWrap{
-      padding: 0px;
+      padding: 30px 15px 15px;
       max-width: 1070px;
       margin: 0 auto;
       text-align: center;
       box-sizing: border-box;
       position: relative;
       z-index: 10;
-      top: 50%;
-      transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
+      @include mbp-up($breakpoint-lg){
+        padding: 30px 45px;
+      }  
+      @include mbp-up($breakpoint-xl){
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        padding: 0px;
+      }  
       @include mbp-up($breakpoint-xxl){
         max-width: 1920px;
       }  
     }
   }
-
-  // .introTitle, .introDescription{
-  //   line-height: 1.35em;
-  // }
-  .introTitle{
-    font-size: 24px;
-    @include mbp-up($breakpoint-lg){
-      font-size: 44px;
-      line-height: 52px;
-    }  
-    
+  .introTitle {
+    margin-bottom: 20px;
   }
   .introDescription{
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 20px;
-
     p + p{
       margin-top: 10px;
     }
@@ -331,7 +437,7 @@
     font-weight: $weight-light;
     text-align: center;
     
-    @include mbp-up($breakpoint-lg){
+    @include mbp-up($breakpoint-xl){
       margin-top: calc(50vh - 195px);
       width: 350px;
       display: inline-block;
@@ -340,54 +446,55 @@
     }
   }
   .introGraphic{
-    // margin-top: 20px;
-    @include mbp-up($breakpoint-lg){
+    @include mbp-up($breakpoint-xl){
       width: 720px;
       display: inline-block;
       vertical-align: top;
       margin-top: 0;
     }
     iframe{
-      width: 770px;
-      height: 770px;
+      display: none;
+      //TODO - BREAKPOINTS FOR IFRAME
+      @include mbp-up($breakpoint-xl){
+        display: inline-block;
+        width: 770px;
+        height: 770px;
+      }  
     }
-    // img{
-    //   width: 100%;
-    // }
   }
 
   .rectLeft, .rectRight{
     display: none;
     position: absolute;
     width: 250px;
+    overflow-x: hidden;
     @include mbp-up($breakpoint-md){
       display: block;
     }
-    @include mbp-up($breakpoint-lg){
-      // width: 340px;
-      width: 20vw;
+    @include mbp-up($breakpoint-xl){
+      width: 17vw;
     }
   }
   .rectLeft{
     left: -140px;
     top: 5vh;
     transition: all 1s ease-in-out;
-    @include mbp-up($breakpoint-lg){
+    @include mbp-up($breakpoint-xl){
       left: 0;
     }
     &.active {
-      top: 55vh;
+      top: 65vh;
     }
   }
   .rectRight{
     right: -140px;
-    top: 20vh;;
+    top: 32vh;;
     transition: all 1s ease-in-out;
-    @include mbp-up($breakpoint-lg){
+    @include mbp-up($breakpoint-xl){
       right: 0;
     }
     &.active {
-      top: 40vh;
+      top: 50vh;
     }
   }
 }
