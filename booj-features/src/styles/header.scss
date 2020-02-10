@@ -5,13 +5,8 @@ header{
   position: fixed;
   width: 100%;
   z-index: 5;
-  padding: 10px 0;
   box-shadow: 0 -5px 21px -3px grey;
-  @include mbp-up($breakpoint-md){
-    padding-top: 10px;
-  }
   @include mbp-up($breakpoint-xl){
-    padding-top: 0;
     background-color: transparent;
     box-shadow: none;
   }
@@ -30,6 +25,7 @@ header{
       height: 45px;
       width: 114px;
       position: absolute;
+      z-index: 3;
       left: 30px;
       display: none;
       @include mbp-up($breakpoint-lg){
@@ -41,9 +37,17 @@ header{
       }
     }
   }
-  > ul{
+  #mainMenu{
+    background-color: white;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
     @include mbp-up($breakpoint-lg){
       text-align: right;
+    }
+    @include mbp-up($breakpoint-xl){
+      padding-top: 0;
+      background-color: transparent;
     }
 
     > li{
@@ -54,10 +58,12 @@ header{
       @include mbp-up($breakpoint-lg){
         width: auto;
         margin-right: 40px;
+        position: relative;
       }
-      a{
+      > a{
         font-size: 10px;
         display: inline-block;
+        cursor: pointer;
 
         @include mbp-up($breakpoint-md){
           background-color: $rmaxRed;
@@ -85,6 +91,7 @@ header{
           border-radius: 5px;
           padding: 7px;
           box-sizing: border-box;
+          pointer-events: none;
           @include mbp-up($breakpoint-md){
             border-radius: 0;
             background-color: transparent;
@@ -94,6 +101,7 @@ header{
           margin-top: 5px;
           display: block;
           text-transform: uppercase;
+          pointer-events: none;
           @include mbp-up($breakpoint-md){
             display: inline-block;
             vertical-align: top;
@@ -102,6 +110,46 @@ header{
           }
         }
       }
+    }
+  }
+  #toursMenu{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    list-style: none;
+    width: 100%;
+    background-color: $rmaxRed;
+    padding: 10px 10px;
+    opacity: 0;
+    transition: top $animSpeedBase ease-in-out, opacity $animSpeedBase ease-in-out;
+    pointer-events: none;
+    z-index: 1;
+    @include mbp-up($breakpoint-lg){
+      top: calc(10% + 10px);
+      width: auto;
+      text-align: right;
+      border-radius: 5px;
+      right: 40px;
+    }
+
+    &.active{
+      pointer-events: auto;
+      opacity: 1;
+      top: 100%;
+      @include mbp-up($breakpoint-lg){
+        top: calc(100% + 10px);
+      }
+      
+    }
+
+    li + li{
+      margin-top: 20px;
+    }
+    a{
+      color: white;
+      font-size: 14px;
+      font-weight: $weight-bold;
+      text-transform: uppercase;
     }
   }
 }

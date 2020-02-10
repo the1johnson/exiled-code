@@ -1,0 +1,158 @@
+#tourSection{
+  background-color: $bgGray;
+  padding-top: $headerHeightXS;
+
+  @include mbp-up($breakpoint-sm){
+    padding-top: $headerHeightSM;
+  }
+  .tourWrapper{
+    padding: 0 35px;
+    @include mbp-up($breakpoint-lg){
+      padding: 0 50px;
+    }
+  }
+
+  .title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: $weight-light;
+    margin-top: 40px;
+  }
+
+  .tourImgWrap{
+    margin-top: 30px;
+    position: relative;
+    img{
+      max-width: 100%;
+      display: block;
+      @include mbp-up($breakpoint-sm){
+        width: 90%;
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+    .sectionInfo{
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+      font-weight: $weight-light;
+      background-color: $rmaxDarkBlue;
+      line-height: 26px;
+      padding: 20px 7px;
+      position: relative;
+      top: -10px;
+
+      @include mbp-up($breakpoint-sm){
+        width: 305px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        padding: 20px;
+      }
+    }
+  }
+  .tabsWrapper{
+    position: relative;
+    @include mbp-up($breakpoint-lg){
+      min-height: 500px;
+    }
+  }
+  .tab{
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+    @include mbp-up($breakpoint-lg){
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    + .tab{
+      margin-top: 40px;
+      @include mbp-up($breakpoint-lg){
+        margin-top: 0;
+      }
+    }
+    &.active{
+      .tabTitle{
+        border-color: $rmaxRed;
+      }
+      .closeWrapper{
+        background-color: $rmaxRed;
+        img{
+          transform: rotate(90deg);
+        }
+      }
+      .tabBody{
+        max-height: 900px;
+      }
+    }
+    .closeWrapper{
+      width: 60px;
+      height: 60px;
+      background-color: $borderGray;
+      border-top-left-radius: 10px;
+      display: inline-block;
+      vertical-align: top;
+      transition: background-color $animSpeedFast ease-in-out;
+
+      img{
+        transition: transform $animSpeedFast ease-in-out;
+      }
+    }
+    .tabTitle{
+      padding-bottom: 10px;
+      border-bottom: 2px solid $borderGray;
+      transition: border-color $animSpeedFast ease-in-out;
+    }
+    .thWrapper{
+      width: calc(100% - 60px);
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px 15px 0 20px;
+      box-sizing: border-box;
+    }
+    .tabBody{
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height $animSpeedFast ease-in-out;
+
+      .tabBodyWrap{
+        margin: 20px 10px 0;
+        @include mbp-up($breakpoint-sm){
+          margin: 20px 20px 0;
+        }
+      }
+    }
+    .tabTitle{
+      font-size: 18px;
+      font-weight: $weight-bold;
+
+      @include mbp-up($breakpoint-sm){
+        font-size: 20px;
+      }
+    }
+    .tabDescription{
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    .vimeoVid{
+      min-height: 130px;
+      iframe{
+          width: 100% !important;
+        }
+    }
+    .tabExtraContent{
+      margin-top: 20px;
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}

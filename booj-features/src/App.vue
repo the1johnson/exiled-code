@@ -12,10 +12,18 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import IntroComponent from './components/intro.vue'
 import HeaderComponent from './components/header.vue'
 export default {
   name: 'app',
+  created () {
+    this.$prismic.client.query(
+      [this.$prismic.Predicates.at('document.type', 'tour_section')]
+    ).then((response) => {
+      Vue.prototype.$tourSectionInfo = response.results
+    })
+  },
   components: {
     IntroComponent,
     HeaderComponent
@@ -32,4 +40,5 @@ export default {
   @import "@/styles/slice-app.scss";
   @import "@/styles/slice-support.scss";
   @import "@/styles/slice-crm.scss";
+  @import "@/styles/tour-section.scss";
 </style>

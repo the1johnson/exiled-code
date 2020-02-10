@@ -3,7 +3,7 @@
     <div class="booj-logo">
       <img src="@/assets/booj_product_rgb.svg">
     </div>
-    <ul>
+    <ul id="mainMenu">
       <li>
         <router-link to="/">
           <span class="clickWrap" v-on:click="reloadPage()">
@@ -17,36 +17,64 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/tour">
+        <a v-on:click="toggleToursMenu()">
           <span class="iconWrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.875 15"><path id="Icon_awesome-map-marked" data-name="Icon awesome-map-marked" d="M8.438,0A3.691,3.691,0,0,0,4.746,3.691c0,1.648,2.413,4.652,3.337,5.743a.462.462,0,0,0,.709,0c.924-1.09,3.337-4.095,3.337-5.743A3.691,3.691,0,0,0,8.438,0ZM.589,6.327A.938.938,0,0,0,0,7.2v7.334a.469.469,0,0,0,.643.435l4.045-1.841V6.3a8.872,8.872,0,0,1-.623-1.36Zm7.848,4.211a1.4,1.4,0,0,1-1.07-.5c-.576-.68-1.189-1.454-1.743-2.248v5.332L11.25,15V7.793c-.554.794-1.167,1.568-1.743,2.248A1.4,1.4,0,0,1,8.438,10.537Zm7.795-5.816L12.188,6.563V15l4.1-1.639a.937.937,0,0,0,.589-.87V5.157A.469.469,0,0,0,16.232,4.721Z" fill="#fff"/></svg></span><span class="txt">Tour a Section</span>
-        </router-link>
+        </a>
+      </li>
+    </ul>
+    <ul id="toursMenu" v-bind:class="[displayToursMenu ? 'active' : '']">
+      <li v-for="(menuItem, index) in this.menuItems" v-bind:key="index">
+        <router-link :to="{path: '/tour/' + menuItem.uid}">{{menuItem.menuName}}</router-link>
       </li>
     </ul>
   </header>
 </template>
  
 <script>
+import Vue from 'vue'
 import { eBus } from '../main';
 export default {
   data () {
     return {
       scrollPosition: null,
+      displayToursMenu: false,
+      menuItems: []
     }
   },
   methods: {
-    reloadPage(){
+    reloadPage () {
       window.location.reload()
     },
-    updateScroll() {
+    toggleToursMenu () {
+      this.displayToursMenu = !this.displayToursMenu
+    },
+    updateScroll () {
       this.scrollPosition = window.scrollY
     },
-    emitShowIntro() {
+    emitShowIntro () {
       eBus.$emit('introHideUpdated', false)
       this.$refs.fullpage.api.moveTo(1)
+    },
+    getMenuItems () {
+      Vue.prototype.$tourSectionInfo.forEach((tourSection) => {
+        this.menuItems.push({uid: tourSection.uid, menuName: tourSection.data.menu_title ? tourSection.data.menu_title : tourSection.data.title})
+      })
     }
   },
   mounted() {
     window.addEventListener('scroll', this.updateScroll);
+
+    if(Vue.prototype.$tourSectionInfo.length){
+      this.getMenuItems()
+    }else{
+      this.$prismic.client.query(
+        [this.$prismic.Predicates.at('document.type', 'tour_section')]
+      ).then((response) => {
+        Vue.prototype.$tourSectionInfo = response.results
+        this.getMenuItems()
+      })
+    }
+
   }
 }
 </script>

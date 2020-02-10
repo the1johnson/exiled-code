@@ -133,7 +133,7 @@ export default {
       }
 
       if(this.player !== null){
-        this.player.destroy();
+        this.player.destroy()
       }
       this.player = new Player('vimeoVid', {
         id: selectedVidInfo.primary.video.video_id,
