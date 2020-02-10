@@ -1,0 +1,46 @@
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  z-index: 101px;
+  display: block;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: $weight-light;
+  @include mbp-up($breakpoint-xl){
+    position: fixed;
+  }  
+  a {
+    color: white;
+  }
+  .footer-left {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    p {
+      padding-left: 15px;
+    }
+  }
+  .footer-right {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    p {
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: $weight-bold;
+      padding-right: 15px;
+    }
+    ul {
+      padding-right: 15px;
+      li {
+        display:inline;
+        padding-left: 15px;
+      }
+    }
+  }
+}

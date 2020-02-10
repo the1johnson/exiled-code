@@ -55,16 +55,17 @@ export default {
           this.fields.homeSlice = document.data.body
         })
     },
-    afterLoad() {
-      // var element = document.querySelectorAll('.last-section')
+    afterLoad() {   
       // if (element.classList.contains('active')) {
       //   alert('hi')
       // }
-      // var indexcount = index.index
-      // window.console.log(element, indexcount, index)
-     //  if (element == (indexcount + 2)) {
-     //      document.body.classList.toggle("last");
-     //  } 
+      var element = document.querySelectorAll('.section').length
+      var bodyclass = document.querySelectorAll('.fp-viewing-'+(element-1))
+      if (bodyclass.length == 1) {
+          document.body.classList.add("last");
+      } else {
+          document.body.classList.remove("last");
+      }
 
      // if(index == el.length){
      //  window.console.log('last')

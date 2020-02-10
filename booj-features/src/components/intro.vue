@@ -48,7 +48,7 @@
       </div>
 
       <div class="intro-section" v-for="(introSlide, index) in this.slides" v-bind:key="index">
-        <div class="sectionWrap">
+        <div class="sectionWrap section2">
           <div class="introText">
             <div class="introTitle h1">{{introSlide.primary.slide_title}}</div>
             <prismic-rich-text v-if="introSlide.primary.slide_description" class="introDescription body-text" :field="introSlide.primary.slide_description" />
@@ -190,7 +190,7 @@ export default {
         this.activeSlideIndex += 1
         this.activeClass = true
       }
-      window.console.log(this.activeSlideIndex)
+      // window.console.log(this.activeSlideIndex)
       this.activeSlideIndex = this.activeSlideIndex < 0 ? 0 : this.activeSlideIndex
       if(this.activeSlideIndex > this.slides.length){
         this.activeSlideIndex = this.slides.length - 1

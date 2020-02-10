@@ -116,9 +116,9 @@ export default {
     responsiveOpts () {
       let windowWidth = window.outerWidth
       if(windowWidth > 1024){
-        this.carouOpts.space = 550
-        this.carouOpts.width = 550
-        this.carouOpts.height = 350
+        this.carouOpts.space = 525
+        this.carouOpts.width = 525
+        this.carouOpts.height = 325
       }else if(windowWidth > 768){
         this.carouOpts.space = 450
         this.carouOpts.width = 405

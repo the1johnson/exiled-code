@@ -224,21 +224,3 @@ a{
   }
 }
 
-#footer {
-  background-color: black;
-  bottom: 0;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  z-index: 101px;
-  display: block;
-  color: white;
-  font-size: 14px;
-  font-weight: $weight-light;
-  @include mbp-up($breakpoint-xl){
-    position: fixed;
-  }  
-}
-
-

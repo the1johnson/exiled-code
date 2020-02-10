@@ -32,4 +32,5 @@ export default {
   @import "@/styles/slice-app.scss";
   @import "@/styles/slice-support.scss";
   @import "@/styles/slice-crm.scss";
+  @import "@/styles/footer.scss";
 </style>

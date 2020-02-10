@@ -40,7 +40,7 @@
           font-size: 24px;
           line-height: 32px;
           max-width: 970px;
-          margin: 0 auto 50px;
+          margin: 0 auto;
         }
       }
   }
@@ -52,6 +52,9 @@
       position: absolute;
       bottom: 0;
     }
+  }
+  .carousel-3d-slider[data-v-c06c963c] {
+    perspective: 800px;
   }
   .galleryWrap{
     position: relative;
@@ -100,6 +103,9 @@
     @include mbp-up($breakpoint-md){
       right: 22%;
     }
+    @include mbp-up($breakpoint-xl){
+      right: 28%;
+    }
   }
   .galleryPrevBtn{
     left: 10%;
@@ -109,6 +115,9 @@
     @include mbp-up($breakpoint-md){
       left: 22%;
     }
+    @include mbp-up($breakpoint-xl){
+      left: 28%;
+    }
   }
 
   #slideInfo{
@@ -117,7 +126,7 @@
 
     @include mbp-up($breakpoint-sm){
       height: 230px;
-      top: -15px;
+      top: -75px;
     }
 
     .slideInfoPost, .slideInfoPre{
@@ -152,6 +161,9 @@
       -ms-transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
     }
+    @include mbp-up($breakpoint-sm){
+      max-width: 400px;
+    }  
 
     .bbTitle{
       font-size: 20px;

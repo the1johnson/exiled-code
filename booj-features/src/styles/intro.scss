@@ -106,7 +106,7 @@
       display: block;
     }  
     @include mbp-up($breakpoint-xxl){
-      max-width: 1920px;
+      max-width: 1400px;
     }
     > span{
       cursor: pointer;
@@ -253,13 +253,9 @@
     }
 
     li.active {
-      cursor: default;
-      @include mbp-up($breakpoint-sm) {
-        border-top: 2px solid $rmaxBlue;
-      }  
+      cursor: default; 
       @include mbp-up($breakpoint-xl) {
         border-left: 2px solid $rmaxBlue;
-        border-top: none;
         padding-top: 0;
       }
       .thumbnail{
@@ -275,6 +271,24 @@
         display: none;
       }
     }
+    li.active::before {
+      @include mbp-up($breakpoint-sm) {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: $rmaxBlue;
+        top: 0px;
+        width: calc(100% - 30px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include mbp-up($breakpoint-md) {
+        width: calc(100% - 60px);
+      }  
+      @include mbp-up($breakpoint-xl) {
+        height: 0;
+      } 
+    }
     li{
       width: 240px;
       padding-top: 10px;
@@ -288,8 +302,14 @@
         padding-right: 15px;
         padding-left: 15px;
       }
+      @include mbp-up($breakpoint-md){
+        padding-right: 30px;
+        padding-left: 30px;
+      }  
       @include mbp-up($breakpoint-xl){
         width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
       }
 
       + li{
@@ -382,6 +402,12 @@
         margin-top: 0;
         z-index: 2;
       }
+      @include mbp-up($breakpoint-md){
+        right: 20px;
+      }  
+      @include mbp-up($breakpoint-lg){
+        right: 0;
+      }  
     }
   }
 
@@ -410,6 +436,9 @@
       box-sizing: border-box;
       position: relative;
       z-index: 10;
+      @include mbp-up($breakpoint-md){
+        padding: 30px 30px 15px;
+      }  
       @include mbp-up($breakpoint-lg){
         padding: 30px 45px;
       }  
@@ -421,8 +450,11 @@
         padding: 0px;
       }  
       @include mbp-up($breakpoint-xxl){
-        max-width: 1920px;
-      }  
+        max-width: 1400px;
+      } 
+      &.section2 {
+        display: table;
+      } 
     }
   }
   .introTitle {
@@ -438,10 +470,9 @@
     text-align: center;
     
     @include mbp-up($breakpoint-xl){
-      margin-top: calc(50vh - 195px);
+      display: table-cell;
       width: 350px;
-      display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       text-align: left;
     }
   }
@@ -468,7 +499,7 @@
     position: absolute;
     width: 250px;
     overflow-x: hidden;
-    @include mbp-up($breakpoint-md){
+    @include mbp-up($breakpoint-lg){
       display: block;
     }
     @include mbp-up($breakpoint-xl){
@@ -488,7 +519,7 @@
   }
   .rectRight{
     right: -140px;
-    top: 32vh;;
+    top: 28vh;;
     transition: all 1s ease-in-out;
     @include mbp-up($breakpoint-xl){
       right: 0;
