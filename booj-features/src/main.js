@@ -13,8 +13,8 @@ Vue.use(PrismicVue, {
 })
 Vue.use(VueFullPage);
 
-
 Vue.config.productionTip = false
+Vue.prototype.$tourSectionInfo = []
 
 export const eBus = new Vue();
 new Vue({

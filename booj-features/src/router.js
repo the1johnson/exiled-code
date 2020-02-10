@@ -13,14 +13,10 @@ export default new Router({
       component: Homepage
     },
     {
-      path: '/:showIntro',
-      name: 'Home With Intro',
-      component: Homepage
-    },
-    {
-      path: '/tour/:id',
+      path: '/tour/:tid',
       name: 'Tour',
-      component: Tour
+      component: Tour,
+      props: true 
     }
   ]
 })

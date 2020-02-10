@@ -12,8 +12,14 @@ $rmaxRed: #E91D2D;
 $rmaxBlue: #0059AD;
 $rmaxDarkBlue: #002E6D;
 $baseBlack: #231F20;
+$bgGray: #F4F4F4;
+$borderGray: #A2A1A1;
 
 $animSpeedBase: .5s;
+$animSpeedFast: .25s;
+
+$headerHeightXS: 76px;
+$headerHeightSM: 50px;
 
 @mixin mbp-up($bpSize){
   @media (min-width: $bpSize){
