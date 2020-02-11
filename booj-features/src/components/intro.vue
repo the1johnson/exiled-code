@@ -10,7 +10,7 @@
           <div class="logBomax"><img src="@/assets/remax-booj-horiz.svg"></div>
 
           <div  class="" v-if="this.videos">
-            <div class="vidtitle h2" v-if="this.selectedVideo.title">{{this.selectedVideo.title}}</div>
+            <div class="vidtitle h2 bold" v-if="this.selectedVideo.title">{{this.selectedVideo.title}}</div>
 
             <div id="vidWrap">
               <div id="vimeoVid"></div>

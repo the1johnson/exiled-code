@@ -1,5 +1,5 @@
 <template>
-  <header id="header" v-bind:class="{headerTall: scrollPosition < 70, headerShort: scrollPosition > 70}">
+  <header id="header" v-bind:class="{headerTall: scrollPosition < 80, headerShort: scrollPosition > 80}">
     <div class="booj-logo">
       <img src="@/assets/booj_product_rgb.svg">
     </div>

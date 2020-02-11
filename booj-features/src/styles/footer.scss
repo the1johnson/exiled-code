@@ -1,34 +1,51 @@
 footer {
   background-color: black;
   bottom: 0;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
   text-align: center;
   z-index: 101px;
   display: block;
   color: white;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   font-weight: $weight-light;
   @include mbp-up($breakpoint-xl){
+    padding-left: 0;
+    padding-right: 0;
     position: fixed;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px
   }  
   a {
     color: white;
   }
   .footer-left {
     display: inline-block;
-    width: 70%;
+    width: 100%;
     text-align: left;
+    @include mbp-up($breakpoint-lg){
+      width: 70%;
+    } 
     p {
-      padding-left: 15px;
+      padding-bottom: 10px;
+      @include mbp-up($breakpoint-md){
+        padding-bottom: 5px;
+      }  
+      @include mbp-up($breakpoint-lg){
+        padding-left: 15px;
+        padding-bottom: 0;
+      }  
     }
   }
   .footer-right {
     display: inline-block;
-    width: 30%;
-    text-align: right;
+    width: 100%;
+    text-align: left;
+    @include mbp-up($breakpoint-lg){
+      width: 30%;
+      text-align: right;
+    }
     p {
       text-transform: uppercase;
       display: inline-block;
@@ -36,10 +53,18 @@ footer {
       padding-right: 15px;
     }
     ul {
-      padding-right: 15px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      @include mbp-up($breakpoint-lg){
+        padding-right: 15px;
+      }
       li {
         display:inline;
-        padding-left: 15px;
+        padding-right: 15px;
+        @include mbp-up($breakpoint-lg){
+          padding-right: 0;
+          padding-left: 15px;
+        }
       }
     }
   }

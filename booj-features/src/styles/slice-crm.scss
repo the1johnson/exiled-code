@@ -16,6 +16,10 @@
   }
   .top-text{
     text-align: center;
+    padding: 0 30px;
+    @include mbp-up($breakpoint-xl){
+      padding: 0;
+    } 
     .title{
           font-size: 24px;
           line-height: 32px;
@@ -35,7 +39,6 @@
         font-size: 16px;
         line-height: 24px;
         font-weight: $weight-bold;
-        margin: 0 30px 50px;
         @include mbp-up($breakpoint-xl){
           font-size: 24px;
           line-height: 32px;
@@ -122,10 +125,10 @@
 
   #slideInfo{
     position: relative;
-    height: 340px;
+    height: 280px;
 
     @include mbp-up($breakpoint-sm){
-      height: 230px;
+      height: 15vh;
       top: -75px;
     }
 

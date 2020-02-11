@@ -1,7 +1,7 @@
 <template>
   <div id="fullpagewrapper" :class="[ introClosed ? 'introclosed' : ' ' ]">
     <full-page v-if="this.fields.homeSlice" ref="fullpage" v-bind:options="this.fields.fpopts">
-      <div class="section fp-auto-height" style="height: 0px;"></div>
+      <div class="section fp-auto-height height-none"></div>
       <div v-for="(slice, index) in this.fields.homeSlice" v-bind:key="index" v-bind:class="slice.primary.background_image" class="section fp-auto-height-responsive">
         <SliceSimple v-if="slice.slice_type === 'simple_slide'" id="Home" v-bind:graphic="slice.primary.graphic" v-bind:title="slice.primary.title" v-bind:description="slice.primary.description" />
 
@@ -76,7 +76,7 @@ export default {
     this.getContent();
     eBus.$on('introHideUpdated', (data) => {
       if(data){
-        this.$refs.fullpage.api.moveTo(2)
+        this.$refs.fullpage.api.silentMoveTo(2)
         this.$refs.fullpage.api.setScrollingSpeed(1000)
         this.introClosed = true
       }

@@ -4,7 +4,9 @@
     <div class="footer-right">
       <ul v-if="socialIcons" class="custom-bullet check">
         <li v-for="(item, index) in socialIcons" v-bind:key="index">
-          <img :src='item.social_name.url'>
+          <a :href='item.social_link.url' :target="'_blank'">
+            <img :src='item.social_name.url'>
+          </a>  
         </li>
       </ul>
       <prismic-rich-text v-if=footerTextRight :field="footerTextRight"/>

@@ -15,6 +15,10 @@
 	    }
 		.top-text {
 			text-align: center;
+			padding: 0 30px;
+			@include mbp-up($breakpoint-xl){
+				padding: 0;
+			}	
 			.title{
 			    font-size: 24px;
 			    line-height: 32px;
@@ -34,7 +38,6 @@
 				font-size: 16px;
 				line-height: 24px;
 				font-weight: $weight-bold;
-				margin: 0 30px 50px;
 				@include mbp-up($breakpoint-xl){
 			      font-size: 24px;
 			      line-height: 32px;
@@ -46,6 +49,12 @@
 		.two-column {
 			position: relative;
 			text-align: center;
+			padding-left: 15px;
+    		padding-right: 15px;
+    		@include mbp-up($breakpoint-md){
+    			padding-left: 0;
+    			padding-right: 0;
+    		}
 			@include mbp-up($breakpoint-lg){
 				text-align: left;
 			}
@@ -57,12 +66,18 @@
 				width: 100%;
 				display: inline-block;
 				text-align: center;
+				margin-bottom: 50px;
+				margin-top: 50px;
 				@include mbp-up($breakpoint-lg){
 					width: 50%;
+					margin-bottom: 0;
+					margin-top: 0;
 				}
 				img {
 					max-width: 100%;
-					max-height: 400px;
+					@include mbp-up($breakpoint-lg){
+						max-height: 450px;
+					}	
 				}
 			}
 			.contentWrap {

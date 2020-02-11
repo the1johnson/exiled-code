@@ -1,7 +1,6 @@
 .sliceSimple{
   .slide-wrapper {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 100px 30px 35px;
     @include mbp-up($breakpoint-md){
       padding-top: 20px;
       padding-bottom: 40px;
@@ -17,45 +16,43 @@
     @include mbp-up($breakpoint-lg){
       text-align: left;
     }
-    img{
-      max-height: 160px;
-      @include mbp-up($breakpoint-md){
-        max-height: 700px;
-      }
+    .img-wrapper {
+      width: 100%;
+      text-align: center;
       @include mbp-up($breakpoint-lg){
-        width: 30%;
-        margin-left: 250px;
+        width: 50%;
         display: inline-block;
-        vertical-align: middle;
-        max-height: none;
+      }  
+      img{
+        // padding-top: 100px;
+        max-height: 45vh;
+        @include mbp-up($breakpoint-lg){
+          padding-top: 0;
+          display: inline-block;
+          vertical-align: middle;
+          max-height: 500px;
+        }
       }
     }
     .contentWrap{
-      padding: 0 35px;
       margin-top: 40px;
       box-sizing: border-box;
       @include mbp-up($breakpoint-lg){
-        width: 37%;
+        width: 50%;
         display: inline-block;
         vertical-align: middle;
         margin-top: 0;
-        margin-left: 5%;
+        // margin-left: 5%;
       }
     }
     .description, .title{
       font-weight: $weight-light;
     }
-    .title{
-      font-size: 24px;
-      line-height: 1.35em;
-      @include mbp-up($breakpoint-md){
-        font-size: 32px;
-      }
-    }
     .description{
-      font-size: 18px;
-      line-height: 26px;
-      margin-top: 25px;
+      margin-top: 10px;
+      @include mbp-up($breakpoint-lg){
+        margin-top: 25px;
+      }  
     }
   }
 }

@@ -16,7 +16,7 @@ export default new Router({
       path: '/tour/:tid',
       name: 'Tour',
       component: Tour,
-      props: true 
+      props: true,
     }
   ]
 })

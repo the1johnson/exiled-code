@@ -388,22 +388,25 @@
       background-color: $rmaxRed;
       font-size: 10px;
       border-radius: 6px;
-      padding: 7px 7px;
       line-height: 1.35em;
       margin-top: 5px;
       text-transform: uppercase;
-      font-weight: $weight-bold;
-
+      font-weight: $weight-bold; 
+      padding: 7px 7px;
+      @media (min-width: 400px){
+        padding: 7px 10px;
+      }
       @include mbp-up($breakpoint-sm){
         position: absolute;
         right: 0;
         bottom: -9px;
-        padding: 3px 10px;
+        padding: 7px 10px;
         margin-top: 0;
         z-index: 2;
       }
       @include mbp-up($breakpoint-md){
         right: 20px;
+        padding: 3px 10px;
       }  
       @include mbp-up($breakpoint-lg){
         right: 0;
