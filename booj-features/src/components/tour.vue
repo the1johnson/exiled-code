@@ -56,8 +56,11 @@ export default {
     tid: String
   },
   methods: {
+    reloadPage () {
+      window.location.reload()
+    },
     loadVideo (tabIndex, videoID) {
-      window.console.log('meh', tabIndex, videoID, document.getElementById(tabIndex+'_'+videoID))
+      // window.console.log('meh', tabIndex, videoID, document.getElementById(tabIndex+'_'+videoID))
       this.player = new Player(tabIndex+'_'+videoID, {
         id: videoID,
         autoplay: false
@@ -113,7 +116,7 @@ export default {
 
       vidIframe.setAttribute('height', newHeight)
     }
-  },
+  },  
   mounted () {
     if(Vue.prototype.$tourSectionInfo.length){
       this.setCurrentTour()

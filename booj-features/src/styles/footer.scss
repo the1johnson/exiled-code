@@ -23,9 +23,10 @@ footer {
   .footer-left {
     display: inline-block;
     width: 100%;
-    text-align: left;
+    text-align: center;
     @include mbp-up($breakpoint-lg){
       width: 70%;
+      text-align: left;
     } 
     p {
       padding-bottom: 10px;
@@ -41,7 +42,7 @@ footer {
   .footer-right {
     display: inline-block;
     width: 100%;
-    text-align: left;
+    text-align: center;
     @include mbp-up($breakpoint-lg){
       width: 30%;
       text-align: right;
