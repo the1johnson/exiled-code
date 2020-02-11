@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <div class="side-logo">
-      <img src="@/assets/remax_logo_line.svg">
-    </div>
     <HeaderComponent />
     <IntroComponent />
     <main>

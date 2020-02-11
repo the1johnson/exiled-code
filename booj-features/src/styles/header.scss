@@ -138,10 +138,6 @@ header{
       pointer-events: auto;
       opacity: 1;
       top: 100%;
-      @include mbp-up($breakpoint-lg){
-        top: calc(100% + 10px);
-      }
-      
     }
 
     li + li{

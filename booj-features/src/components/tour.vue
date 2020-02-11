@@ -2,7 +2,7 @@
   <div id="tourSection">
     <div class="tourWrapper" v-if="tourInfo">
       <div class="title">{{tourInfo.title}}</div>
-      <div class="tourImgWrap">
+      <div class="tourImgWrap container">
         <prismic-image v-if="tourInfo.graphic" :field="tourInfo.graphic"/>
         <div class="sectionInfo">
           <div class="bbTitle" v-if="tourInfo.bb_title">{{tourInfo.bb_title}}</div>
