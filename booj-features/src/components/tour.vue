@@ -10,6 +10,19 @@
         </div>
       </div>
       
+      <div class="tabControlWrapper">
+        <div class="tabControl" v-for="(tabInfo, index) in tourInfo.tabs" v-bind:key="index" v-bind:class="[tabInfo.isActive ? 'active' : '']">
+          <div class="tabHead" v-on:click="setActiveTab(index)">
+            <div class="closeWrapper">
+              <img src="@/assets/cta-arrow-white.svg">
+            </div>
+            <div class="thWrapper">
+              <div class="tabTitle">{{tabInfo.tab_title}}</div>
+              <div class="tabDescription">{{tabInfo.tab_description}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="tabsWrapper">
         <div class="tab" v-for="(tabInfo, index) in tourInfo.tabs" v-bind:key="index" v-bind:class="[tabInfo.isActive ? 'active' : '']">
           <div class="tabHead" v-on:click="setActiveTab(index)">
@@ -55,9 +68,18 @@ export default {
   props: {
     tid: String
   },
+  watch: {
+    tid: function (){
+      this.setCurrentTour()
+    },
+    tourInfo: function (){
+      Vue.nextTick(() => {
+        this.setActiveTab(0)
+      })
+    }
+  },
   methods: {
     loadVideo (tabIndex, videoID) {
-      window.console.log('meh', tabIndex, videoID, document.getElementById(tabIndex+'_'+videoID))
       this.player = new Player(tabIndex+'_'+videoID, {
         id: videoID,
         autoplay: false
@@ -68,14 +90,14 @@ export default {
       this.player.on('loaded', this.saveBaseVideoSize)
     },
     setCurrentTour () {
-      let self = this
       Vue.prototype.$tourSectionInfo.forEach((tourSection) => {
         if(tourSection.uid === this.tid){
           this.tourInfo = tourSection.data
           
+          /* REMOVED IN FAVOR OF A WATCH
           setTimeout(function(){
               self.setActiveTab(0)
-          }, 100)
+          }, 100)*/
         }
       })
     },
@@ -87,6 +109,7 @@ export default {
           self.player.destroy()
         }
         if(tabInfo.isActive){
+          window.console.log('fffff', tabInfo.tab_video.video_id)
           self.loadVideo(index, tabInfo.tab_video.video_id)
         }
         return tabInfo

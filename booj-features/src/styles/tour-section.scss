@@ -56,28 +56,36 @@
   }
   .tabsWrapper{
     position: relative;
-    @include mbp-up($breakpoint-lg){
+    clear: both;
+    /*@include mbp-up($breakpoint-lg){
       min-height: 500px;
-    }
+    }*/
   }
-  .tab{
-    background-color: white;
-    border-radius: 10px;
-    padding-bottom: 10px;
-
+  .tabControlWrapper{
+    display: none;
     @include mbp-up($breakpoint-lg){
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
+      display: block;
     }
-
-    + .tab{
-      margin-top: 40px;
-      @include mbp-up($breakpoint-lg){
-        margin-top: 0;
+    .tabControl{
+      width: 30%;
+      float: left;
+      background-color: white;
+      &:last-child{
+        float: right;
+      }
+      &:nth-child(2){
+        margin-left: 5%;
       }
     }
+    /*.tabDescription{
+      min-height: 120px;
+
+      @include mbp-up($breakpoint-xl){
+        min-height: 80px;
+      }
+    }*/
+  }
+  .tab, .tabControl{
     &.active{
       .tabTitle{
         border-color: $rmaxRed;
@@ -92,6 +100,7 @@
         max-height: 900px;
       }
     }
+
     .closeWrapper{
       width: 60px;
       height: 60px;
@@ -109,6 +118,13 @@
       padding-bottom: 10px;
       border-bottom: 2px solid $borderGray;
       transition: border-color $animSpeedFast ease-in-out;
+      font-size: 18px;
+      font-weight: $weight-bold;
+      line-height: 28px;
+
+      @include mbp-up($breakpoint-sm){
+        font-size: 20px;
+      }
     }
     .thWrapper{
       width: calc(100% - 60px);
@@ -116,6 +132,35 @@
       vertical-align: top;
       padding: 10px 15px 0 20px;
       box-sizing: border-box;
+    }
+    .tabDescription{
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+  }
+  .tab{
+    background-color: white;
+    border-radius: 10px;
+    @include mbp-up($breakpoint-md){
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    &.active{
+      padding-bottom: 10px;
+    }
+
+    + .tab{
+      margin-top: 40px;
+      @include mbp-up($breakpoint-lg){
+        margin-top: 0;
+      }
+    }
+    
+    .tabHead{
+      @include mbp-up($breakpoint-lg){
+        display: none;
+      }
     }
     .tabBody{
       max-height: 0px;
@@ -128,19 +173,6 @@
           margin: 20px 20px 0;
         }
       }
-    }
-    .tabTitle{
-      font-size: 18px;
-      font-weight: $weight-bold;
-
-      @include mbp-up($breakpoint-sm){
-        font-size: 20px;
-      }
-    }
-    .tabDescription{
-      font-size: 14px;
-      line-height: 20px;
-      margin-top: 10px;
     }
     .vimeoVid{
       min-height: 130px;
