@@ -13,24 +13,32 @@
           </slide>
         </carousel-3d>
         <div class="galleryBg"></div>
-        <div class="galleryNextBtn" v-on:click="galNextSlide">{{galleryNextTitle}}</div>
-        <div class="galleryPrevBtn" v-on:click="galPrevSlide">{{galleryPrevTitle}}</div>
+        <div class="galleryNextBtn" v-on:click="galNextSlide"><img src="@/assets/cta-arrow.svg">{{galleryNextTitle}}</div>
+        <div class="galleryPrevBtn" v-on:click="galPrevSlide">{{galleryPrevTitle}}<img src="@/assets/cta-arrow.svg"></div>
+        <div class="galleryNextBtnMobile" v-on:click="galNextSlide">
+          <img src="@/assets/cta-arrow.svg">
+        </div>  
+        <div class="galleryPrevBtnMobile" v-on:click="galPrevSlide">
+          <img src="@/assets/cta-arrow.svg">
+        </div>  
       </div>
-      
       <div id="slideInfo">
-
         <div class="slideInfoWrapper slideInfoPre" v-bind:class="[displayPreSlide ? 'active' : '']">
+          <div class="h1 mobile-only">{{slideInfo.slide_namePre}}</div>
+          <hr>
           <div class="bbTitle">{{slideInfo.titlePre}}</div>
           <div class="bbDescritpion">
             <prismic-rich-text class="pre-tooltip-text" v-if="slideInfo.descriptionPre" :field="slideInfo.descriptionPre" />
-            <div class="tourButton">Tour {{slideInfo.slide_namePre}}</div>
+            <div class="tourButton" v-if="slideInfo.tourTextPre && slideInfo.tourLinkPre"><a :href="slideInfo.tourLinkPre.url">{{slideInfo.tourTextPre}}</a></div>
           </div>
         </div>
         <div class="slideInfoWrapper slideInfoPost" v-bind:class="[displayPreSlide ? '' : 'active']">
+          <div class="h1 mobile-only">{{slideInfo.slide_namePost}}</div>
+          <hr>
           <div class="bbTitle">{{slideInfo.titlePost}}</div>
           <div class="bbDescritpion">
             <prismic-rich-text class="pre-tooltip-text" v-if="slideInfo.descriptionPost" :field="slideInfo.descriptionPost" />
-            <div class="tourButton">Tour {{slideInfo.slide_namePost}}</div>
+            <div class="tourButton" v-if="slideInfo.tourTextPost && slideInfo.tourLinkPost"><a :href="slideInfo.tourLinkPost.url">{{slideInfo.tourTextPost}}</a></div>
           </div>
         </div>
 
@@ -51,7 +59,7 @@ export default {
       displayPreSlide: true,
       slideInfo: {
         titlePre: null,
-        descriptionPre: null
+        descriptionPre: null,
       },
       carouOpts: {
         space: 350,
@@ -83,7 +91,10 @@ export default {
 
       this.slideInfo.titlePre = this.gallerySlides[currSlideIndex].blue_box_title
       this.slideInfo.descriptionPre = this.gallerySlides[currSlideIndex].blue_box_description
+      this.slideInfo.tourTextPre = this.gallerySlides[currSlideIndex].blue_box_button_text
+      this.slideInfo.tourLinkPre = this.gallerySlides[currSlideIndex].blue_box_button_link
       this.slideInfo.slide_namePre = this.gallerySlides[currSlideIndex].slide_name
+      this.slideInfo.tourPagePre = this.gallerySlides[currSlideIndex].tour_page
     },
     onBeforeSlideChange () {
       let csi = this.getCommonSlideIndex()
@@ -93,11 +104,17 @@ export default {
       if(this.displayPreSlide){
         this.slideInfo.titlePre = this.gallerySlides[currSlideIndex].blue_box_title
         this.slideInfo.descriptionPre = this.gallerySlides[currSlideIndex].blue_box_description
+        this.slideInfo.tourTextPre = this.gallerySlides[currSlideIndex].blue_box_button_text
+        this.slideInfo.tourLinkPre = this.gallerySlides[currSlideIndex].blue_box_button_link
         this.slideInfo.slide_namePre = this.gallerySlides[currSlideIndex].slide_name
+        this.slideInfo.tourPagePre = this.gallerySlides[currSlideIndex].tour_page
       }else{
         this.slideInfo.titlePost = this.gallerySlides[currSlideIndex].blue_box_title
         this.slideInfo.descriptionPost = this.gallerySlides[currSlideIndex].blue_box_description
+        this.slideInfo.tourTextPost = this.gallerySlides[currSlideIndex].blue_box_button_text
+        this.slideInfo.tourLinkPost = this.gallerySlides[currSlideIndex].blue_box_button_link
         this.slideInfo.slide_namePost = this.gallerySlides[currSlideIndex].slide_name
+        this.slideInfo.tourPagePost = this.gallerySlides[currSlideIndex].tour_page
       }
     },
     onAfterSlideChange () {
@@ -116,9 +133,9 @@ export default {
     responsiveOpts () {
       let windowWidth = window.outerWidth
       if(windowWidth > 1024){
-        this.carouOpts.space = 525
-        this.carouOpts.width = 525
-        this.carouOpts.height = 325
+        this.carouOpts.space = 500
+        this.carouOpts.width = 500
+        this.carouOpts.height = 300
       }else if(windowWidth > 768){
         this.carouOpts.space = 450
         this.carouOpts.width = 405

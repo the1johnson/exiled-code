@@ -2,7 +2,7 @@
   <div id="tourSection">
     <div class="tourWrapper" v-if="tourInfo">
       <div class="title">{{tourInfo.title}}</div>
-      <div class="tourImgWrap">
+      <div class="tourImgWrap container">
         <prismic-image v-if="tourInfo.graphic" :field="tourInfo.graphic"/>
         <div class="sectionInfo">
           <div class="bbTitle" v-if="tourInfo.bb_title">{{tourInfo.bb_title}}</div>
@@ -79,7 +79,13 @@ export default {
     }
   },
   methods: {
+    reloadPage () {
+      window.location.reload()
+    },
     loadVideo (tabIndex, videoID) {
+
+      window.console.log('meh', tabIndex, videoID, document.getElementById(tabIndex+'_'+videoID))
+
       this.player = new Player(tabIndex+'_'+videoID, {
         id: videoID,
         autoplay: false
@@ -136,7 +142,7 @@ export default {
 
       vidIframe.setAttribute('height', newHeight)
     }
-  },
+  },  
   mounted () {
     if(Vue.prototype.$tourSectionInfo.length){
       this.setCurrentTour()

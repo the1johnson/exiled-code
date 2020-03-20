@@ -17,6 +17,9 @@
         <FooterComponent id="footer" />
       </div>
     </full-page>
+    <div class="side-logo">
+      <img src="@/assets/remax_logo_line.svg">
+    </div>
   </div>
 </template>
 

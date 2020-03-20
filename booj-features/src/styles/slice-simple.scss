@@ -2,7 +2,7 @@
   .slide-wrapper {
     padding: 100px 30px 35px;
     @include mbp-up($breakpoint-md){
-      padding-top: 20px;
+      padding-top: 60px;
       padding-bottom: 40px;
     }
     @include mbp-up($breakpoint-lg){
