@@ -1,12 +1,12 @@
 <template>
-  <header>
-    <div>Logo</div>
-    <div>Links</div>
-  </header>
+	<header>
+		<div>Logo</div>
+		<div>Links</div>
+	</header>
 </template>
 
 <script>
 export default {
-  name: 'Header',
+	name: 'Header',
 }
 </script>

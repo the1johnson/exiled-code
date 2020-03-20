@@ -7,22 +7,22 @@ import Bio from '@/pages/bio.vue'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Homepage
-    },
-    {
-      path: '/events',
-      name: 'Event',
-      component: Events
-    },
-    {
-      path: '/bio/:bid',
-      name: 'Bio',
-      component: Bio,
-      props: true,
-    }
-  ]
+	routes: [
+		{
+			path: '/',
+			name: 'Home',
+			component: Homepage
+		},
+		{
+			path: '/events',
+			name: 'Event',
+			component: Events
+		},
+		{
+			path: '/bio/:bid',
+			name: 'Bio',
+			component: Bio,
+			props: true,
+		}
+	]
 })
