@@ -20,6 +20,7 @@ module.exports = {
 		'vue'
 	],
 	'rules': {
+		'no-trailing-spaces': 'error',
 		'indent': [
 			'error',
 			'tab'
