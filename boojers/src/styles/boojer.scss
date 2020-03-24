@@ -1,0 +1,24 @@
+.title{
+  color: #989898;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.bg-span{
+	position: absolute;
+	width: 100vw;
+	right: -15px;
+	height: 100%;
+	z-index: 0;
+}
+.boojer-img{
+	z-index: 1;
+	position: relative;
+}
+.last-boojer{
+	height: calc(100% - 50px);
+	background-color: #EB2227;
+	span{
+		font-size: 40px;
+	}
+}

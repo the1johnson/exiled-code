@@ -1,11 +1,11 @@
 <template>
-  <div>
-    Awards
-  </div>
+	<div>
+		Awards
+	</div>
 </template>
 
 <script>
-  export default {
-    name: 'Awards',
-  }
+export default {
+	name: 'Awards',
+}
 </script>

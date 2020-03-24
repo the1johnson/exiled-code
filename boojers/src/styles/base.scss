@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap');
+
+body #app{
+	font-family: 'Red Hat Text', sans-serif;
+	font-weight: 500;
+	color: #333333;
+	h2{
+		font-weight: bold;
+		font-size: 64px;
+	}
+	p{
+		line-height: 24px;
+		font-weight: 400;
+	}
+	label{
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	.icon{
+		height: 24px;
+		width: 24px;
+		&.drop{
+			position: absolute;
+			right: 5px;
+			top:32px;
+			pointer-events: none;
+		}
+	}
+	.bg-image{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bg-gray{
+		background-color: #D2D8DE;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	.white{
+		color: white;
+		a{color: white;}
+	}
+	.btn{
+		border-radius: 36px;
+		border: 2px solid #ffffff;
+		line-height: 21px;
+		font-weight: bold;
+		color: white;
+		padding: 12px 30px;
+		img{
+			display: inline-block;
+			margin-left: 5px;
+		}
+	}
+	input[type="text"],select{
+		-webkit-appearance: none;
+		background-color: white;
+		border:2px solid #CFCFCF;
+		border-radius: 2px;
+		height: 40px;
+		padding:10px 15px;
+		&:focus{
+			outline: 0;
+		}
+	}
+	span.submit{
+		height: 40px;
+		width: 40px;
+		background-color: #EB2227;
+		right:0;
+		bottom: 0;
+	}
+}

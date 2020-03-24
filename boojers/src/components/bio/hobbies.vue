@@ -1,11 +1,11 @@
 <template>
-  <div>
-    Hobbies
-  </div>
+	<div>
+		Hobbies
+	</div>
 </template>
 
 <script>
-  export default {
-    name: 'Hobbies',
-  }
+export default {
+	name: 'Hobbies',
+}
 </script>

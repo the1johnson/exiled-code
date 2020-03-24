@@ -1,0 +1,27 @@
+.bg-image{
+  min-height: 655px;
+  .fade{
+    height: 96px;
+    position: absolute;
+    left: 0;
+    opacity: 0.8;
+    &.top{
+      top: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,0) 0%, #000000 100%);
+    }
+    &.bottom{
+      bottom: 0;
+      background: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0) 100%);
+    }
+  }
+  .caption-section{
+    bottom: 10px;
+    span{
+      font-size: 13px;
+    }
+    p{
+      font-size: 26px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,11 +1,11 @@
 <template>
-  <div>
-    Gallery
-  </div>
+	<div>
+		Gallery
+	</div>
 </template>
 
 <script>
-  export default {
-    name: 'Gallery',
-  }
+export default {
+	name: 'Gallery',
+}
 </script>

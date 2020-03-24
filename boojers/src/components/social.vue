@@ -1,11 +1,11 @@
 <template>
-  <div>
-    Social
-  </div>
+	<div>
+		Social
+	</div>
 </template>
 
 <script>
-  export default {
-    name: 'Social',
-  }
+export default {
+	name: 'Social',
+}
 </script>
