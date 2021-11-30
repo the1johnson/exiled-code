@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Monster Print View</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/print.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <main id="monsterStats" class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Name
+                            <div id="name" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-4">
+                            Monster Type
+                            <div id="creature_type" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            Monster Rank
+                            <div id="rank" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-1">
+                            ACE
+                            <div id="ace" class="box-val"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            Total Body
+                            <div id="points_total" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            Armor
+                            <div id="armor" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            Threshold
+                            <div id="threshold" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            Intelligence
+                            <div id="intelligence" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-3">
+                            Spell Pyramid
+                            <div id="spell_pyramid" class="box-val"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            Str
+                            <div id="strength" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-5">
+                            Rips From:
+                            <div id="rips" class="box-val"></div>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5">
+                            Rips When Weaknesses
+                            <div id="rips_weak" class="box-val"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="halfzies">
+                        What Do I see?
+                        <div id="what_see" class="box-val lg-height"></div>
+                    </div><!--
+                    --><div class="halfzies">
+                        Appearance Notes
+                        <div id="appearance" class="box-val lg-height"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    Weapons Or Claws
+                    <div id="weapons" class="box-val"></div>
+                </div>
+                <div class="col-sm-1">
+                    1 Handed Dmg
+                    <div id="dmg_oneh" class="box-val"></div>
+                </div>
+                <div class="col-sm-1">
+                    2 Handed Damage
+                    <div id="dmg_twoh" class="box-val"></div>
+                </div>
+                <div class="col-sm-3">
+                    Carrier Attack
+                    <div id="carrier" class="box-val"></div>
+                </div>
+                <div class="col-sm-4">
+                    Spells memorized should be written on the back of the monster card
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    Offensive Abilities
+                    <div id="offensive" class="box-val lg-height"></div>
+                </div>
+                <div class="col-sm-3">
+                    Defensive Abilities
+                    <div id="defensive" class="box-val lg-height"></div>
+                </div>
+                <div class="col-sm-3">
+                    Vulnerabilities
+                    <div id="vulnerabilities" class="box-val lg-height"></div>
+                </div>
+                <div class="col-sm-3">
+                    Skills
+                    <div id="skills" class="box-val lg-height"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    May Killing Blow?
+                </div>
+                <div class="col-sm-1">
+                    Times
+                </div>
+                <div class="col-sm-2">
+                    May Search and Steal?
+                </div>
+                <div class="col-sm-4">
+                    May perform Actions to assure resurrection?
+                </div>
+                <div class="col-sm-3">
+                    Signature:
+                </div>
+            </div>
+        </main>
+        
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/print.js"></script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alliance Helper V1</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <main class="container">
+            <h1>Alliance Helper</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="monsterNameSearch">Search Monster Name</label>
+                    <input class="form-control list-filter" name="monsterName" id="monsterNameSearch" data-filter="name">
+                </div>
+                <div class="col-sm-6">
+                    <label for="monsterTypeSearch">Search Monster Type</label>
+                    <input class="form-control list-filter" name="monsterType" id="monsterTypeSearch" data-filter="creature_type">
+                </div>
+            </div>
+            <ul id="monsterList" class="row">
+                
+            </ul>
+        </main>
+        
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/megazord.js"></script>
+    </body>
+</html>

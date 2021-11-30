@@ -1,0 +1,1526 @@
+LARP,"Bugbear, Grunt",3,"Large, green, shaggy biped.",Green makeup with black facial hair makeup.,15,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,0,Normal,None.,None.,Double damage from lightning.,"Weapon master. 
+ Style master.",Fodder(Lesser),Goblinoid
+LARP,"Bugbear, Elite",4,"Large, green, shaggy biped.",Green makeup with black facial hair makeup.,20,Must Wear Rep,0,Normal,As skills,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,None.,Double damage from lightning.,"May possess PC skills, do not add character body.",Lackey(Lesser),Goblinoid
+LARP,"Bugbear, Savant of the Lash",8,"Large, green, shaggy biped.",Green makeup with black facial hair makeup.,35,Must Wear Rep,0,Normal,8-7-6-5-4-3-2 (earth),3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,Magic Bind x2.,None.,Double damage from lightning.,"Weapon master. 
+ Style master.
+ Read and write. 
+ First aid. Healing arts.",Minion(Greater),Goblinoid
+LARP,"Bugbear, Taskmaster",8,"Large, green, shaggy biped.",Green makeup with black facial hair makeup.,45,Must Wear Rep,0,Normal,None.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),7,8,Normal,Magic Cause Critical Wounds x2.,"
+ Resist Lightning x1.",Double damage from lightning.,"Weapon master. 
+ Style master.
+ Weapon proficiency +2. ^&",Minion(Greater),Goblinoid
+LARP,"Bugbear, Sage of Pain",10,"Large, green, shaggy biped.",Green makeup with black facial hair makeup.,40,Must Wear Rep,0,Normal,6-5-4-3-2-1 (earth),3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,None.,"Immune to necromantic damage spells (X spell Chaos). 
+ Immune to flame, ice. 
+ ",Double damage from lightning.,"Weapon master. 
+ Style master.
+ Read and write. 
+ First aid. Healing arts.",Overlord(Greater),Goblinoid
+LARP,"Bugbear, Rackmaster",12,"Large, green, shaggy biped.",Green makeup with black facial hair makeup.,55,Must Wear Rep,0,Normal,As skills.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Body,Magic Prison x1.,"
+ Resist Poison x2.
+ Resist Spell x1. 
+ Bane lightning x2.",Double damage from lightning.,"May possess PC skills, do not add character body.",Master(Greater),Goblinoid
+LARP,"Goblin, Grunt",1,Green Warty Biped,Green makeup on face. Goblins never have tusks.,10,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),2,0,Normal,None.,None.,Double damage from stone.,One handed master.,Fodder(Lesser),Goblinoid
+LARP,"Goblin, Grenadier",1,Green Warty Biped with red eyes.,Green makeup on face with red makeup around eyes. Red eyes should be clearly visible.,10,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),2,0,Normal,None.,Explodes when struck by one weapon blow (non ranged) that inflicts 5 or more damage. Person striking goblin takes 40 points of flame damage. Does NOT have a radius effect. Spells do not trigger an explosion.,Double damage from stone.,One handed master.,Lackey(Lesser),Goblin
+LARP,"Goblin, Apprentice Casta",3,Green Warty Biped,Green makeup on face. Goblins never have tusks.,10,Must Wear Rep,0,Low,4-3-2-1 (either),0,None,None,Weapon (One Handed),2,0,Normal,None.,None.,Double damage from stone.,"One handed master. 
+ Read and write. 
+ First aid. Healing arts.
+ Read magic.",Minion(Greater),Goblinoid
+LARP,"Goblin, Hedge Wizard",8,Green Warty Biped,Green makeup on face. Goblins never have tusks.,20,Must Wear Rep,0,Normal,7-6-5-4-3-2-1 (either),0,None,None,Weapon (One Handed),2,0,Normal,None.,Resist Spellx1.,Double damage from stone.,"One handed master. 
+ Read and write. 
+ Read magic. 
+ First aid. Healing arts. 
+ Herbal Lore. Alchemy 1. 
+ Craftsman skills - goblin lore, monster lore, medicine.",Overlord(Greater),Goblinoid
+LARP,"Goblin, Howling One",8,Green Warty Biped,Green makeup on face. Goblins never have tusks.,20,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon (One Handed),6,0,Normal,Arcane Fear x1 (must howl before throwing the fear).,Resist Poison x1.,Double damage from stone.,"One handed master. 
+ Style master. 
+ Weapon proficiency +2. ^&",Servant(Lesser),Goblinoid
+LARP,"Goblin, King",20,Green Warty Biped,Green makeup on face. Goblins never have tusks.,35,Must Wear Rep,3,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (One Handed),10,0,Normal,Control goblin by voice.,"Resist Spellx2. 
+ Resist Poison x2.",Double damage from stone.,"One handed master. 
+ Style master. 
+ Weapon proficiency +6. 
+ Slay x2. Improved Slay x1.
+ Eviscerate x1.
+ Parry x2.
+ Riposte x1. ^&",Master(Greater),Goblinoid
+LARP,Hobgoblin,2,Large Green Warty Biped,Green makeup and black wig (if available).,10,Must Wear Rep,0,Low,None.,0,None,None,Weapon (Any),2,3,Normal,None.,None.,Double damage from stone.,"Weapon master. 
+ Style master.",Fodder(Lesser),Goblinoid
+LARP,"Hobgoblin, Elite",3,Large Green Warty Biped,Green makeup and black wig (if available).,20,Must Wear Rep,0,Low,None.,0,None,None,Weapon (Any),2,3,Normal,None.,None.,Double damage from stone.,"Weapon master. 
+ Style master.",Lackey(Lesser),Goblinoid
+LARP,"Hobgoblin, Drill Sergeant",5,Large Green Warty Biped,Green makeup and black wig (if available).,20,Must Wear Rep,0,Low,None.,0,None,None,Weapon (Any),4,5,Normal,None.,None.,Double damage from stone.,"Weapon master.
+ Style master.
+ Weapon proficiency +2 ^&",Servant(Lesser),Goblinoid
+LARP,"Hobgoblin, Naysayer",8,Large Green Warty Biped,Green makeup and black wig (if available).,20,Must Wear Rep,0,Normal,4-4-4-4-4-3-2-1 (either),0,None,None,Weapon (Any),2,3,Normal,Magic Shun x1.,None.,Double damage from stone.,"Weapon master. 
+ Read and write. 
+ Read magic. 
+ First aid. Healing arts.",Lackey(Lesser),Goblinoid
+LARP,"Hobgoblin, Strategist",9,Large Green Warty Biped,Green makeup and black wig (if available).,25,Must Wear Rep,0,Normal,4-4-4-4-4-3-2-1 (either),0,None,None,Weapon (Any),2,3,Normal,Magic Dominate x1.,Resist Command x1.,Double damage from stone.,"Weapon master.
+ Read and write. 
+ Read magic. 
+ First aid. Healing arts.",Overlord(Greater),Goblinoid
+LARP,"Hobgoblin, Master Mind",16,Large Green Warty Biped,Green makeup and black wig (if available).,35,Must Wear Rep,0,Normal,None.,3,None,None,Weapon (Any),9,10,Normal,"Arcane dominate x1. 
+ Arcane Shun x1. 
+ Arcane Silence x1. 
+ Arcane Sleep x1.","Immune to command, silence. 
+ Resist Spell x2. 
+ Resist Poison x2.",Double damage from stone.,"Weapon master. Style master. 
+ Read and write. Read magic. 
+ First aid. Healing arts. 
+ Herbal Lore. 
+ Weapon proficiency +4. 
+ Slay x2. Improved Slay x1.
+ Parry x2. ^&",Overlord(Greater),Goblinoid
+LARP,"Chaos Elemental, Shard (Havok)",3,"Chromatic colored, crackling figure.",Black makeup with swirling colors.,20,None,0,Low,None.,0,None,None,Claws (One Handed),2,0,Normal,10 Elemental Chaos x1.,"No metabolism. 
+ Healed double by chaos or necromancy. 
+ Immune to alteration, command, paralysis, poison, waylay. 
+","Double damage from healing.
+ Immune to life.
+ Destroyed by prison.
+ Disappears at 0 body.",None.,Lackey(Lesser),"Elemental, Magistarium"
+LARP,"Chaos Elemental, Imp (Adhavok)",6,"Chromatic colored, crackling figure.",Black makeup with swirling colors.,35,None,0,Normal,None.,1,Entangle,None,Weapons and Claws (Any),3,4,Normal,10 Elemental Chaos x3.,"No metabolism.
+ Healed double by chaos or necromancy. 
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Cloak Healing x1.","Double damage from healing.
+ Immune to life.
+ Destroyed by prison.
+ Disappears at 0 body.",Weapon master. Style master.,Lackey(Lesser),"Elemental, Magistarium"
+LARP,"Chaos Elemental, Adept (Gremnis)",12,"Chromatic colored, crackling figure.",Black makeup with swirling colors.,45,None,0,Normal,9-8-7-6-5-4-3-2-1 (earth),2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Chaos,"10 Elemental Chaos x3. 
+ 20 Elemental Chaos x2.","No metabolism.
+ Healed double by chaos or necromancy.
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Cloak Healing x2. 
+ Phase x2.","Double damage from healing.
+ Immune to life.
+ Destroyed by prison.
+ Disappears at 0 body.","Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Servant(Lesser),"Elemental, Magistarium"
+LARP,"Chaos Elemental, Lord (Caitiff)",16,"Chromatic colored, crackling figure.",Black makeup with swirling colors.,55,None,0,High,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),6,7,Chaos,"Arcane Berserk x2.
+ 10 Elemental Chaos x5. 
+ 20 Elemental Chaos x3. 
+ 30 Elemental Chaos x2.","No metabolism.
+ Healed double by chaos or necromancy.
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Only affected by Body, Spell weapon attacks.
+ Cloak Healing x3.
+ Phase x3.","Double damage from healing.
+ Immune to life.
+ Destroyed by prison.
+ Disappears at 0 body.","May possess PC skills, do not add character body. 
+ Will always have earth spells.",Minion(Greater),"Elemental, Magistarium"
+LARP,"Chaos Elemental, Knight (Vorteal)",18,"Chromatic colored, crackling figure.",Black makeup with swirling colors.,80,None,0,High,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapons and Claws (Any),8,9,Chaos,"Arcane Berserk x5.
+ 20 Elemental Chaos x5. 
+ 30 Elemental Chaos x3.
+ 50 Elemental Chaos x2.","No metabolism.
+ Healed double by chaos or necromancy.
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Only affected by Body, Spell weapon attacks.
+ Cloak Healing x3. 
+ Phase x6.","Double damage from healing.
+ Immune to life.
+ Destroyed by prison.
+ Disappears at 0 body.","May possess PC skills, do not add character body. 
+ Will always have earth spells..",Minion(Greater),"Elemental, Magistarium"
+LARP,"Death Elemental, Shard (Dirge)",5,"Small, black crackling form.",Black clothing and black makeup or faceless hood.,20,None,0,Low,None.,1,Entangle,None,Claws (One Handed),3,0,Normal,Channel spell Death x1.,"No metabolism.
+ Healed to full by death.
+ Immune to alteration, command, healing, necromancy, paralysis, poison, waylay.","Destroyed by life.
+ Disappears at 0 body.",None.,Fodder(Lesser),"Elemental, Magistarium"
+LARP,"Death Elemental, Imp (Enthropomite)",8,"Black, crackling form.",Black clothing and black makeup or faceless hood.,35,None,0,Normal,5-4-3-2-1 (earth),2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Normal,Arcane Death x1.,"No metabolism.
+ Healed to full by death.
+ Immune to alteration, command, healing, necromancy, paralysis, poison, waylay.
+ Cloak Life x1.","Destroyed by life.
+ Disappears at 0 body.","Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Lackey(Lesser),"Elemental, Magistarium"
+LARP,"Death Elemental, Adept (Folsom)",14,"Black, crackling form.",Black clothing and black makeup or faceless hood.,45,None,0,Normal,4-4-4-4-4-4-3-2-1,3,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),5,6,"Death, Body",Arcane Death x2.,"No metabolism.
+ Healed to full by death.
+ Immune to alteration, command, healing, necromancy, paralysis, poison, waylay.
+ Cloak Life x3.
+ Resist Spell x2.","Destroyed by life.
+ Disappears at 0 body.","Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Servant(Lesser),"Elemental, Magistarium"
+LARP,"Death Elemental, Lord (Charneava)",16,"Black, cracking form.",Black clothing and black makeup or faceless hood.,55,None,0,High,As skills.,5,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),7,8,"Death, Body",Arcane Death x3.,"No metabolism.
+ Healed to full by death.
+ Immune to alteration, command, healing, necromancy, paralysis, poison, waylay.
+ Cloak Life x4. 
+ Resist Spell x3.","Destroyed by life.
+ Disappears at 0 body.","May possess PC skills, do not add character body. 
+ Will always have earth spells.",Minion(Greater),"Elemental, Magistarium"
+LARP,"Death Elemental, Knight (Partallia)",18,Pale Humanoid with a diamond over one eye (color varies),Black clothing and black makeup or faceless hood.,80,None,0,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,"Death, Body",Arcane Death x4.,"No metabolism.
+ Healed to full by death.
+ Immune to alteration, command, healing, necromancy, paralysis, poison, waylay.
+ Only affected by Spell, Life, Body weapon attacks.
+ Cloak Life x6.
+ Resist Spell x4.","Destroyed by life.
+ Disappears at 0 body.","May possess PC skills, do not add character body. 
+ Will always have earth spells.",Minion(Greater),"Elemental, Magistarium"
+LARP,"Life Elemental, Shard (Embrion)",3,Pale Humanoid with a diamond over one eye (color varies),White or grey makeup with diamond over eye.,20,None,0,Low,3-2-1 (earth),1,Entangle,None,Claws (One Handed),3,0,Normal,Channel spell Life x1.,"No metabolism.
+ Healed double by healing.
+ Healed to full by life.
+ Immune to alteration, command, paralysis, poison, waylay.","Double damage from necromancy
+ Destroyed by death.
+ Disappears at zero body.","Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Fodder(Lesser),"Elemental, Magistarium"
+LARP,"Life Elemental, Imp (Plebian)",6,"Pale, small humanoid with a diamond over one eye (color varies).",White or grey makeup with diamond over eye.,35,None,0,Normal,5-4-3-2-1 (earth),2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Normal,Arcane Life x1.,"No metabolism.
+ Healed double by healing.
+ Healed to full by life.
+ Immune to alteration, command, paralysis, poison, waylay.
+ Cloak Death x1.","Double damage from necromancy
+ Destroyed by death.
+ Disappears at zero body.","Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Lackey(Lesser),"Elemental, Magistarium"
+LARP,"Life Elemental, Adept (Patrician)",12,Pale Humanoid with a diamond over one eye (color varies).,White or grey makeup with diamond over eye.,45,None,0,Normal,4-4-4-4-4-4-3-2-1 (earth),3,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),5,6,"Life, Body",Arcane Life x3.,"No metabolism.
+ Healed double by Healing.
+ Healed to full by life.
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Cloak Death x2.
+ Resist Spell x2.","Double damage from necromancy
+ Destroyed by death.
+ Disappears at zero body.","Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Servant(Lesser),"Elemental, Magistarium"
+LARP,"Life Elemental, Lord (Procurator)",16,Pale Humanoid with a diamond over one eye (color varies).,White or grey makeup with diamond over eye.,55,None,0,High,As skills.,5,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),7,8,"Life, Body","Arcane Life x3. 
+ Magic Purify x2.","No metabolism.
+ Healed double by Healing.
+ Healed to full by life.
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Cloak Death x4. 
+ Resist Spell x3.","Double damage from necromancy
+ Destroyed by death.
+ Disappears at zero body.","May possess PC skills, do not add character body. 
+ Will always have earth spells.",Minion(Greater),"Elemental, Magistarium"
+LARP,"Life Elemental, Knight (Tribune)",18,Pale Humanoid with a diamond over one eye (color varies),White or grey makeup with diamond over eye.,80,None,0,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,"Life, Body","Arcane Life x4. 
+ Magic Purify x4.","No metabolism.
+ Healed double by Healing.
+ Healed to full by life.
+ Immune to alteration, command, paralysis, poison, waylay. 
+ Only affected by Magic, Death weapon attacks.
+ Cloak Death x6. 
+ Resist Spell x4.","Double damage from necromancy
+ Destroyed by death.
+ Disappears at zero body.","May possess PC skills, do not add character body. 
+ Will always have earth spells.",Minion(Greater),"Elemental, Magistarium"
+LARP,"Order Elemental, Shard (Bulwark)",3,"Small, silver human.",Grey makeup.,20,None,0,Low,None.,0,None,None,Claws (One Handed),2,0,Normal,None.,"No metabolism.
+ Healed to full by prison.
+ Immune to alteration, command, paralysis, poison, waylay.","Double damage from chaos, necromancy.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Fodder(Lesser),"Elemental, Magistarium"
+LARP,"Order Elemental, Imp (Barraston)",6,Grey skinned humanoid.,Grey makeup.,35,None,0,Normal,4-3-2-1 (both),1,Entangle,None,Weapons and Claws (Any),3,4,Normal,Magic Prison x1.,"No metabolism.
+ Healed to full by prison.
+ Immune to alteration, command, paralysis, poison, waylay.
+ Resist Spell x1.","Double damage from chaos, necromancy.
+ Immune to healing, life.
+ Disappears at 0 body.","Weapon master. Style master.
+ Read and write. First aid. Healing arts. Read magic.",Lackey(Lesser),"Elemental, Magistarium"
+LARP,"Order Elemental, Adept (Magistrate)",12,Grey skinned humanoid.,Grey makeup.,45,None,0,Normal,6-5-4-3-2-1 (both),2,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),4,5,Body,Arcane Prison x2.,"No metabolism.
+ Healed to full by prison.
+ Immune to alteration, command, paralysis, poison, waylay.
+ Resist Spell x1. 
+ Phase x1.","Double damage from chaos, necromancy.
+ Immune to healing, life.
+ Disappears at 0 body.","Weapon master. Style master.
+ Read and write. First aid. Healing arts. Read magic.",Servant(Lesser),"Elemental, Magistarium"
+LARP,"Order Elemental, Lord (Justicar)",16,Grey skinned humanoid,Grey makeup.,55,None,0,High,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),6,7,Body,"Arcane Prison x3. 
+ Arcane Ward x1. 
+ Arcane Wizard Lock x1.","No metabolism.
+ Healed to full by prison.
+ Immune to alteration, command, paralysis, poison, waylay.
+ Resist Spell x2. 
+ Phase x2.","Double damage from chaos, necromancy.
+ Immune to healing, life.
+ Disappears at 0 body.","May possess PC skills, do not add character body. Will always possess dual pyramids.",Minion(Greater),"Elemental, Magistarium"
+LARP,"Order Elemental, Knight (Arbiter)",20,Grey skinned humanoid,Grey makeup.,80,None,0,High,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapons and Claws (Any),8,9,Prison,"Arcane Prison x4. 
+ Arcane Ward x1. 
+ Arcane Wizard Lock x1.","No metabolism.
+ Healed to full by prison.
+ Immune to alteration, command, paralysis, poison, waylay.
+ Only affected by Spell , Chaos, Body weapon attacks.
+ Resist Spell x4. 
+ Phase x4.","Double damage from chaos, necromancy.
+ Immune to healing, life.
+ Disappears at 0 body.","May possess PC skills, do not add character body. Will always possess dual pyramids.",Overlord(Greater),"Elemental, Magistarium"
+LARP,Banshee,12,Non -corporeal woman.,"Banshees typically possess a grey or blue face, dressed in tattered rags, are female, and scream horribly",40,None,0,Normal,As skills.,5,Immune,Immune,Weapons and Claws (Any),7,8,Destruction,"Magic Death x3. 
+ Magic Ice Storm x3.","No metabolism.
+ Immune to alteration, binding, command, curse, healing, ice, necromancy, paralysis, poison, waylay.
+ Only affected by Silver, Spell, Body weapon attacks.","Immune to healing, life.
+ Dissipates at 0 body.","May possess PC skills, add character body.",Minion(Greater),Cursed
+LARP,Remnant,4,Scarred humanoid,"Blue or grey makeup, tattered clothes.",20,Must Wear Rep,0,Mindless,None,2,"Entangle, Slow, Repel",None,Claws (Any),3,4,Normal,Channel spell weakness x1.,"No metabolism. 
+ Immune to alteration, command, curse, necromancy, poison, waylay.","Immune to healing, life.",None.,Lackey(Lesser),Cursed
+LARP,Revenant,10,Rotting humanoid.,"Blue or grey makeup, tattered clothes.",80,Must Wear Rep,0,Normal,As skills,3,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),5,6,Normal,"Arcane Fear x3. 
+ Arcane Paralysis x1 (only against intended victim).","No metabolism. 
+ Immune to alteration, command, curse, necromancy, paralysis, poison, waylay.
+ Can only be killing blowed by intended victim.
+ Resist Magic x2.","Immune to healing, life. 
+ Will not attack any other target but the intended victim unless the Revenant is hurt by another source, then it will defend itself.","May possess PC skills, do not add character body.",Minion(Greater),Cursed
+LARP,Rusalka,5,Humanoid dripping with sea water.,"Blue or grey makeup, tattered clothes.",30,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Weakness,"Magic Destruction x1. 
+ Magic Ice Bolt x2.","No metabolism. 
+ Immune to alteration, command, curse, necromancy, paralysis, poison, waylay.",None.,None.,Servant(Lesser),Cursed
+LARP,Pantherghast,6,A large skeletal animal.,"Skeletal makeup or mask with animal features added, if possible.",35,None,0,Low,None.,2,"Entangle, Slow, Repel",None,Claw (Two Handed),4,0,Normal,Shuns all creatures that are not of the race the pantherghast is attuned to). NPC should repeatedly state Shun all non <creature attuned to>.,"Alien metabolism.
+ Immune to all attacks from non-attuned creatures.
+ Immune to command, necromancy, poison, paralysis, waylay.
+ Resist Spell x1.","Immune to healing, life. 
+ Destroyed at 0 body.",None.,Lackey(Lesser),Extra-Planar
+LARP,"Pantherghast, Hunter",12,A large skeletal animal.,"Skeletal makeup or mask with animal features added, if possible.",55,None,0,Normal,None.,4,"Entangle, Slow, Repel, Bind",None,Claws (Any),6,7,Normal,Shuns all creatures that are not of the race the pantherghast is attuned to). NPC should repeatedly state Shun all non <creature attuned to>.,"Alien metabolism.
+ Immune to all attacks from non-attuned creatures.
+ Immune to command, necromancy, poison, paralysis, waylay.
+ Maximum Damage 1 from normal weapon attacks.
+ Resist Spell x3.","Immune to healing, life. 
+ Destroyed at 0 body.",None.,Servant(Lesser),Extra-Planar
+LARP,"Pantherghast, Terminator",18,A large skeletal animal.,"Skeletal makeup or mask with animal features added, if possible.",80,None,0,Normal,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Normal,Shuns all creatures that are not of the race the pantherghast is attuned to). NPC should repeatedly state Shun all non <creature attuned to>.,"Alien metabolism.
+ Immune to all attacks from non-attuned creatures.
+ Immune to command, necromancy, poison, paralysis, waylay.
+ Maximum Damage 1 from normal and silver weapon attacks.
+ Resist Spell x5.","Immune to healing, life. 
+ Destroyed at 0 body.",None.,Overlord(Greater),Extra-Planar
+LARP,"Bear, Brown",3,"Bear with thick, brown fur.","Brown makeup, black nose, brown fur if possible.",25,10 Natural Armor,0,Animal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Normal,None.,None.,None.,None.,Servant(Lesser),Animal
+LARP,"Bear, Grizzly",6,Large bear with thick brown fur.,"Brown makeup, black nose, brown fur if possible.",40,20 Natural Armor,0,Animal,None.,4,"Entangle, Slow, Repel, Bind",None,Claws (Any),6,7,Normal,None.,None.,None.,None.,Lackey(Lesser),Animal
+LARP,"Bear, Howl",15,"Gigantic, feathered bear with beak and long claws.","Brown makeup, beak.",55,30 Natural Armor,7,Animal,None.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Claws (Any),10,11,Normal,Engulf x2.,"Immune to command effects.
+Immune to waylay 
+Spell Guard x2
+Resist Poison x1.",None.,None.,Overlord(Greater),Animal
+LARP,Canine,2,Large dog.,"Brown, grey or black makeup with contrasting nose.",10,None,0,Animal,None,1,Entangle,None,Claws (One Handed),3,0,Normal,None.,None.,None.,None.,Fodder(Lesser),Animal
+LARP,Diseased Woodland Creature,1,"Large rabbit, squirrel, ferret or wolverine, etc.",Various animal makeup.,10,None,0,Animal,None.,0,None,None,Claws (One Handed),2,0,Disease,None.,None.,None.,None.,Fodder(Lesser),Animal
+LARP,Feline,2,"Small, hunting cat.","Brown, black, white, grey makeup with contrasting nose and whiskers.",10,None,0,Animal,None.,0,None,None,Claws (One Handed),2,0,Normal,None.,Dodge x1.,None.,None.,Fodder(Lesser),Animal
+LARP,Giant Slug,,A man-sized Slug.,Grey or brown makeup with contrasting spots.,10,None,0,Animal,None.,1,Entangle,None,Claw (Two Handed),0,4,Normal,30 Elemental Acid x5.,"Immune to waylay.
+ Acidic Skin.
+ Only takes 1 pt of Damage per weapon blow except assassinate, slay, terminate or eviscerate.",May not run.,None.,Servant(Lesser),Animal
+LARP,Mist Lynx,,"A pale, white hunting cat with wisps of mist rising off it's fur.",White makeup with black nose and whiskers. Should wear white clothing/fur as well.,25,None,0,Animal,None.,2,"Entangle, Slow, Repel",None,Claw (Two Handed),4,5,Body,None.,"Phase x1. 
+ Gaseous form x1.",None.,None.,Servant(Lesser),Animal
+LARP,"Rat, Sewer",1,Large rat.,Brown or grey makeup with nose and whiskers.,10,None,0,Animal,None.,0,None,None,Claws (One Handed),1,0,Disease,None.,None.,May only use dagger sized claws.,None.,Fodder(Lesser),Animal
+LARP,"Rat, Giant",3,Dog sized rat.,Brown or grey makeup with nose and whiskers.,20,None,0,Animal,None.,0,None,None,Claws (One Handed),2,0,Disease,None.,None.,None.,None,Lackey(Lesser),Animal
+LARP,"Rat, Giant War",8,Gigantic rat.,Brown or grey makeup with nose and whiskers.,35,None,0,Animal,None.,3,"Entangle, Slow, Repel, Bind",None,Claws (Any),5,6,Disease,None.,None.,None.,None.,Servant(Lesser),Animal
+LARP,Rust Beast,6,"Small, armadillo like creature with a brownish hide.",Brown makeup and brown tabard.,20,10 Natural Armor,0,Animal,None.,0,None,None,Claws (One Handed),2,0,Normal,"Arcane shatter x2. 
+ Arcane Destroy x1.",Acidic Skin.,None.,None.,Servant(Lesser),Animal
+LARP,Sand Tiger (Land Shark),,Large Shark like creature with legs.,Grey or white makeup with many teeth.,35,None,0,Normal,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapons and Claws (Any),8,9,Normal,Engulf x3.,None.,Double Damage from Lightning.,"May possess PC skills, add character body.",Lackey(Lesser),Animal
+LARP,Snake,4,Large serpent.,Just about any color makeup with scales and fangs.,20,None,0,Animal,None.,1,Entangle,None,Claws (Any),3,4,Normal,Engulf x1.,None.,Cannot move or attack once it engulfs someone.,None.,Fodder(Lesser),Animal
+LARP,Wolf,6,A large wolf.,Black or grey makeup with contrasting nose.,20,None,0,Animal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Normal,None.,None.,None.,None.,Fodder(Lesser),Animal
+LARP,"Wolf, Dire",7,"Large wolf with glowing, red eyes.",Black or grey makeup with contrasting nose. Red around eyes.,40,None,0,Animal,None.,2,"Entangle, Slow, Repel, Bind",None,Claws (Any),4,5,Normal,Arcane Fear x1 (after howling).,None.,None.,None.,Servant(Lesser),Animal
+LARP,"Gnoll, Grunt",3,A dog-like biped with brownish fur.,Brown makeup with black nose.,20,Must Wear Rep,0,Normal,None.,1,Entangle,None,Weapon (Any),3,4,Normal,None.,None.,Double damage from stone.,"Weapon master. 
+ Style master.",Fodder(Lesser),Lupoid
+LARP,"Gnoll, Elite",6,A dog-like biped with brownish fur.,Brown makeup with black nose.,30,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,None.,Double damage from stone.,"Style master. 
+ Weapon master.",Lackey(Lesser),Lupoid
+LARP,"Gnoll, Alchemist",9,A dog-like biped with brownish fur.,Brown makeup with black nose.,30,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,None.,Double damage from stone.,"Style master. 
+ Weapon master. 
+ Read and write. 
+ Herbal lore. Alchemy 10.",Minion(Greater),Lupoid
+LARP,"Gnoll, War",9,A dog-like biped with brownish fur.,Brown makeup with black nose.,35,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),6,7,Normal,None.,None.,Double damage from stone.,"Style master. Weapon master. 
+ Weapon proficiency +2. 
+ Disarm x1.
+ Slay x1.
+ Parry x1. ^&",Servant(Lesser),Lupoid
+LARP,"Gnoll, Heart Eater",14,A dog-like biped with brownish fur.,Brown makeup with black nose.,50,Must Wear Rep,0,High,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapon (Any),6,7,Normal,"Control Lupoid by voice. 
+ Control wolf by voice. 
+ Channel spell Death x2.","Only affected by silver weapon attacks.
+ Resist Spell x2.","Double damage from stone.
+ Immune to life.","May posses PC skills, add character body.",Overlord(Greater),Lupoid
+LARP,"Gnoll, Raiser",14,A dog-like biped with brownish fur.,Brown makeup with black nose.,35,Must Wear Rep,0,High,8-7-6-5-4-3-2-1 (earth only),2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Chaos,"Magic Create Undead x2. 
+ Magic Control Undead x2.","Healed by necromancy.
+ Cloak Healing x2.","Double damage from healing, stone.","Style master. Weapon master. 
+ Read and write. 
+ First aid. Healing arts.",Overlord(Greater),Lupoid
+LARP,Kobold,1,"Small, red dog like creature.",Red makeup with black nose.,5,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),1,0,Normal,None.,None.,Double damage from ice.,"Small weapon. 
+ Waylay.",Fodder(Lesser),Lupoid
+LARP,"Kobold, Assassin",5,"Small, red dog like creature.",Red makeup with black nose.,20,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),2,0,Normal,None.,None.,Double damage from ice.,"One handed weapon master. 
+ Backstab +4. 
+ Waylay. 
+ Evade x2.
+ Dodge x1.
+ Assassinate x1 (50 damage) 
+ Improved Assassinate x1 ^&",Servant(Lesser),Lupoid
+LARP,"Kobold, Thief",8,Small red dog like creature.,Red makeup with black nose.,20,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),2,0,Normal,None.,None.,Double damage from ice.,"One handed weapon master.
+ Waylay.
+ Backstab +6.
+ Evade x3.
+ Dodge x1. Assassinate x1 (25 damage).
+ Read and write.
+ Herbal lore. Alchemy 3. ^&",Servant(Lesser),Lupoid
+LARP,"Kobold, Ninja",12,Small red dog like creature.,Red makeup with black nose.,25,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),2,0,Normal,None.,None.,Double damage from ice.,"One handed weapon master. 
+ Style master. 
+ Waylay. Backstab +8. 
+ Assassinate x2 (50 Damage)
+ Improved Assassinate x1. 
+ Evade x4.
+ Dodge x2.
+ Read and write.
+ Herbal Lore. Alchemy 3.^&",Minion(Greater),Lupoid
+LARP,"Kobold, Renegade",12,Small red dog like creature.,Red makeup with black nose.,20,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),4,0,Normal,None.,None.,Double damage from ice.,"One handed weapon master. 
+ Style master. 
+ Backstab +4.
+ Evade x2.
+ Dodge x1. Assassinate x1 (25 Damage).
+ Proficiency +2.
+ Slay x1 (25 Damaage). Parry x1. ^&",Minion(Greater),Lupoid
+LARP,"Troll, Forest",8,Brown and green troll.,Brown and green makeup.,25,Must Wear Rep,0,Normal,4-4-4-3-2-1,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,None.,Resist Spell x1.,Double damage from flame.,"Weapon master. Style master. 
+ Read and write. Read magic.",Lackey(Lesser),Trolloid
+LARP,"Troll, Hill",3,Reddish brown troll.,Brown makeup.,20,Must Wear Rep,0,Low,None.,1,Entangle,None,Weapon (Any),3,4,Normal,None.,None.,Double damage from flame.,Weapon master. Style master.,Fodder(Lesser),Trolloid
+LARP,"Troll, Stone",6,Grey skinned troll.,Grey makeup.,25,Must Wear Rep,3,Normal,None.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,None.,None.,Double damage from flame.,Weapon master. Style master.,Lackey(Lesser),Trolloid
+LARP,"Troll, Swamp",7,"Green skinned, slimey troll.",Green makupe with black slime accents. Tabard with hanging foliage if available.,25,Must Wear Rep,0,Normal,None.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,Arcane Entangle x2.,"Resist Poison x1.
+ Cloak Flame x1.",Double damage from flame.,Weapon master. Style master.,Lackey(Lesser),Trolloid
+LARP,"Troll, Warlord",15,Large grey or brown skinned troll.,Grey or brown makeup.,50,Must Wear Rep,4,High,None.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),9,10,Normal,None.,None.,Double damage from flame.,"Weapon master. Style master. 
+ Weapon proficiency +4. 
+ Slay x2. Improved Slay x2.
+ Parry x2.
+ Shatter x1. ^&",Minion(Greater),Trolloid
+LARP,"Troll, Emperor",18,"Large, black skinned troll.",Black makeup.,80,Must Wear Rep,4,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Normal,"Control troll by voice. 
+ Arcane Entangle x4.","Immune to command, flame. 
+ Resist Spell x3.
+ Resist Poison x3.",Double damage from flame.,"May possess PC skills, do not add character body.
+ Weapon master. Style master.",Master(Greater),Trolloid
+LARP,Bullywug,1,"Small, humanoid frog.",Green or brown makeup. White around eyes.,10,None,0,Low,None,0,None,None,Weapon (One Handed),2,0,Normal,None.,None.,Double damage from ice.,One handed edged or one handed blunt.,Fodder(Lesser),Reptoid
+LARP,Fire Newt,5,"Small, red, froglike humanoid.",Red makeup. White around eyes.,20,None,0,Low,None.,0,None,None,Weapon (Any),2,3,Flame,"10 Elemental Flame x2. 
+ Magic Enflame x2.",Healed by flame.,Double damage from ice.,Weapon master. Style master.,Lackey(Lesser),Reptoid
+LARP,"Lizard Man, Youngling",2,"Green, scaly lizard biped.",Green and yellow makeup with scales.,15,Must Wear Rep,0,Low,None.,0,None,None,Weapon (One Handed),2,3,Normal,None.,None.,Double damage from ice.,Weapon Master. Style Master.,Lackey(Lesser),Reptoid
+LARP,"Lizard Man, Mature",2,"Green, scaly lizard biped.",Green and yellow makeup with scales.,20,Must Wear Rep,0,Low,None.,1,Entangle,None,Weapon (One Handed),3,4,Normal,None.,None.,Double damage from ice.,Weapon Master. Style Master.,Lackey(Lesser),Reptoid
+LARP,"Lizard Man, Saurian",5,"Large, green, scaly biped.",Green and yellow makeup with scales.,40,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,Nausea Poison x2.,None.,Double damage from ice,Weapon master. Style master.,Servant(Lesser),Reptoid
+LARP,"Lizard Man, Reptilon",14,"Mammoth, green, scaly biped.",Green and yellow makeup with scales.,55,20 Natural Armor,5,High,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),6,7,Normal,Nausea Poison x3.,None.,Double damage from ice.,"May possess PC skills, do not add character body.",Overlord(Greater),Reptoid
+LARP,"Naga, Young",2,"Large, red scaled cobra.",Red makeup with scales.,10,Must Wear Rep,0,Animal,None.,0,None,None,Weapons and Claws (Any),2,3,Normal,5 Elemental Acid x1.,"Alien metabolism.
+ Resist Poison x1.",Double damage from ice.,None.,Fodder(Lesser),Reptoid
+LARP,"Naga, Thrall",3,Humanoid cobra with red scales.,Red makeup with scales.,20,Must Wear Rep,0,Low,As skills.,1,Entangle,None,Weapons and Claws (Any),3,4,Normal,10 Elemental Acid x1.,"Alien Metabolism.
+ Resist Poison x1.",Double damage from ice.,"May possess PC skills (fighter, rogue or scout), do not add character body.",Lackey(Lesser),Reptoid
+LARP,"Naga, Warrior",5,humanoid Cobra with red scales,Red makeup with scales.,35,Must Wear Rep,0,Normal,As skills.,2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Normal,10 Elemental Acid x1.,"Alien metabolism.
+ Resist Poison x1.",Double damage from ice.,"May possess PC skills, (fighter, rogue or scout), do not add character body.",Servant(Lesser),Reptoid
+LARP,"Naga, Blackguard",8,Humanoid cobra with red scales.,Red makeup with scales.,55,Must Wear Rep,0,High,As skills.,3,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),5,6,Normal,10 Elemental Acid x3.,"Alien Metabolism. 
+ Resist Poison x3.",Double damage from ice.,"May possess PC skills (fighter, rogue or scout), do not add character body.",Minion(Greater),Reptoid
+LARP,"Naga, Beguiler",10,Humanoid cobra with red scales.,Red makeup with scales.,35,Must Wear Rep,0,High,As skills.,2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Normal,"10 Elemental Acid x2. 
+ Dominate Poison x3.
+ Sleep Poison x3.","Alien Metabolism. 
+ Resist Poison x3.",Double damage from ice.,"May possess PC skills (adept, scholar or templar only), do not add character body.",Minion(Greater),Reptoid
+LARP,"Naga, Clan Elder",15,Humanoid cobra with red scales and a red gem in forehead.,Red makeup with scales.,65,Must Wear Rep,0,High,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),6,7,Normal,"20 Elemental Acid x3. 
+ Death Poison x1.","Alien metabolism.
+ Immune to command, poison.
+ Acidic skin.",Double damage from ice.,"May possess PC skills (fighter, rogue or scout), do not add character body.",Overlord(Greater),Reptoid
+LARP,"Naga, Queen",24,Humanoid cobra with red scales and a red gem in forehead.,Red makeup with scales.,80,30 Natural Armor,6,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,1,Normal,"Control naga by voice. 
+ 30 Elemental Acid x3. 
+ 20 Elemental Acid x6. 
+ Death Poison x3.","Alien metabolism.
+ Immune to command, poison.",Double damage from ice.,"May possess PC skills, do not add character body.",Master(Greater),Reptoid
+LARP,Salamander,6,"Large, red, froglike humanoid.",Red makeup with white around eyes.,35,None,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon and Claws (One Handed),4,0,Flame,20 Elemental Flame x2.,Healed by flame.,Double damage from ice.,One handed weapon master. Style master.,Servant(Lesser),Reptoid
+LARP,Chocolate Pudding,3,Brown slime.,Brown makeup with black slime accents.,15,None,0,Mindless,None.,1,Entangle,None,Claws (One Handed),3,0,Slow,"Intoxicate Poison x5. 
+ Engulf x1.","Alien metabolism. 
+ Immune to command, poison, waylay.","Double damage from flame. 
+ Killed by gypsy curse.",None.,Lackey(Lesser),Plant
+LARP,Cobalt Ooze,4,"Blue, oozing creature.",Blue makeup with white ooze accents.,25,None,0,Mindless,None.,1,Entangle,None,Claws (Any),3,4,Normal,"Paranoia Poison x3.
+ Berserk Poison x1. 
+ Engulf x1.","Alien metabolism. 
+ Immune to command, poison, waylay.",Double damage from flame.,None.,Servant(Lesser),Plant
+LARP,Grape Jelly,6,A purplish ooze.,Purple makeup with black ooze accents.,20,None,0,Mindless,None.,1,Entangle,None,Claws (Any),3,4,Enfeeble,"Arcane Entangle x6.
+ Engulf x1.","Alien metabolism.
+ Immune to command, poison, waylay.",Double damage from flame.,None.,Servant(Lesser),Plant
+LARP,Green Slime,,Green oozing creature.,Green makeup with black and yellow slime accents.,20,None,0,Mindless,None.,1,Entangle,,Claws (Any),3,4,Body,"Magic Shatter x1.
+ Engulf x1.","Alien metabolism.
+ Immune to command, poison, waylay. 
+ Acidic Skin.",Double damage from flame.,None.,Lackey(Lesser),Plant
+LARP,"Spracta, Seedling",2,Humanoid plant.,Green makeup. Plant tabard if available.,10,None,0,Mindless,None.,0,None,None,Claws (One Handed),2,0,Normal,None.,"Alien metabolism.
+ Healed by lightning. Lightning adds to body, up to 50 maximum.
+ Immune to command, poison, waylay.","Double damage from flame, ice.",None.,Fodder(Lesser),Plant
+LARP,"Spracta, Reaper",4,A large bipedal bush with sharp thorns.,Green makeup with black thorns. Plant tabard if available.,10,None,0,Mindless,None,0,None,None,Claws (One Handed),2,3,Enfeeble,Feeblemind Poison x1.,"Alien metabolism.
+ Healed by lightning.
+ Immune to command, poison, waylay.","Double damage from flame, ice.",None.,Lackey(Lesser),Plant
+LARP,"Spracta, Consumer",6,"A black, bipedal plant.",Green makeup. Plant tabard if available.,25,None,0,Mindless,None.,0,None,None,Claws (Any),2,3,Normal,"Arcane Entangle x3.
+ Death Poison x1.
+ Engulf x2.","Alien metabolism.
+ Healed by lightning.
+ Immune to command, poison waylay.","Double damage from flame, ice.",None.,Minion(Greater),Plant
+LARP,"Spracta, Man Trap",6,Large bipedal plant with enormous jaws.,Green makeup with large red mouth. Plant tabard if available.,25,None,0,Mindless,None.,1,Entangle,None,Claws (Any),3,4,Normal,"Paralysis Poison x2. 
+ Engulf x2.","Alien metabolism.
+ Healed by lightning.
+ Immune to command, poison, waylay.","Double damage from flame, ice.",None.,Servant(Lesser),Plant
+LARP,"Spracta, Dissolver",7,Large bipedal plant dripping acid.,Green makeup with yellow acid drip accents. Plant tabard if available.,20,None,0,Low,None.,1,Entangle,None,Claws (Any),3,4,Normal,"Control plant by voice.
+ 10 Elemental Acid x6.
+ 20 Elemental Acid x2.","Alien metabolism.
+ Healed by lightning.
+ Immune to command, poison, waylay.
+ Acidic Skin.","Double damage from flame, ice.",None.,Servant(Lesser),Plant
+LARP,"Spracta, Shambler",12,"Large, walking plant.",Green makeup. Plant tabard if available.,10,None,0,Mindless,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Normal,"Arcane Entangle x3.
+ Engulf x3.","Alien metabolism.
+ Healed by lightning.
+ Immune to command, flame, ice, poison, waylay.",Double damage from stone.,None.,Minion(Greater),Plant
+LARP,Attercob,6,Large spider with humanoid features.,"Attercob are black, with six additional arms (via tabard or shirt) with a black hour glass on their foreheads.",20,None,0,Normal,4-4-3-2-1 (Either ),2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Normal,Arcane Entangle x3.,"Alien metabolism. 
+ Immune to command, Entangle, Slow, Repel, Bind",Double damage from flame.,"Weapon master. Style master. 
+ Read and write. 
+ Read magic. 
+ First aid. Healing arts.",Servant(Lesser),Insect
+LARP,"Attercob, Queen",35,Large spider with humanoid features.,"Attercob are black, with six additional arms (via tabard or shirt) with a black hour glass on their foreheads. Queens typically have a large white sack on their backs (egg sack).",100,None,5,Genius,As skills.,5,Immune,Immune,Weapons and Claws (Any),7,8,Drain,"Control spider or attercob by voice.
+ Arcane Entangle x10.","Alien metabolism.
+ Immune to command, poison.
+Auto Reflect binding 
+ Resist Spell x3.",Double damage from flame.,"May possess PC skills, add character body.",Master(Greater),Insect
+LARP,"Fire Ant, Worker",3,"Large, red ant.",Red makeup. Antennae if available.,10,None,0,Low,None.,0,None,None,Claws (Any),2,3,Flame,None.,"Alien metabolism.
+ Group mind.
+ Healed by flame.
+ Immune to command (except charm and sleep), greater command, waylay.","Double damage from ice.
+ Killed by dominate or sleep.",None.,Fodder(Lesser),Insect
+LARP,"Fire Ant, Drone Warrior",5,"Giant, red ant.",Red makeup. Antennae if available.,20,None,0,Low,None.,1,Entangle,None,Claws (Any),3,4,Flame,5 Elemental Flame x5.,"Alien metabolism.
+ Group mind.
+ Healed by flame.
+ Immune to command (except charm and sleep), greater command, waylay.","Double damage from ice.
+ Killed by dominate or sleep.",None.,Servant(Lesser),Insect
+LARP,"Fire Ant, The Offspring",7,"Giant, red ant.",Red makeup. Antennae if available.,25,None,0,Low,None.,3,"Entangle, Slow, Repel, Bind",None,Claws (Any),5,6,Flame,10 Elemental Flame x3.,"Alien metabolism.
+ Group mind.
+ Healed by flame.
+ Immune to command (except charm and sleep), greater command, waylay.","Double damage from ice.
+ Killed by dominate or sleep.",None.,Overlord(Greater),Insect
+LARP,"Fire Ant, Soldier",9,"Giant, red ant.",Red makeup. Antennae if available.,15,None,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon (One Handed),4,5,Flame,20 Elemental Flame x3.,"Alien metabolism.
+ Group mind.
+ Healed by flame.
+ Immune to command (except charm and sleep), greater command, waylay.","Double damage from ice.
+ Killed by dominate or sleep.",None.,Minion(Greater),Insect
+LARP,"Fire Ant, Queen",14,Huge ant queen.,Red makeup. Antennae if available. Large red egg sack if available.,50,None,0,High,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Flame,"Control fire ant by voice.
+ 20 Elemental Flame x5. 
+ 5 Elemental Flame unlimited. Cannot move feet as per Magic Storm rules while using this attack.","Alien metabolism.
+ Group mind.
+ Healed by flame.
+ Immune to command, greater command, poison, waylay.",Double damage from ice.,None.,Master(Greater),Insect
+LARP,Spider,3,Giant spider.,"Black, brown grey or other color makeup with 6 additional eyes.",15,None,0,Animal,None.,0,Immune,Immune,Claws (One Handed),2,0,Normal,Arcane Entangle x3.,"Alien metabolism. 
+ Immune to command, waylay.",Double damage from flame.,None.,Fodder(Lesser),Insect
+LARP,"Spider, Shadow",8,"Large, black, shadowy spider.",Black makeup with 6 additional eyes.,25,None,0,Animal,None.,3,Immune,Immune,Claws (One Handed),5,0,Normal,Arcane Entangle x3.,"Alien metabolism. 
+ Immune to command. 
+ Phase x2.",Double damage from flame.,None.,Servant(Lesser),Insect
+LARP,Ogre,4,Yellow skinned ogroid,Yellow makeup with tusks.,25,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,"
+ Resist Necromancy x1.",None.,Weapon master. Style Master.,Lackey(Lesser),Ogroid
+LARP,"Ogre, War",7,Yellow skinned ogroid,Yellow makeup with tusks.,40,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),6,7,Normal,None.,"
+ Resist Necromancy x2.",None.,"Weapon master. Style master. 
+ Weapon proficiency +2. 
+ Slay x1.
+ Parry x1. ^&",Servant(Lesser),Ogroid
+LARP,"Ogre, Champion",16,Yellow skinned ogroid,Yellow makeup with tusks.,60,Must Wear Rep,0,Normal,None.,4,"Entangle, Slow, Repel, Bind",None,Weapon (Any),10,11,Normal,None.,"
+ Resist Necromancy x3.
+ Resist Spell x2.",None.,"Weapon master. Style master. 
+ Weapon proficiency +4. 
+ Slay x2. Improved Slay x2.
+ Parry x2.
+ Eviscerate 1. Riposte 1.
+ Stun limb x1. Shatter x1. ^&",Minion(Greater),Ogroid
+LARP,"Ogre, Chieftain",30,Yellow skinned ogroid,Yellow makeup with tusks.,100,Must Wear Rep,5,Normal,None.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapon (Any),18,19,Normal,Control ogre by voice (Does not affect high ogres).,"
+ Resist Necromancy x5.
+ Resist Poison x2.
+ Resist Spell x3.",None.,"Weapon master. Style master. 
+ Weapon proficiency +8.
+ Slay x4. Improved Slay x4.
+ Parry x4.
+ Eviscerate 2. Riposte 2.
+ Stun limb x2. Shatter x2. ^&",Master(Greater),Ogroid
+LARP,"Ogre, Coward",12,Yellow skinned ogroid,Yellow makeup with tusks.,25,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,"
+ Resist Necromancy x1.",None.,"Weapon master. Style master. 
+ Read and write.
+ Herbal lore. Alchemy 3.
+ Backstab +8.
+ Dodge x2. Assassinate x2 (50 damage).
+ Improved Assassinate x1
+ Evade x4. Disarm x4. ^&",Master(Greater),Ogroid
+LARP,"Ogre, Shaman",12,Yellow skinned ogroid,Yellow makeup with tusks.,35,Must Wear Rep,0,Low,4-4-4-4-3-2-1 (earth only),2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,"
+ Resist Necromancy x3.",None.,"Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.",Minion(Greater),Ogroid
+LARP,"Ogre, Tribal Shaman",22,Yellow skinned ogroid,Yellow makeup with tusks.,60,Must Wear Rep,0,Low,4-4-4-4-4-4-3-2-1 (earth only),2,"Entangle, Slow, Repel",None,Weapon (Any),8,9,Normal,Control ogre by voice (Does not affect high ogres).,"
+ Resist Necromancy x4.
+ Resist Spell x2.",None.,"Weapon master. Style master.
+ Read and write.
+ First aid. Healing arts.
+ Proficiency +4.
+ Slay x2. Improved Slay x2
+ Parry x2. ^&",Master(Greater),Ogroid
+LARP,"Ogre, Northern (Yeti)",10,White furred and white skinned Ogroid,White makeup with tusks. White or grey fur if available.,25,Must Wear Rep,0,Low,None.,4,"Entangle, Slow, Repel, Bind",None,Claws (Any),6,7,Normal,"10 Elemental Ice x3. 
+ Magic Paralysis x1. 
+ Arcane Fear x1.",Immune to ice.,Double damage from flame.,None.,Minion(Greater),Ogroid
+LARP,"Ogre, Tengu",15,Yellow skinned ogroid with red eyes.,Yellow makeup with tusks. Red makeup around eyes.,50,Must Wear Rep,0,High,As skills.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,"Control Ogroid and Goblinoid by voice (Does not affect high ogres or high orcs).
+ Vampire charm.
+ Channel spell Paralysis x1.
+ Arcane Paralysis x2. 
+ Arcane Fear x2.","Healed by necromancy.
+ Immune to command, poison.
+ Resist Spell x2. 
+ Dodge x1.
+ Gaseous form x1.",Double damage from healing (not affected by undead spells).,"May possess PC skills, do not add character body.",Overlord(Greater),Ogroid
+LARP,"Orc, Grunt",3,Green skinned ogroid,Green makeup with tusks.,20,Must Wear Rep,0,Low,None.,1,Entangle,None,Weapon (Any),3,4,Normal,None.,None.,None.,Weapon master. Style master.,Fodder(Lesser),Ogroid
+LARP,"Orc, Elite",8,Green skinned ogroid,Green makeup with tusks.,20,Must Wear Rep,0,Low,None.,1,Entangle,None,Weapon (Any),5,6,Normal,None.,None.,None.,Weapon master. Style master. Weapon proficiency +2. ^&,Servant(Lesser),Ogroid
+LARP,"Orc, War",8,Green skinned ogroid,Green makeup with tusks.,25,Must Wear Rep,0,Low,None.,1,Entangle,None,Weapon (Any),6,7,Normal,None.,None.,None.,"Weapon master. Style master. 
+ Weapon proficiency +3. 
+ Slay x1.
+ Parry x1. ^&",Servant(Lesser),Ogroid
+LARP,"Orc, War Chief",10,"Large, green skinned Ogroid",Green makeup with tusks.,45,Must Wear Rep,0,Normal,None.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,Control orc by voice (does not affect high orcs).,"Immune to command.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x2.",None.,"May posses PC skills (cannot be scholar, may be templar), add character body.",Fodder(Lesser),Ogroid
+LARP,"Orc, Spell Fist",12,Green skinned ogroid,Green makeup with tusks.,20,Must Wear Rep,0,Normal,4-4-4-4-4-3-2-1 (earth),1,Entangle,None,Weapon (Any),3,4,Normal,None.,None.,None.,"Weapon master. Style Master.
+ Read and write.
+ First Aid. Healing Arts.",Minion(Greater),Ogroid
+LARP,"Orc, War Bringer",18,"Large, green skinned ogroid",Green makeup with tusks.,40,Must Wear Rep,0,Normal,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),10,11,Normal,Magic Berserk x1.,"Immune to command, silence. 
+ Cloak Binding x2.",None.,"Weapon master. Style master. 
+ Weapon proficiency +6. 
+ Slay x2. Improved Slay x2.
+ Parry x2.
+ Shatter x1. ^&",Servant(Lesser),Ogroid
+LARP,Bone Golem,20,"Large, skeletal creature.",Skeleton mask or makeup. Skeletal tabard.,65,Must Wear Rep,0,Mindless,As skills.,10,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Claws (Any),12,13,Normal,None.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay and death. 
+ Only affected by Spell, and Body weapon attacks.","Can only be healed by ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Minion(Greater),Construct
+LARP,Diamond Golem,24,"Large, glass statue.",White makeup with lines for facets.,65,Must Wear Rep,0,Mindless,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Normal,None.,"No metabolism. Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Innate Reflect Spell(except versus Shatter and Destroy).","Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ Takes 15 damage from Shatter. 
+ Takes 30 damage from destroy.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Overlord(Greater),Construct
+LARP,"Gargoyle, Guardian of Troves",6,Stone construct with bat wings.,Grey makeup and wings.,20,None,0,Mindless,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Normal,Channel spell Shun x1.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Half damage from weapon attacks.","Double damage from lightning. 
+ Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ 15 damage from Shatter. 
+ 30 damage from Destroy.",This construct may not be the target of the spirit store ritual.,Fodder(Lesser),Construct
+LARP,"Gargoyle, Guardian of Portals",8,Stone construct with bat wings.,Grey makeup and wings.,35,None,0,Mindless,None.,3,"Entangle, Slow, Repel, Bind",None,Claws (Any),5,6,Normal,Channel spell Shun x2.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Half damage from weapon attacks.","Double damage from lightning. 
+ Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ 15 damage from Shatter. 
+ 30 damage from Destroy.",This construct may not be the target of the spirit store ritual.,Lackey(Lesser),Construct
+LARP,"Gargoyle, Guardian of Gates",12,Stone construct with bat wings.,Grey makeup and wings.,50,None,0,Mindless,None.,4,"Entangle, Slow, Repel, Bind",None,Claws (Any),6,7,Normal,Channel spell Shun x3.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Half damage from weapon attacks. 
+ Resist Spell x1.","Double damage from lightning. 
+ Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ 15 damage from Shatter. 
+ 30 damage from Destroy.",This construct may not be the target of the spirit store ritual.,Servant(Lesser),Construct
+LARP,"Gargoyle, Guardian of Towers",14,Large stone construct with bat wings.,Grey makeup and wings.,55,None,4,Mindless,None.,5,"Entangle, Slow, Repel, Bind",None,Claws (Any),7,8,Shun,Channel spell Shun x3.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Half damage from weapon attacks. 
+ Resist Magic x2.
+ Dodge x1.","Double damage from lightning. 
+ Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ 15 damage from Shatter. 
+ 30 damage from Destroy.",This construct may not be the target of the spirit store ritual.,Minion(Greater),Construct
+LARP,"Gargoyle, Guardian of Keeps",16,Large stone construct with bat wings.,Grey makeup and wings.,60,None,4,Mindless,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Silence,Channel spell Shun x2.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Half damage from weapon attacks. 
+ Resist Spell x2.","Double damage from lightning. 
+ Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ 15 damage from Shatter. 
+ 30 damage from Destroy.",This construct may not be the target of the spirit store ritual.,Overlord(Greater),Construct
+LARP,"Gargoyle, Guardian of Forever",25,Massive stone construct with bat wings.,Grey makeup and wings.,80,None,4,Mindless,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Body,Channel spell Shun x3.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Half damage from weapon attacks. 
+ Resist Spell x2. 
+ Dodge x2.","Double damage from lightning. 
+ Can only be healed by ritual.
+ Immune to healing, life. 
+ Destroyed at 0 body.
+ 15 damage from Shatter. 
+ 30 damage from Destroy.",This construct may not be the target of the spirit store ritual.,Master(Greater),Construct
+LARP,Homonculus,6,Patchwork humanoid.,Various colored makeup with black stitches.,20,None,0,Mindless,None.,1,Entangle,None,Claws (One Handed),3,0,Sleep,Arcane Sleep x3.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.","Can only be healed by ritual. 
+ Immune to healing, life.
+ Destroyed at 0 body.",This construct may not be the target of the spirit store ritual.,Lackey(Lesser),Construct
+LARP,Iron Man,8,Statue made of iron.,Silver or gray makeup.,40,Must Wear Rep,0,Mindless,As skills.,2,"Entangle, Slow, Repel, Bind",None,Claws (One Handed),4,0,Normal,None.,"No metabolism. 
+ Healed by lightning.
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.","Double damage from ice.
+ Can only be healed by ritual or lightning.
+ Immune to healing. life. 
+ Destroyed at 0 body.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Servant(Lesser),Construct
+LARP,Iron Golem,12,Large statue made of iron.,Silver or gray makeup.,60,Must Wear Rep,4,Mindless,As skills.,4,"Entangle, Slow, Repel, Bind",None,Claws (Any),6,7,Normal,None.,"No metabolism.
+ Healed by lightning.
+ Immune to command,  healing, necromancy, poison, paralysis, waylay.","Double damage from ice.
+ Can only be healed by ritual, lightning.
+ Immune to healing, life. 
+ Destroyed at 0 body.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Minion(Greater),Construct
+LARP,Mercury Golem,25,Statue made of liquid metal.,Silver makeup.,100,None,0,Mindless,As skills.,5,Immune,Immune,Claws (Any),7,8,Silver,None.,"No metabolism.
+ Healed by lightning.
+ Immune to alteration, command,  flame, ice, healing, necromancy, poison, paralysis, stone, waylay.
+ Phase x5.","Can only be healed by ritual or lightning.
+ Immune to healing, life. 
+ Destroyed at 0 body. 
+ 15 damage from Shatter. 
+ 30 damage from Destroy.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Master(Greater),Construct
+LARP,Mud Golem,5,Statue made of earth.,Brown makeup.,20,None,0,Mindless,As skills.,1,Entangle,None,Claws (Any),3,4,Normal,Arcane Entangle x2.,"No metabolism. 
+ Healed by ice.
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.","Can only be healed by ice or ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Lackey(Lesser),Construct
+LARP,Obsidian Man,12,Statue made of black stone.,Black makeup.,35,Must Wear Rep,0,Mindless,As skills.,2,"Entangle, Slow, Repel",None,Claws (One Handed),4,0,Normal,None.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Innate Reflect Spell (except versus Shatter and Destroy).","Can only be healed by ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body. 
+ 15 damage from Shatter. 
+ 30 damage from Destroy.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Lackey(Lesser),Construct
+LARP,Obsidian Golem,15,Large statue made of black stone.,Black makeup.,55,Must Wear Rep,0,Mindless,As skills.,4,"Entangle, Slow, Repel, Bind",None,Claws (Any),6,7,Normal,None.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.
+ Innate Reflect Spell (except versus Shatter and Destroy).","Can only be healed by ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body. 
+ 15 damage from Shatter. 
+ 30 damage from Destroy.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Servant(Lesser),Construct
+LARP,Scarecrow,5,Scarecrow.,Brown or tan makeup with black eyes and lighter nose.,25,Must Wear Rep,0,Mindless,As skills.,0,None,None,Claws (One Handed),2,0,Normal,Arcane Fear x3.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.","Double damage from flame.
+ Can only be healed by ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Lackey(Lesser),Construct
+LARP,Silver Golem,22,Large statue made of silver.,Silver makeup.,80,Must Wear Rep,0,Mindless,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Claws (Any),10,11,Silver,Channel spell Prison x3.,"No metabolism.
+ Healed to full by prison.
+ Immune to alteration, command, curse, healing, necromancy, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from silver weapon attacks.","Can only be healed by prison or ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body. 
+ 15 damage from Shatter. 
+ 30 damage from Destroy.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Overlord(Greater),Construct
+LARP,Stone Golem,12,"Large, stone statue.",Grey makeup.,50,Must Wear Rep,0,Mindless,As skills.,3,"Entangle, Slow, Repel, Bind",None,Claws (Any),5,6,Normal,None.,"No metabolism. 
+ Immune to alteration, command, healing, necromancy, poison, paralysis, waylay.","Can only be healed by ritual. 
+ Immune to healing, life. 
+ Destroyed at 0 body. 
+ 15 damage from Shatter. 
+ 30 damage from Destroy.","May possess PC skills, if a spirit is stored in golem, do not add character body.",Servant(Lesser),Construct
+LARP,Crimson Fog,5,"Red, glowing mist.",Red makeup. Red flowing tabard or robe.,20,None,0,Animal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Normal,Engulf x1.,"Alien metabolism. 
+ Phase x1. 
+ Gaseous form x1.","May not go gaseous when someone is engulfed. 
+ Killed by slow, bind, web or confine.
+ Dissipates at 0 body.",None.,Servant(Lesser),Magical Creature
+LARP,Dark Unicorn,40,A black stallion with a twisted horn in its forehead.,"Black makeup. Black, twisted horn.",100,None,9,Genius,7-7-7-7-7-7-7-7-7 (earth),6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Spell,"Magic Destruction x3. 
+ Magic Drain x3. 
+ Channel spell Death x3. 
+ Channel spell Paralysis x3. 
+ Channel spell Cause Mortal Wounds x3.","Immune to alteration, command, poison, silence, waylay. Healed by necromancy.
+ Only affected by Earth, Spell, or Body weapon attacks. 
+ Resist Spell x5. 
+ Dodge x5.",Double damage from healing.,None.,Master(Greater),Magical Creature
+LARP,Iron Rattler,5,A metallic-looking snake.,Grey or silver makeup with large fangs.,15,None,10,Animal,None.,1,Entangle,None,Claws (Any),3,4,Normal,None.,"No metabolism.
+ Healed by lightning.
+ Immune to alteration, command, necromancy, poison, paralysis, waylay.
+ Dodge x1.","Can only be healed by lightning. 
+ Immune to healing, life. 
+ Destroyed at 0 body.",None.,Lackey(Lesser),Magical Creature
+LARP,Magic Eater,2,Small Armadillo like creature with a brownish hide,Brown and yellow makeup. Brown tabard.,15,None,0,Animal,None.,0,None,None,Claws (One Handed),1,0,Normal,None.,"Alien metabolism. 
+ Healed by all spells (5 body points per spell). 
+ Immune to waylay. 
+ Immune to Spell weapon attacks.",None.,None.,Lackey(Lesser),Magical Creature
+LARP,Unicorn,40,A white stallion with a horn in its forehead.,White makeup with white horn.,100,None,9,Genius,7-7-7-7-7-7-7-7-7 (earth),6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Spell,"Magic Remove Destruction x3. 
+ Magic Purify x3. 
+ Channel spell Death x3. 
+ Channel spell Life x3. 
+ Channel spell Cure Mortal Wounds x3.","Immune to alteration, command, greater command, poison, silence, waylay. 
+ Only affected by chaos, spell, body weapon attacks. 
+ Resist Spell x5. 
+ Dodge x5.",Double damage from necromancy.,None.,Master(Greater),Magical Creature
+LARP,"Fey, Commoner",4,Any PC race.,Fey may appear to be of any PC race.,5,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (Any),2,3,Normal,"Arcane Dominate x1.
+ Lesser fey curse x1.","Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks.
+ Rift x1.
+ Dodge x1.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Lackey(Lesser),Fey
+LARP,"Fey, Merchant",6,Any PC race.,Fey may appear to be of any PC race.,10,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (Any),2,3,Normal,"Arcane Dominate x1.
+ Lesser fey curse x1.","Immune to command.
+ Immune to silver, spell weapon attacks
+ Rift x1.
+ Resist Spell x1.
+ Dodge x1.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Lackey(Lesser),Fey
+LARP,"Fey, Gentry",10,Any PC race.,Fey may appear to be of any PC race.,20,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (Any),2,3,Normal,"Arcane Dominate x2.
+ Lesser fey curse x2.","Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks
+ Rift x2
+ Resist Spell x2.
+ Dodge x1.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Lackey(Lesser),Fey
+LARP,"Fey, Noble",16,Any PC race.,Fey may appear to be of any PC race.,25,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (Any),2,3,Normal,"Arcane Dominate x2.
+ Arcane Sleep x2.
+ Lesser fey curse x2.
+ Greater fey curse x1.","Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks
+ Rift x2
+ Resist Spell x2.
+ Dodge x4.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Lackey(Lesser),Fey
+LARP,Quickling,4,PC Race with blue tinged skin and white lightning bolts on face.,Fey may appear to be of any PC race. Blue skin with white lightning bolts.,10,Must Wear Rep,0,Normal,As skills.,0,Immune,Immune,Weapon (One Handed),2,3,Lightning,Channel spell Lightning Bolt x2,"Healed by lightning.
+ Immune to binding, command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks
+ Evade x2.
+ Dodge x1.","Double damage from stone.
+ Double damage from normal weapon attacks.","One handed weapon master.
+ Style master.",Lackey(Lesser),Fey
+LARP,"Quickling, Bolt",4,PC Race with blue tinged skin and white lightning bolts on face.,Fey may appear to be of any PC race. Blue skin with white lightning bolts.,20,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (One Handed),2,3,Lightning,"Channel spell Lightning Bolt x2
+ Channel spell Lightning Storm x2.","Healed by lightning.
+ Immune to binding, command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks
+ Evade x4.
+ Dodge x2.","Double damage from stone.
+ Double damage from normal weapon attacks.","May possess PC Skills, add character body. 
+ One handed weapon master.
+ Style master.",Lackey(Lesser),Fey
+LARP,"Quickling, Flash",4,PC Race with blue tinged skin and white lightning bolts on face.,Fey may appear to be of any PC race. Blue skin with white lightning bolts.,35,Must Wear Rep,0,Normal,As skills.,0,"Entangle, Slow, Repel, Bind",None,Weapon (One Handed),2,3,Lightning,"Channel spell Lightning Bolt x2
+ Channel spell Lightning Storm x2.
+ Channel spell Lightning Blast x2.","Healed by lightning.
+ Immune to binding, command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks
+ Evade x8.
+ Dodge x4.","Double damage from stone.
+ Double damage from normal weapon attacks.","May possess PC Skills, add character body. 
+ One handed weapon master.
+ Style master.",Lackey(Lesser),Fey
+LARP,Red Cap,4,PC race with blood red hair or hat.,Fey may appear to be of any PC race. Must wear a red hat or have blood red hair.,20,Must Wear Rep,0,Normal,As skills.,2,"Entangle, Slow, Repel",None,Weapon (One Handed),4,5,Normal,Arcane Fear x1.,"Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks
+ Resist Poison x1.
+ Resist Spell x2.",Double damage from normal weapon attacks.,"Weapon master.
+ Style master.",Lackey(Lesser),Fey
+LARP,"Red Cap, Bloodletter",4,PC race with blood red hair or hat.,Fey may appear to be of any PC race. Must wear a red hat or have blood red hair.,40,Must Wear Rep,0,Normal,As skills.,4,None,None,Weapon and Claws (One Handed),6,7,Body,Arcane Fear x2.,"Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks.
+Rift x1.
+ Resist Poison x2.
+ Resist Spell x3.
+ Dodge x1.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.
+ Weapon master.
+ Style master.",Lackey(Lesser),Fey
+LARP,"Red Cap, Throatslitter",4,PC race with blood red hair or hat.,Fey may appear to be of any PC race. Must wear a red hat or have blood red hair.,60,Must Wear Rep,0,Normal,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Berserk,Arcane Fear x4.,"Immune to command.
+ Only affected by normal weapon attacks.
+Rift x2.
+ Resist Poison x3.
+ Resist Spell x4.
+ Dodge x2.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.
+ Weapon master.
+ Style master.",Lackey(Lesser),Fey
+LARP,"Satyr, Commoner",4,Humanoid with goatlike legs and Mystic Wood Elf horns.,MWE horns and fur pants if available.,20,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (Any),2,3,Normal,Arcane Dominate x2.,"Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Lackey(Lesser),Fey
+LARP,"Satyr, Knight",8,Humanoid with goat like legs and Mystic Wood Elf horns.,MWE horns and fur pants if available.,30,Must Wear Rep,0,Normal,3-2-1 (either),2,"Entangle, Slow, Repel",None,Weapon (Any),3,4,Normal,"Arcane dominate x3.
+ Innate pyramid.
+ Lesser fey curse x2.
+ Fey mark/unmark x1.","Immune to command.
+Reduced Damage: Maximum Damage 1 from silver, spell weapon attacks.
+ Resist Spell x2.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Servant(Lesser),Fey
+LARP,"Satyr, Lord",12,Humanoid with goat like legs and Mystic Wood Elf horns.,MWE horns and fur pants if available.,40,Must Wear Rep,0,Normal,4-4-4-4-3-2-1 (either),2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,"Vampire charm x1.
+ Arcane dominate x5.
+ Innate pyramid. 
+ Lesser fey curse x3. 
+ Greater fey curse x1. 
+ Fey mark/unmark x3.","Immune to command.
+Reduced Damage: Maximum Damage 1 from silver and spell weapon attacks.
+ Resist Spell x3.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Minion(Greater),Fey
+LARP,"Satyr, Prince",25,Humanoid with goat like legs and Mystic Wood Elf horns.,MWE horns and fur pants if available.,50,Must Wear Rep,0,High,See offensive abilities.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,"Vampire charm x5.
+ Arcane dominate x5.
+ Innate pyramids: 
+ 4-4-4-4-4-4-3-2-1 primary
+ 4-4-4-3-2-1 secondary. 
+ Lesser fey curse x5. 
+ Greater fey curse x3. 
+ Fey mark/unmark x5.","Resist Spell x5. 
+ Immune to command, poison.
+ Only affected by normal, body weapon attacks.
+Rift x1.",Double damage from normal weapon attacks.,"May possess PC skills, add character body.",Overlord(Greater),Fey
+LARP,"Satyr, King",35,Humanoid with goat like legs and Mystic Wood Elf horns.,MWE horns and fur pants if available.,80,Must Wear Rep,0,High,See offensive abilities.,4,"Entangle, Slow, Repel, Bind",None,Weapon (Any),6,7,Normal,"Vampire Charm, unlimited.
+ Arcane dominate x10.
+ Innate pyramids:
+ 4-4-4-4-4-4-4-4-4 primary
+ 4-4-4-4-4-4-3-2-1 secondary. 
+ Lesser fey curse, unlimited.
+ Greater fey curse x5. 
+ Fey mark/unmark, unlimited.","Immune to command, poison.
+ Only affected by normal, body weapon attacks.
+Rift x2.
+ Resist Spell x7.",None.,"May possess PC skills, add character body.",Master(Greater),Fey
+LARP,Bone Shade,4,Black spectral form.,Black makeup or faceless hood. Black tabard or robe.,10,Must Wear Rep,0,Low,None.,1,Immune,Immune,Claws (One Handed),3,0,Body,Channel spell Bind (legs) x1. $%,"No metabolism.
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Resist Spell x1.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Fodder(Lesser),Undead Spectral
+LARP,Corpse Light,10,"Man-sized, glowing figure.",White clothes. Glow stick around neck if available.,30,None,0,High,4-4-4-4-4-3-2-1,0,Immune,Immune,None,0,0,None,"Control undead by voice. 
+ Arcane dominate x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Cloak Healing x2.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.","Read and write. 
+ First aid. Healing arts..",Minion(Greater),Undead Spectral
+LARP,Ghost,8,"A moaning, transparent spirit covered in chains.",White makeup. White or grey clothes. Chains if available.,20,Must Wear Rep,0,Low,None.,3,Immune,Immune,Claws (Any),5,6,Wither,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Phase x2.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Minion(Greater),Undead Spectral
+LARP,Ghost Lord,18,"A moaning, transparent spirit covered in chains.",White makeup. White or grey clothes. Chains if available.,50,Must Wear Rep,0,High,As skills.,4,Immune,Immune,Claws (Any),6,7,Wither,Channel spell Wither x4.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal and silver weapon attacks.
+ Phase x4.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),Undead Spectral
+LARP,Haunt,18,Black spectral creature,Black makeup or faceless hood with black tabard or robe.,60,Must Wear Rep,0,Normal,As skills.,4,Immune,Immune,Claws (Any),6,7,Silence,"Channel spell Destruction x2.
+ Arcane Fear x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x2. 
+ Cloak Healing x1.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.","May possess PC skills, do not add character body.",Minion(Greater),Undead Spectral
+LARP,Night Shade,12,Black spectral form.,Black makeup or faceless hood with black tabard or robe.,55,Must Wear Rep,0,Low,None.,4,Immune,Immune,Claws (Any),6,7,Body,"Channel spell Bind Legs x2. 
+ Channel spell Confine x2. $%","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Resist Spell x2.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Minion(Greater),Undead Spectral
+LARP,Phantom,8,Non-Corporeal humanoid.,Grey makeup with black around eyes. Grey or black clothes.,20,Must Wear Rep,0,Low,4-4-4-3-2,0,Immune,Immune,None,0,0,None,Arcane Fear x3.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks. 
+ Resist Spell x3.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Servant(Lesser),Undead Spectral
+LARP,Spectral Warlord,30,Spectral form glowing with power.,White or grey makeup with black around eyes. White or grey clothes.,80,Must Wear Rep,0,High,As skills.,6,Immune,Immune,Claws (Any),8,9,Drain,"Arcane Fear x5. 
+ 20 Elemental Ice x5.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Only affected by earth, Spell, body weapon attacks.
+ Phase x4.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.","May possess PC skills, do not add character body.",Master(Greater),Undead Spectral
+LARP,Spectre,8,Non-Corporeal humanoid,Black or grey makeup or faceless hood. Black or grey clothes.,15,Must Wear Rep,0,Mindless,None.,0,Immune,Immune,Claws (One Handed),2,0,Drain,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from  normal weapon attacks.
+ Phase x1.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Lackey(Lesser),Undead Spectral
+LARP,Will O' Wisp,6,A glowing ball of light.,Black clothes with glowstick around neck.,5,None,0,Mindless,None.,0,Immune,Immune,None,0,0,None,Arcane dominate x4 (the only issue a will o' wisp may give is Follow Me).,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, flame, ice, lightning, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Fodder(Lesser),Undead Spectral
+LARP,Wraith,12,Translucent figure.,Black or grey makeup or faceless hood. Black or gey clothes.,40,Must Wear Rep,0,High,None.,3,Immune,Immune,Claws (Any),5,6,Drain,Magic paralysis x1.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Phase x2.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.",None.,Minion(Greater),Undead Spectral
+LARP,Wraith Lord,15,"Large, translucent figure.",Black or grey makeup or faceless hood. Black or gey clothes.,60,Must Wear Rep,0,High,As skills.,4,Immune,Immune,Claws (Any),6,7,Drain,Magic paralysis x2.,"No metabolism. Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Phase x3.","Double damage from healing. 
+ Immune to life.
+ Destroyed by sunlight. 
+ Dissipates at 0 body.","May possess PC skills, do not add character body.",Minion(Greater),Undead Spectral
+LARP,Ancient Mariner,6,Bloated corpse with discolored skin.,Ancient mariners tend towards a bloated and slightly green look (not unlike a ghoul) in addition to undead makeup.,20,Must Wear Rep,0,Normal,None,1,Entangle,None,Weapon (Any),3,4,Normal,25 Elemental Ice x2,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, flame, ice, paralysis, poison, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, add character body.",Servant(Lesser),Undead Zombie
+LARP,Barrow Lord,32,Rotting mound of flesh.,IF at all possible the Barrow lord should be covered in flesh colored robes or tarps.,125,None,0,Genius,As skills.,10,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),12,13,Drain,"Control undead by voice.
+ Nausea Poison x10.
+ 20 Elemental Chaos x10. 
+ Engulf x4. When a barrow lord engulfs a creature it is healed to full body.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, paralysis, bind (legs), poison, waylay.
+ Only affected by earth, Spell, Body weapon attacks.
+ Resist Spell x6. 
+ Cloak Healing x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, do not add character body.",Master(Greater),Undead Zombie
+LARP,Barrow Wight,10,Rotting twisted corpse.,Grey or white makeup with black accents or undead mask.,40,Must Wear Rep,0,Low,None.,3,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),5,6,Drain,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style Master.,Servant(Lesser),Undead Zombie
+LARP,Cackling Corpse,2,"Laughing, humanoid Corpse.",Grey or white makeup with black accents or undead mask. Undead tabard.,10,Must Wear Rep,0,Mindless,None,0,None,None,Claws (One Handed),2,0,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.
+ 
+ MUST LAUGH AND CACKLE LOUDLY.",None.,Fodder(Lesser),Undead Zombie
+LARP,Charnal Juggernaut,6,"Walking, twisted corpse.",Grey or white makeup with black accents or undead mask. Undead tabard.,35,Must Wear Rep,0,Mindless,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half damage from weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Lackey(Lesser),Undead Zombie
+LARP,Charnal Colossus,9,"Walking, twisted corpse.",Grey or white makeup with black accents or undead mask. Undead tabard.,50,Must Wear Rep,0,Mindless,None,4,"Entangle, Slow, Repel, Bind",None,Weapon (Any),6,7,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Immune to normal weapon attacks.
+ Half damage from weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Servant(Lesser),Undead Zombie
+LARP,Charnal Tomb Horror,14,Large hulk of rotting flesh.,Grey or white makeup with black accents or undead mask. Undead tabard.,80,Must Wear Rep,0,Mindless,None.,5,"Entangle, Slow, Repel, Bind",None,Weapon (Any),7,8,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half damage from weapon attacks. 
+ Spell Gaurd x2","Immune to life. 
+ Double damage from healing, harm undead and destroy undead. Turns to dust at 0 body.",Weapon master. Style master.,Minion(Greater),Undead Zombie
+LARP,Clinging Corpse,13,Humanoid wrapped in sticky bandages.,Grey or white makeup with black accents or undead mask. Bandages.,35,Must Wear Rep,0,Mindless,None.,2,Immune,Immune,Claws (Any),4,5,Normal,Arcane Entangle x6.,"No metabolism. Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Searching corpse causes searcher to be stuck to it as paste of stickiness. To remove treasure, an alchemical solvent or release must be used.","Immune to life. 
+ Double damage from healing. 
+ Turns to mound of goo at 0 body.",None.,Minion(Greater),Undead Zombie
+LARP,Death Lord Mage,12,"Scarred, rotting corpse.",Grey or white makeup with black accents or undead mask.,40,Must Wear Rep,0,Normal,As skills.,1,Entangle,None,Weapon (Any),3,4,Normal,"Control undead by voice. 
+ Magic Create Undead x3.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x1. 
+ Spell Desecrate x3.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (celestial or earth scholar), add character body.",Minion(Greater),Undead Zombie
+LARP,Death Lord Thief,12,"Scarred, rotting corpse.",Grey or white makeup with black accents or undead mask.,50,Must Wear Rep,0,Normal,As skills.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,"Control undead by voice. 
+ Magic Create Undead x3. 
+ Arcane Detect Magic x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell  x1.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (rogue), add character body.",Minion(Greater),Undead Zombie
+LARP,Death Lord Warrior,12,"Scarred, rotting humanoid.",Grey or white makeup with black accents or undead mask.,50,Must Wear Rep,0,Normal,As skills.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Normal,"Control undead by voice.
+ Magic Create Undead x3. 
+ Arcane Fear x3","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x1.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (fighter), add character body.",Minion(Greater),Undead Zombie
+LARP,"Death Lord, Wizard",10,"Scarred, rotting corpse.",Grey or white makeup with black accents or undead mask.,50,Must Wear Rep,0,Normal,As skills.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,"Control undead by voice.
+ Magic Create Undead x3.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Spell Desecrate x3.
+ Resist Spell x2.
+ Bane Binding x1. Bane Flame x1.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (celestial or earth scholar), add character body.",Overlord(Greater),Undead Zombie
+LARP,"Death Lord, Rogue",14,"Scarred, rotting corpse.",Grey or white makeup with black accents or undead mask.,55,Must Wear Rep,0,Normal,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapon (Any),6,7,Spell,"Control undead by voice.
+ Magic Create Undead x3.
+ Arcane Detect Magic x6.
+ Magic Release x2.
+ Magic Dispel x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (rogue), add character body.",Overlord(Greater),Undead Zombie
+LARP,"Death Lord, Knight",18,"Scarred, rotting humanoid.",Grey or white makeup with black accents or undead mask.,60,Must Wear Rep,0,Normal,As skills.,5,"Entangle, Slow, Repel, Bind",None,Weapon (Any),7,8,Spell,"Control undead by voice.
+ Magic Create Undead x3. 
+ Arcane Fear x3.
+ Magic Dispel x2.
+ Magic Help Undead x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (fighter), add character body.",Overlord(Greater),Undead Zombie
+LARP,"Death Lord, Dread Lord Sorcerer",24,"Scarred, rotting corpse.",Grey or white makeup with black accents or undead mask.,65,Must Wear Rep,0,High,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapon (Any),6,7,Spell,"Control greater undead by voice.
+ Magic Create Undead x3.
+ Magic Cause Mortal Wounds x2.
+ Magic Dispel x2.
+ Magic Confine x2.
+ Magic Drain x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Only affected by earth, Spell, Body weapon attacks.
+ Spell Desecrate x3. 
+ Resist Spell x4. 
+ Bane Binding x2. Bane Flame x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (celestial or earth scholar), add character body.",Overlord(Greater),Undead Zombie
+LARP,"Death Lord, Dread Lord Highwayman",24,"Scarred, rotting corpse.",Grey or white makeup with black accents or undead mask.,80,Must Wear Rep,0,High,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapon (Any),8,9,Spell,"Control greater undead by voice.
+ Arcane Detect Magic x10.
+ Magic Create Undeadx3 
+ Magic Release x2 Magic Dispel x4 
+ Channel spell Death x2 Channel spell Shun x2
+ Channel spell Disarm x2 Channel spell Shatter x2","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Only affected by earth, Spell weapon attacks.
+ Resist Spell x4.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (rogue), add character body.",Overlord(Greater),Undead Zombie
+LARP,"Death Lord, Dread Lord Preceptor",28,"Scarred, rotting humanoid.",Grey or white makeup with black accents or undead mask.,100,Must Wear Rep,0,High,As skills.,10,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapon (Any),12,13,Spell,"Control greater undead by voice.
+ Arcane Fear x3. 
+ Magic Create Undead x3. 
+ Magic Help Undead x2.
+ Magic Dispel x2. 
+ Magic Death x2. 
+ Channel spell Destruction x2. 
+ Channel spell Wither x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Only affected by earth, Spell weapon attacks.
+ Resist Spell x4. 
+ Bane Flame x2. 
+ Bane Binding x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (fighter), add character body.",Overlord(Greater),Undead Zombie
+LARP,Death Master,7,"Twisted, walking corpse.",Grey or white makeup with black accents or undead mask.,20,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Normal,Control undead by voice.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Lackey(Lesser),Undead Zombie
+LARP,Genhoarde (Failed Liche),20,"Scarred, rotting humanoid with glowing red eyes.",Grey or white makeup with black accents or undead mask.,55,Must Wear Rep,0,Normal,None.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapon and Claws (One Handed),10,11,Wither,"Control undead by voice. 
+ Magic Create Undead x3.","No metabolism.
+ Healed double by necromancy.
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x2. 
+ Phase x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, add character body.",Overlord(Greater),Undead Zombie
+LARP,Ghast,7,Pale twisted corpse .,Grey or white makeup with green accents or undead mask.,20,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Enfeeble,Nausea Poison x2.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Style Master. Weapon master.,Servant(Lesser),Undead Zombie
+LARP,Ghoul,5,"Scarred, rotting humanoid.",Grey or white makeup with green accents or undead mask.,20,Must Wear Rep,0,Low,None.,1,Entangle,None,Claws (One Handed),3,0,Enfeeble,Nausea Poison x1.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",None.,Fodder(Lesser),Undead Zombie
+LARP,Ghoul Lord,,Scarred Rotting Humanoid,Grey or white makeup with green accents or undead mask. Undead tabard.,50,Must Wear Rep,0,Normal,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),6,7,Paralysis,"Control undead by voice.
+ Nausea Poison x4.
+ Channel spell Destruction x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks.
+ Resist Spell x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills (fighter and rogue), do not add character body.",Minion(Greater),Undead Zombie
+LARP,Huntsman,25,Twisted Corpse with entrails dangling from rib cage,Grey or white makeup with black accents or undead mask. Undead tabard.,125,Must Wear Rep,0,High,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapons and Claws (Any),8,9,Enfeeble,"Control greater undead by voice.
+ PHYSICAL BOTTLE (may be regen point).
+ Arcane Death x2.
+ Channel spell Disease x2. 
+ Channel spell Bind x2. 
+ Channel spell Confine x2. %^","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay. 
+ Only affected by earth, magic weapon attacks. 
+ Resist Spell x2. 
+ Cloak Healing x2. 
+ Phase x2.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, do not add character body.",Master(Greater),Undead Zombie
+LARP,Kennel Creep,20,Twisted Corpse with entrails dangling from rib cage,Grey or white makeup with black accents or undead mask. Undead tabard.,65,Must Wear Rep,0,Normal,As skills.,5,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),7,8,"Disease, Slow","Control undead by voice.
+ Physical Bottle (may act as regen point.)
+ Vertigo poison x2. 
+ Channel spell Confine x2. 
+ Channel spell Death x1. $%","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay. 
+Reduced Damage: Maximum Damage 1 from normal, silver weapon attacks. 
+ Cloak Healing x1. 
+ Phase x2.
+Resist Magic x1. ","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),Undead Zombie
+LARP,Lord of the Graveyard,16,A scarred Twisted Corpse.,Grey or white makeup with black accents or undead mask. Undead tabard.,35,Must Wear Rep,0,High,None.,0,None,None,Weapon (Any),8,11,Drain,"Control undead by voice. 
+ Magic Create Undead x15.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Resist Spell x1.
+ Spell Desecrate x3.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","Weapon master. Style master. 
+ Weapon proficiency +6. 
+ Slay x2. Improved Slay x2.
+ Parry x2. ^&",Servant(Lesser),Undead Zombie
+LARP,Mummy,4,Walking corpse clothed in rotted wrappings.,Grey or white makeup with black accents or undead mask. Bandages.,20,Must Wear Rep,0,Mindless,None.,1,Entangle,None,Weapon and Claws (One Handed),3,4,"Disease, Slow",None.,"No metabolism.
+ Healed double by necromancy.
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing, flame. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Lackey(Lesser),Undead Zombie
+LARP,"Mummy, Sycophant",6,Walking corpse clothed in rotted wrappings.,Grey or white makeup with black accents or undead mask. Bandages.,35,Must Wear Rep,0,Mindless,None.,3,None,None,Weapon and Claws (One Handed),5,6,"Disease, Slow","Channel spell Destruction x1. 
+ Channel spell Cause Mortal Wounds x1.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, binding, command, death, ice, poison, paralysis, waylay.
+ Resist Spell x1. 
+ Bane Binding x2.","Immune to life. 
+ Double damage from healing, flame. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Lackey(Lesser),Undead Zombie
+LARP,"Mummy, Pharoah",16,Walking corpse clothed in rotted wrappings.,Grey or white makeup with black accents or undead mask. Bandages.,60,Must Wear Rep,0,Normal,As skills.,5,Immune,Immune,Weapons and Claws (Any),7,8,Wither,"Control undead by voice. 
+ Channel spell Destruction x2. 
+ Channel spell Death x2. 
+ Magic Cause Mortal Wounds x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, binding, command, death, ice, poison, paralysis, waylay.
+ Resist Spell x2. 
+ Bane Binding x2.","Immune to life. 
+ Double damage from healing, flame. 
+ Turns to dust at 0 body.","May possess PC skills, add character body.",Overlord(Greater),Undead Zombie
+LARP,"Mummy, Eternal Emperor",28,Walking corpse clothed in rotted wrappings.,Grey or white makeup with black accents or undead mask. Bandages.,100,Must Wear Rep,0,High,As skills.,8,Immune,Immune,Weapons and Claws (Any),10,11,Wither,"Control greater undead by voice.
+ Channel spell Destruction x4. 
+ Channel spell Death x4.
+ Magic Cause Mortal Wounds x4.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, flame, ice, poison, paralysis, waylay.
+ Only affected by earth, spell, body weapon attacks.
+ Resist Spell x4.
+ Bane binding x4.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, add character body.",Overlord(Greater),Undead Zombie
+LARP,Wight,6,Rotting twisted corpse.,Grey or white makeup with black accents or undead mask.,20,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapon (Any),4,5,Drain,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Lackey(Lesser),Undead Zombie
+LARP,Zombie,1,Walking corpse.,Grey or white makeup with black accents or undead mask.,10,Must Wear Rep,0,Mindless,None.,0,None,None,Weapon and Claws (One Handed),2,3,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body. 
+ Cannot defend itself from attacks. May not run.",Weapon master. Style master.,Fodder(Lesser),Undead Zombie
+LARP,Crypt Keeper,7,Skeletal humanoid with loose strands of putrid flesh.,White makeup with black accents or undead mask. Undead tabard.,25,Must Wear Rep,0,Normal,None.,3,"Entangle, Slow, Repel, Bind",None,Weapon (Any),5,6,Enfeeble,"Control undead by voice. 
+ Magic Enfeeble x2.
+ Magic Death x2.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Servant(Lesser),Undead Skeletal
+LARP,Death's Head,7,"Floating skull with flaming, red eyes.",Black clothes. White makeup with black accents and red eyes or undead mask.,15,None,0,Mindless,4-4-4-3-2- 1 (earth),0,Immune,Immune,None,0,0,None,"Magic Death x1. 
+ Innate pyramid.
+ Must throw necromantic or curse spells only.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Immune to normal weapon attacks.
+ Bane Healing x3.","Must remain stationary.
+ Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",None.,Servant(Lesser),Undead Skeletal
+LARP,Grave Dancer,2,Skeletal humanoid.,White makeup with black accents or undead mask. Undead tabard.,10,Must Wear Rep,0,Mindless,None.,0,None,None,Claws (Any),2,3,Normal,Channel spell Disarm x1.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half Damage from weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",None.,Fodder(Lesser),Undead Skeletal
+LARP,Jade Skeleton,2,Large Skeleton with Green Bones,White makeup with black and green accents or undead mask. Undead tabard.,20,20 Natural Armor,0,Low,None.,0,None,None,Weapon (Any),2,3,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Revive after 60 seconds x1.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body after using revive skill.",Weapon master. Style Master.,Fodder(Lesser),Undead Skeletal
+LARP,"Liche, Lesser",16,Skeletal figure with glowing eyes.,White makeup with black accents and red around eyes or undead mask. Undead tabard. Usually well dressed in rotting finery.,125,Must Wear Rep,0,High,As skills.,5,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),7,8,Drain,"Control greater undead by voice. 
+ Arcane Paralysis x1. 
+ 10 Elemental Ice x5. 
+ 20 Elemental Ice x3. 
+ Magic Create Undead x10.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Only affected by Earth, Spell, Body weapon attacks.
+ Resist Spell x5.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May posssess PC skills, do not add character body.",Overlord(Greater),Undead Skeletal
+LARP,"Liche, Greater",40,Skeletal form with glowing eyes.,White makeup with black accents and red around eyes or undead mask. Undead tabard. Usually well dressed in rotting finery.,250,Must Wear Rep,6,Genius,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Drain,"Control greater undead by voice.
+ Arcane Fear x5.
+ Arcane paralysis x3.
+ 10 Elemental Ice x10. 
+ 20 Elemental Ice x5.
+ 30 Elemental Ice x2.
+ Magice Create Undead x10.","No metabolism.
+ Healed double by necromancy.
+ Immune to alteration, command, ice, paralysis, poison, waylay.
+ Only affected by Earth, Spell, Body weapon attacks.
+ Resist Spell x10.
+ Revive x1. (all monster abilities renew upon revive, PC skills do not)","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body after using revive skill.","May posssess PC skills, do not add character body.",Master(Greater),Undead Skeletal
+LARP,Skeleton,2,Shambling Skeleton.,White makeup with black accents or undead mask. Undead tabard.,10,Must Wear Rep,0,Mindless,None.,0,None,None,Weapon and Claws (One Handed),2,0,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half damage from weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Fodder(Lesser),Undead Skeletal
+LARP,"Skeleton, Warrior",5,Skeletal humanoid.,White makeup with black accents or undead mask. Undead tabard. Armor if available.,20,Must Wear Rep,0,Normal,As skills.,2,"Entangle, Slow, Repel",None,Weapon and Claws (One Handed),4,5,Normal,None.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half damage from weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.","May possess PC skills, do not add character body.",Servant(Lesser),Undead Skeletal
+LARP,"Skeleton, Giant",6,"Large, Shambling Skeleton.",White makeup with black accents or undead mask. Undead tabard.,25,Must Wear Rep,0,Low,None.,2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Normal,None.,"No metabolism.
+ Healed double by necromancy.
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half damage from weapon attacks.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",Weapon master. Style master.,Lackey(Lesser),Undead Skeletal
+LARP,"Skeleton, Champion",12,Skeletal humanoid covered in ice.,White makeup with black accents or undead mask. Undead tabard. Blue clothes if available.,55,Must Wear Rep,0,Normal,As skills.,4,"Entangle, Slow, Repel, Bind",None,Weapons and Claws (Any),6,7,Ice,"Control undead by voice.
+ Magic Ice Storm x3.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Half damage from weapon attacks. 
+ Resist Spell x2.","Immune to life. 
+ Double damage from healing, flame.
+ Turns to dust at 0 body.","May possess PC skills, do not add character body.",Minion(Greater),Undead Skeletal
+LARP,"Skeleton, Warlord",22,Skeletal humanoid bathed in flame.,White makeup with black accents or undead mask. Undead tabard. Red clothes if available.,80,Must Wear Rep,0,High,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapons and Claws (Any),8,9,Flame,Magic Dragon's Breath x5.,"No metabolism. 
+ Healed double by necromancy.
+ Immune to alteration, command, poison, paralysis, waylay.
+ Half damage from weapon attacks.
+ Resist Spell  x4.","Immune to life. 
+ Double damage from ice, healing. 
+ Turns to dust at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),Undead Skeletal
+LARP,Barghast,14,Large rotting wolf.,Barghasts have the appearance of a canine in addition to undead makeup.,50,None,0,Animal,None.,6,"Entangle, Slow, Repel, Bind",Entangle,Claws (Any),8,9,Normal,"Arcane Fear x3.
+ Magic Death x3. Must howl before throwing.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",None.,Servant(Lesser),Undead Animal
+LARP,Hound of the Dead,6,A rotting hound.,Hounds have the appearance of a canine in addition to undead makeup.,20,None,0,Animal,None.,2,"Entangle, Slow, Repel",None,Claws (One Handed),4,0,Normal,Magic Cause Critical Wounds x2.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",None.,Lackey(Lesser),Undead Animal
+LARP,Rot Worm,3,A large Rotting Worm.,White or grey undead makeup with white or grey tabard.,20,None,0,Mindless,None,0,None,None,Claws (One Handed),2,0,Disease,"Arcane Fear x1.
+ Engulf x1.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.","Immune to life. 
+ Double damage from healing. 
+ Turns to dust at 0 body.",None.,Fodder(Lesser),Undead Animal
+LARP,"Vampire, Victim (Fledgling)",3,A pale humanoid.,May appear as any race.,20,Must Wear Rep,0,Normal,None,1,Entangle,None,Weapon and Claws (One Handed),3,4,Normal,Arcane Fear x1.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Resist Spell x1.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.",None.,Fodder(Lesser),Undead Vampire
+LARP,"Vampire, Thrall (Fledgling)",5,A pale humanoid.,May appear as any race.,20,Must Wear Rep,0,Normal,None,1,Entangle,None,Weapon and Claws (One Handed),3,4,Weakness,"10 Elemental Ice x1. 
+ Arcane Fear x1.","No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Resist Spell x1.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.",,Fodder(Lesser),Undead Vampire
+LARP,"Vampire, Hireling (Fledgling)",8,A pale humanoid.,May appear as any race.,25,Must Wear Rep,0,Normal,None,1,Entangle,None,Weapon and Claws (One Handed),5,6,Weakness,Arcane Fear x2.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Resist Spell x2.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.","Weapon master. 
+ Style master. 
+ Weapon proficiency +2. 
+ Slay x1. 
+ Parry x1. ^&",Lackey(Lesser),Undead Vampire
+LARP,"Vampire, Warrior (Mature)",15,A pale humanoid.,May appear as any race.,40,Must Wear Rep,0,Normal,None,2,"Entangle, Slow, Repel",None,Weapon and Claws (One Handed),8,9,Wither,Arcane Fear x2.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Resist magic x2. 
+ Phase x1.
+ Gaseous Form x1.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.","Weapon master. 
+ Style master. 
+ Weapon proficiency +4. 
+ Slay x2. Improved Slay x2.
+ Parry x2.
+ Disarm x4. ^&",Lackey(Lesser),Undead Vampire
+LARP,"Vampire, Champion (Mature)",20,A pale humanoid.,May appear as any race.,50,Must Wear Rep,0,Normal,None,2,"Entangle, Slow, Repel",None,Weapon and Claws (One Handed),10,11,Wither,Arcane Fear x3.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+Reduced Damage: Maximum Damage 1 from normal and silver weapon attacks.
+ Resist magic x3. 
+ Phase x2.
+ Gaseous Form x2.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.","Weapon master. 
+ Style master. 
+ Weapon proficiency +6. 
+ Slay x3. Improved Slay x3.
+ Parry x3.
+ Eviscerate x1. 
+ Riposte x1. ^&
+ Disarm x4.",Servant(Lesser),Undead Vampire
+LARP,"Vampire, Bookworm (Fledgling)",8,A pale humanoid.,May appear as any race.,20,Must Wear Rep,0,Normal,4444321,1,Entangle,None,Weapon and Claws (One Handed),3,4,Weakness,Arcane Fear x2.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Resist Spell x2.","Immune to life. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.","Read & write. 
+ First aid & healing arts OR read magic.",Lackey(Lesser),Undead Vampire
+LARP,"Vampire, Scholar (Mature)",15,A pale humanoid.,May appear as any race.,35,Must Wear Rep,0,Normal,44444432,2,"Entangle, Slow, Repel",None,Weapon and Claws (One Handed),4,5,Wither,Arcane Fear x2.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay.
+ Reduced Damage: Maximum Damage 1 from normal weapon attacks.
+ Resist Spell x2. 
+ Phase x1.
+ Gaseous Form x1.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.","Read & write. 
+ First aid & healing arts OR read magic.",Lackey(Lesser),Undead Vampire
+LARP,"Vampire, Professor (Mature)",20,A pale humanoid.,May appear as any race.,40,Must Wear Rep,0,Normal,444444444,2,"Entangle, Slow, Repel",None,Weapon and Claws (One Handed),4,5,Wither,Arcane Fear x3.,"No metabolism. 
+ Healed double by necromancy. 
+ Immune to alteration, command, ice, poison, paralysis, waylay. 
+Reduced Damage: Maximum Damage 1 from normal and silver weapon attacks.
+ Resist Spell x3. 
+ Phase x2.
+ Gaseous Form x2.","Immune to life. 
+ Double damage from healing. 
+ Drops to ground at 0 body and may not be healed back up. After one minute will turn to mist and disappear.
+ Destroyed by sunlight.","Read & write. 
+ First aid & healing arts OR read magic.",Servant(Lesser),Undead Vampire
+LARP,Gorgon,10,Humanoid figure (male or female) with snakes for hair.,Rubber snakes for hair.,20,Must Wear Rep,0,High,As skills.,1,Entangle,None,Weapons and Claws (Any),3,4,Weakness,Magic Paralysis x1.,"Acidic Skin. 
+ Healed 10 Points by any poison attack.",30 Points of damage from Purify.,"May possess PC skills, do not add character body.",Minion(Greater),Humanoid
+LARP,"Gorgon, Elite",10,Humanoid figure (male or female) with snakes for hair.,Rubber snakes for hair.,35,Must Wear Rep,0,High,As skills.,2,"Entangle, Slow, Repel",None,Weapons and Claws (Any),4,5,Drain,Arcane Paralysis x1.,"Acidic Skin. 
+ Healed 10 Points by any poison attack.",30 Points of damage from Purify.,"May possess PC skills, do not add character body.",Minion(Greater),Humanoid
+LARP,"Gorgon, Greater",15,Humanoid figure (male or female) with snakes for hair.,Rubber snakes for hair.,55,Must Wear Rep,0,High,As skills.,6,"Entangle, Slow, Repel, Bind",Entangle,Weapons and Claws (Any),8,9,Drain,Arcane Paralysis x2.,"Acidic Skin.
+ Healed 10 Points by any poison attack.
+ Immune to normal, silver weapon attacks.
+ Immune to Waylay 2 or less.",30 Points of damage from Purify.,"May possess PC skills, do not add character body.",Overlord(Greater),Humanoid
+LARP,Hag,7,Ugly humanoid.,Green skin with warts and stringy black wig. Warty nose and chin prosthetics if available.,25,Must Wear Rep,0,Normal,As skills.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Sleep,"Arcane Weakness x2. 
+ Arcane Destruction x2. 
+ Gypsy Curse x3.","Immune to dominate.
+ Resist Spell x2.",Killed by remove destruction spells.,"May possess PC skills (scholar only), do not add character body.",Minion(Greater),Humanoid
+LARP,Sirine,5,Beautiful humanoid.,May appear as a female of any race.,20,Must Wear Rep,0,Normal,As skills.,0,None,None,Weapon (Any),0,0,Normal,"Arcane dominate x3.
+ Arcane Sleep x3.","Immune to command.
+Auto Bane Command",None.,"May possess PC skills, add character body.",Servant(Lesser),Humanoid
+LARP,"Air Elemental, Shard",3,Small humanoid form made of air.,White makeup and white tabard. Lightning bolts on cheeks.,10,None,0,Normal,None.,0,None,None,Claws (One Handed),2,0,Lightning,10 Elemental Lightning x1.,"No metabolism.
+ Healed by lightning.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from stone.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Fodder(Lesser),"Elemental, Foundation"
+LARP,"Air Elemental, Imp",4,Small humanoid form made of air.,White makeup and white tabard. Lightning bolts on cheeks.,20,None,0,Low,None.,1,Entangle,None,Claws (One Handed),3,0,Lightning,10 Elemental Lightning x3.,"No metabolism.
+ Healed by lightning.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from stone.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Lackey(Lesser),"Elemental, Foundation"
+LARP,"Air Elemental, Adept",8,Humanoid form made of air.,White makeup and white tabard. Lightning bolts on cheeks.,35,None,0,Normal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Lightning,15 Elemental Lightning x3.,"No metabolism.
+ Healed by lightning.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from stone.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Servant(Lesser),"Elemental, Foundation"
+LARP,"Air Elemental, Lord",14,Humanoid form made of air.,White makeup and white tabard. Lightning bolts on cheeks.,50,None,0,High,None.,3,"Entangle, Slow, Repel, Bind","Entangle, Slow, Repel",Claws (Any),5,6,Lightning,"25 Elemental Lightning x3.
+ Channel spell Lightning Bolt x2.","No metabolism.
+ Healed by lightning.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x1.","Double damage from stone.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Minion(Greater),"Elemental, Foundation"
+LARP,"Air Elemental, Knight",16,Large humanoid form made of air.,White makeup and white tabard. Lightning bolts on cheeks.,55,None,0,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Lightning,"30 Elemental Lightning x5.
+ Channel spell Lightning Bolt x2.
+ Channel spell Lightning Storm x2.","No metabolism.
+ Healed by lightning.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x2. 
+ Cloak Stone x1.","Double damage from stone.
+ Immune to healing, life.
+ Disappears at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),"Elemental, Foundation"
+LARP,"Earth Elemental, Shard",3,Small humanoid form made of earth.,"Brown, black and/or grey makeup in stone pattern. Brown, black or grey tabard.",10,None,0,Normal,None.,0,None,None,Claws (One Handed),2,0,Stone,10 Elemental Stone x1.,"No metabolism.
+ Healed by stone.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from lightning.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Fodder(Lesser),"Elemental, Foundation"
+LARP,"Earth Elemental, Imp",4,Small humanoid form made of earth.,"Brown, black and/or grey makeup in stone pattern. Brown, black or grey tabard.",20,None,0,Low,None.,1,Entangle,None,Claws (One Handed),3,0,Stone,10 Elemental Stone x3.,"No metabolism.
+ Healed by stone.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from lightning.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Lackey(Lesser),"Elemental, Foundation"
+LARP,"Earth Elemental, Adept",8,Humanoid form made of earth.,"Brown, black and/or grey makeup in stone pattern. Brown, black or grey tabard.",35,None,0,Normal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Stone,15 Elemental Stone x3.,"No metabolism.
+ Healed by stone.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from lightning.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Servant(Lesser),"Elemental, Foundation"
+LARP,"Earth Elemental, Lord",16,Humanoid form made of earth.,"Brown, black and/or grey makeup in stone pattern. Brown, black or grey tabard.",50,None,0,High,None.,3,"Entangle, Slow, Repel, Bind","Entangle, Slow, Repel",Claws (Any),5,6,Stone,"25 Elemental Stone x3. 
+ Channel spell Stone Bolt x4.","No metabolism.
+ Healed by stone.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x1.","Double damage from lightning.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Minion(Greater),"Elemental, Foundation"
+LARP,"Earth Elemental, Knight",16,Large humanoid form made of earth.,"Brown, black and/or grey makeup in stone pattern. Brown, black or grey tabard.",55,None,10,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Stone,"30 Elemental Stone x3.
+ Arcane Entangle x2.
+ Channel spell Stone Storm x2.","No metabolism.
+ Healed by stone.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x2.
+ Cloak Lightning x1.","Double damage from lightning.
+ Immune to healing, life.
+ Disappears at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),"Elemental, Foundation"
+LARP,"Fire Elemental, Shard",3,Small humanoid form made of flame.,Red and yellow makeup. Red tabard.,10,None,0,Normal,None.,0,None,None,Claws (One Handed),2,0,Flame,10 Elemental Flame x1.,"No metabolism.
+ Healed by flame.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from ice.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Fodder(Lesser),"Elemental, Foundation"
+LARP,"Fire Elemental, Imp",4,Small humanoid form made of flame.,Red and yellow makeup. Red tabard.,20,None,0,Low,None.,1,Entangle,None,Claws (One Handed),3,0,Flame,10 Elemental Flame x3.,"No metabolism.
+ Healed by flame.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from ice.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Lackey(Lesser),"Elemental, Foundation"
+LARP,"Fire Elemental, Adept",8,Humanoid form made of flame.,Red and yellow makeup. Red tabard.,35,None,0,Normal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Flame,15 Elemental Flame x3.,"No metabolism.
+ Healed by flame.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from ice.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Servant(Lesser),"Elemental, Foundation"
+LARP,"Fire Elemental, Lord",16,Humanoid form made of flame.,Red and yellow makeup. Red tabard.,50,None,0,High,None.,3,"Entangle, Slow, Repel, Bind","Entangle, Slow, Repel",Claws (Any),5,6,Flame,"25 Elemental Flame x3.
+ Channel spell Flame Bolt x1.","No metabolism.
+ Healed by flame.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x1.","Double damage from ice.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Minion(Greater),"Elemental, Foundation"
+LARP,"Fire Elemental, Knight",16,Large humanoid form made of flame.,Red and yellow makeup. Red tabard.,55,None,0,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Flame,"30 Elemental Flame x3.
+ Channel spell Flame Bolt x2.
+ Channel spell Enflame x1.
+ Channel spell Dragon's Breath x1.","No metabolism.
+ Healed by flame.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x2. 
+ Cloak Ice x1.","Double damage from ice.
+ Immune to healing, life.
+ Disappears at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),"Elemental, Foundation"
+LARP,"Water Elemental, Shard",3,Small humanoid form made of water.,Blue makeup with white accents.,10,None,0,Normal,None.,0,None,None,Claws (One Handed),2,0,Ice,10 Elemental Ice x1.,"No metabolism.
+ Healed by ice.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from flame.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Servant(Lesser),"Elemental, Foundation"
+LARP,"Water Elemental, Imp",4,Small humanoid form made of water.,Blue makeup with white accents.,20,None,0,Low,None.,1,Entangle,None,Claws (One Handed),3,0,Ice,10 Elemental Ice x3.,"No metabolism.
+ Healed by ice.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from flame.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Lackey(Lesser),"Elemental, Foundation"
+LARP,"Water Elemental, Adept",8,Humanoid form made of water.,Blue makeup with white accents.,35,None,0,Normal,None.,2,"Entangle, Slow, Repel",None,Claws (Any),4,5,Ice,15 Elemental Ice x3.,"No metabolism.
+ Healed by ice.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.","Double damage from flame.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Servant(Lesser),"Elemental, Foundation"
+LARP,"Water Elemental, Lord",16,Humanoid form made of water.,Blue makeup with white accents.,50,None,0,High,None.,3,"Entangle, Slow, Repel, Bind",None,Claws (Any),5,6,Ice,"25 Elemental Ice x3.
+ Channel spell Ice Bolt x2.","No metabolism.
+ Healed by ice.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Magic x1.","Double damage from flame.
+ Immune to healing, life.
+ Disappears at 0 body.",None.,Minion(Greater),"Elemental, Foundation"
+LARP,"Water Elemental, Knight",16,Large humanoid form made of water.,Blue makeup with white accents.,55,None,0,High,As skills.,8,"Entangle, Slow, Repel, Bind, Confine","Entangle, Slow, Repel, Bind",Weapons and Claws (Any),10,11,Ice,"30 Elemental Ice 5 /day.
+ Channel spell Ice Bolt x2.
+ Channel spell Ice Storm x2.","No metabolism.
+ Healed by ice.
+ Immune to alteration, command, necromancy, paralysis, poison, waylay.
+ Resist Spell x2.
+ Cloak flame x1.","Double damage from flame.
+ Immune to healing, life.
+ Disappears at 0 body.","May possess PC skills, do not add character body.",Overlord(Greater),"Elemental, Foundation"
